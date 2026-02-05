@@ -1,0 +1,611 @@
+.hl-person      { background: linear-gradient(  rgba(122, 31, 31, 0.331) ); }    
+.hl-place       { background: linear-gradient( rgba(122, 31, 31, 0.331)); }   
+.hl-date        { background: linear-gradient( rgba(122, 31, 31, 0.331)); }   
+.hl-org         { background: linear-gradient( rgba(122, 31, 31, 0.331) ); }   
+.hl-quote       { background: linear-gradient( rgba(122, 31, 31, 0.331) ); }  
+.hl-people      { background: linear-gradient(rgba(122, 31, 31, 0.331)); }   
+.hl-foreign     { background: linear-gradient( rgba(122, 31, 31, 0.331) ); }    
+.hl-opere       { background: linear-gradient( rgba(122, 31, 31, 0.331) ); }
+
+/* Reset minimal */
+body {
+    
+    font-family: "Georgia","Times New Roman"serif;
+    background: #fafafa;
+    color: #1f2933;
+    line-height: 1.75;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/* LOGO */
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* TITOLO SITO */
+.logo a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.logo img{
+    max-width:420px;
+    filter: grayscale(100%);
+    opacity: 0.9;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+.logo a:hover {
+    color: #0077cc;
+    text-decoration: underline;
+}
+
+
+/* DESCRIZIONI */
+.desc {
+    width: 80%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.desc-carousel {
+    width: 80%;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.desc-slide {
+    display: none;
+    animation: fadeSlide 0.6s ease;
+}
+
+.desc-slide.active {
+    display: block;
+}
+
+.desc-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.desc-indicators .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d1d5db;
+}
+
+.desc-indicators .dot.active {
+    background: #7a1f1f;
+}
+
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* NAVBAR */
+header {
+    background: #d1d5db;
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.navbar a,
+.dropbtn{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    color: #1f2933;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #7a1f1f;
+}
+
+
+
+.navbar .dropbtn:hover {
+    color: #7a1f1f;
+}
+
+.navbar a::after,
+.dropbtn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #7a1f1f;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after,
+.dropbtn:hover::after {
+    width: 100%;
+}
+
+
+.nameproject {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-radius: 5px;
+    min-width: 150px;
+    padding: 8px 0;
+    z-index: 99;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background: #f3e7e7;
+    color: #7a1f1f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/* MENU PARAGRAFI */
+#menu-paragrafi {
+    margin: 30px auto;
+    width: 80%;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#menu-paragrafi h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#menu-paragrafi ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+#menu-paragrafi li {
+    margin: 5px 0;
+}
+
+#menu-paragrafi a {
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 18px;
+    padding: 4px 8px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#menu-paragrafi a:hover {
+    background: #e6f0ff;
+    color: #003d80;
+}
+
+#menu-articoli {
+    margin: 30px auto;
+    width: 80%;
+    background: white;
+    border-left: 4px solid #7a1f1f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.articolo-block {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.titolo-articolo {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.titolo-articolo::before {
+   content: "§";
+   margin-right: 8px;
+   color: var(--accent);
+}
+
+.lista-paragrafi {
+   margin-left: 20px;
+   padding-left: 10px;
+   border-left: 1px solid #d1d5db;
+}
+
+.lista-paragrafi li {
+    margin: 6px 0;
+}
+
+.lista-paragrafi a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #4b5563;
+    transition: 0.2s;
+}
+
+.lista-paragrafi a:hover {
+   color: #7a1f1f;
+}
+
+/* FENOMENI */
+#fenomeni {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.bottoni_fenomeni button {
+   margin: 5px; 
+   cursor: pointer;
+   border-radius: 999px;
+   font-size: 14px;
+   padding: 6px 14px;
+   border: 1px solid #7a1f1f;
+   background: white;
+   font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.bottoni_fenomeni button:hover {
+   background: #f3e7e7;
+   color: #7a1f1f;
+}
+
+.bottoni_fenomeni button.active {
+    background: #f3e7e7;   /* colore azzurrino o quello che vuoi */
+    border-color: #7a1f1f;
+    font-weight: bold;
+    color: #7a1f1f;
+}
+
+
+
+/* ---- LAYOUT PAGINE ---- */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+.text {
+    width: 90%;
+    margin: 40px auto;
+    padding-left: 20px;
+}
+
+/* immagine più grande */
+.box {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+/* testo giustificato e più stretto */
+.boxtext {
+    flex: 2.5;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    min-width: 520px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* immagine */
+.box img {
+    width: 100px;;
+    height: auto; 
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  padding: 4rem 2rem 3rem;
+  border-top: 4px solid #7a1f1f;
+}
+
+.footer-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2933;
+  margin-bottom: 3rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.box h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #7a1f1f;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #fee2e2;
+}
+
+/* Footer info - trasforma paragrafi in lista pulita */
+footer .box p {
+  margin: 0.75rem 0;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 1.5;
+}
+
+footer .box p:last-child {
+  border-bottom: none;
+}
+
+footer .box p strong {
+  color: #7a1f1f;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+
+footer .footer-container {
+  gap: 3rem !important;
+}
+
+footer .box {
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.7);
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  backdrop-filter: blur(5px);
+}
+
+/* Logo centrato */
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-box img {
+  max-width: 240px !important;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+.footer-repo {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.footer-repo a {
+  color: #7a1f1f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-repo a:hover {
+  text-decoration: underline;
+}
+
+
+.info-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0 0;
+}
+
+.info-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-list li:last-child {
+  border-bottom: none;
+}
+
+.info-list strong {
+  color: #7a1f1f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Rimuove lo stile blu dai link dei fenomeni */
+.persName,
+.placeName,
+.orgName,
+.opere,
+.popoli a {
+    color: inherit;              
+    text-decoration: none;      
+}
+
+.placeName a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.persName:hover,
+.placeName:hover,
+.orgName:hover,
+.opere:hover,
+.popoli:hover {
+    text-decoration: underline;  /* opzionale: leggero feedback al passaggio */
+}
+/* Originale sempre visibile */
+.sic {
+    display: inline;
+}
+
+
+
+/* Contenitore dell’immagine facsimile */
+.facsimile-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 859.4px;      /* larghezza reale dell'immagine */
+}
+
+/* L’immagine deve restare nelle dimensioni reali */
+.facsimile {
+    width: 859.4px !important;  /* forza la dimensione corretta */
+    height: auto;
+    display: block;
+}
+
+/* Layer che contiene le zone */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 859.4px;    /* deve corrispondere alla larghezza dell’immagine */
+    height: auto;     /* si adatta */
+}
+
+/* Regione evidenziabile */
+.zone-overlay {
+    position: absolute;
+    border: 2px;
+    pointer-events: none;  /* non blocca clic sull'immagine */
+    transition: background 0.2s, border 0.2s;
+}
+
+/* Quando un paragrafo viene selezionato */
+.zone-overlay.active {
+    border-color: rgba(0, 140, 255, 0.8);
+    background-color: rgba(0, 140, 255, 0.25);
+}
+
+
+/* Navbar normale all'inizio */
+header {
+    position: relative;    /* NON sticky in cima */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: opacity 0.4s ease, background 0.3s ease;
+}
+
+/* Versione sticky quando l’utente scrolla */
+header.nav-fixed {
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    background: #ffffffcc;   /* leggero vetro */
+    backdrop-filter: blur(6px);
+}
+
+.milestone-rule {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+    width: 80%;
+}
+
+
+
+

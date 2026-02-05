@@ -1,0 +1,2163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="codifica.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="it">
+  <teiHeader xml:lang="it">
+
+    <fileDesc>
+      <titleStmt>
+        <title level="j" type="main">La Rassegna Settimanale</title>
+        <title level="j" type="sub">di politica, scienze, lettere ed arti</title>
+
+        <respStmt>
+          <resp>Fondatori:</resp>
+          <persName ref="#P_LF">Leopoldo Franchetti</persName>
+          <persName ref="#P_SS">Sydney Sonnino</persName>
+        </respStmt>
+
+      </titleStmt>
+
+      <editionStmt>
+        <edition>Edizione digitale - <date when="2026-02">Febbraio 2026</date>
+        </edition>
+        <respStmt>
+          <resp>Coordinatore:</resp>
+          <persName xml:id="P_AMDG"> Angelo Mario Del Grosso</persName>
+        </respStmt>
+      </editionStmt>
+
+      <extent>
+        <measure type="pages">8</measure> <!-- da inserire il numero di pagine che verrà-->
+        <measure type="words">39837</measure> <!-- da inserire il numero di parole che verrà-->
+      </extent>
+
+      <publicationStmt>
+        <publisher>Università di Pisa</publisher>
+        <pubPlace> Pisa</pubPlace>
+        <date when="2026"> 2026</date>
+        <availability status="free">
+          <p>Contenuto ad accesso libero</p>
+        </availability>
+      </publicationStmt>
+
+      <seriesStmt>
+        <title xml:id="title">La Rassegna Settimanale di Politica, Scienze , Lettere ed Arti</title>
+        <respStmt>
+          <resp>Codifica del testo a cura di:</resp>
+          <persName xml:id="P_MV">Michele Vietina</persName>
+        </respStmt>
+        <biblScope unit="volume">1</biblScope>
+        <biblScope unit="chapter">13</biblScope>
+        
+      </seriesStmt>
+
+      <notesStmt>
+        <note>Le liste strutturate di persone, luoghi e organizzazioni sono riportate nel <gi>profileDesc</gi> secondo le linee guida TEI.</note>
+      </notesStmt>
+
+      <sourceDesc>
+        <biblStruct xml:lang="it">
+          <monogr>
+            <title level="j" type="main">La Rassegna Settimanale</title>
+            <title level="j" type="sub">di politica, scienze, lettere ed arti</title>
+            <imprint>
+              <pubPlace ref="#S_RM">Roma</pubPlace>
+              <publisher corresp="https://it.wikipedia.org/wiki/Barbera_(casa_editrice)">Casa Editrice Barbera</publisher>
+              <date when="1878">1878</date>
+            </imprint>
+          </monogr>
+        </biblStruct>
+
+        <msDesc>
+          <msIdentifier>
+            <country>Italia</country>
+            <settlement>Roma</settlement>
+            <repository>Rassegna Settimanale</repository>
+          </msIdentifier>
+
+          <physDesc>
+            <objectDesc>
+              <supportDesc material="Paper">
+                <support>Fogli di carta</support>
+                <condition>Le pagine sono facilmente leggibili nonostante i minimi segni del tempo, rappresentati da piccole macchie nere e qualche accenno di deteriorazione.
+                </condition>
+              </supportDesc>
+              <layoutDesc>
+                <layout>Le pagine si presentano divise in due colonne rendendo la lettura scorrevvole.</layout>
+              </layoutDesc>
+            </objectDesc>
+          </physDesc>
+        </msDesc>
+      </sourceDesc>
+
+    </fileDesc>
+
+
+
+
+   
+    <!-- E N C O D I N G   D E S C -->
+    
+    <encodingDesc>
+      <projectDesc>
+        <p>Sono state effettuate le codifiche di cinque sezioni della Rassegna settimanale.</p>
+
+        <p>Gli articoli selezionati sono:
+          <list>
+            <item>
+              <title level="a" type="main">Micene</title>
+            </item>
+            <item>
+              <title level="a" type="main">Il Parlamento</title>
+            </item>
+            <item>
+              <title level="a" type="main">Bibliografia</title>
+            </item>
+            <item>
+              <title level="a" type="main">Notizie</title>
+            </item>
+          </list>
+          </p>
+      </projectDesc>
+    </encodingDesc>
+
+
+
+
+    <!-- P R O F I L E   D E S C -->
+     
+
+    <profileDesc>
+
+      <particDesc>
+
+        <!-- PERSONE-->
+
+        <!--IL PARLAMENTO-->
+
+        <listPerson type="Il Parlamento">
+          <person xml:id="P_BC" corresp="https://it.wikipedia.org/wiki/Benedetto_Cairoli">
+            <persName>Cairoli</persName>
+          </person>
+
+          <person xml:id="P_GZ" corresp="https://it.wikipedia.org/wiki/Giuseppe_Zanardelli">
+            <persName>Zanardelli</persName>
+          </person>
+
+           <person xml:id="P_FSD" corresp="https://it.wikipedia.org/wiki/Federico_Seismit-Doda">
+            <persName>Seismit-Doda</persName>
+          </person>
+
+           <person xml:id="P_GB" corresp="https://it.wikipedia.org/wiki/Giovanni_Bruzzo">
+            <persName>Bruzzo</persName>
+          </person>
+
+           <person xml:id="P_ADB" corresp="https://it.wikipedia.org/wiki/Alfonso_Di_Brocchetti">
+            <persName>Di Brocchetti</persName>
+          </person>
+
+           <person xml:id="P_FDS" corresp="https://it.wikipedia.org/wiki/Francesco_de_Sanctis">
+            <persName>De Sanctis</persName>
+          </person>
+
+          <person xml:id="P_RC" corresp="https://it.wikipedia.org/wiki/Raffaele_Conforti#:~:text=Figlio%20di%20Calvanico%2C%20Raffaele%20Conforti,Sicilie%20presieduto%20da%20Carlo%20Troya.">
+            <persName>Conforti</persName>
+          </person>
+
+          <person xml:id="P_AB" corresp="https://it.wikipedia.org/wiki/Alfredo_Baccarini">
+            <persName>Baccarini</persName>
+          </person>
+
+          <person xml:id="P_LC" corresp="https://it.wikipedia.org/wiki/Luigi_Corti">
+            <persName>Corti</persName>
+          </person>
+
+          <person xml:id="P_FC" corresp="https://it.wikipedia.org/wiki/Francesco_Crispi">
+            <persName>Crispi</persName>
+          </person>
+
+          <person xml:id="P_GN" corresp="https://it.wikipedia.org/wiki/Giovanni_Nicotera">
+            <persName>Nicotera</persName>
+          </person>
+
+          <person xml:id="P_DF" corresp="https://it.wikipedia.org/wiki/Domenico_Farini">
+            <persName>Domenico Farini</persName>
+          </person>
+
+          <person xml:id="P_AM" corresp="https://it.wikipedia.org/wiki/Antonio_Mordini">
+            <persName>Mordini</persName>
+          </person>
+
+          <person xml:id="P_QS" corresp="https://it.wikipedia.org/wiki/Quintino_Sella">
+            <persName>Sella</persName>
+          </person>
+
+          <person xml:id="P_MC" corresp="https://it.wikipedia.org/wiki/Michele_Coppino">
+            <persName>Coppino</persName>
+          </person>
+
+          <person xml:id="P_LP" corresp="https://it.wikipedia.org/wiki/Luigi_Pianciani">
+            <persName>Pianciani</persName>
+          </person>
+
+          <person xml:id="P_DT" corresp="https://it.wikipedia.org/wiki/Diego_Tajani">
+            <persName>Taiani</persName>
+          </person>
+
+          <person xml:id="P_AS" corresp="https://it.wikipedia.org/wiki/Antonio_Starabba,_marchese_di_Rudin%C3%AC">
+            <persName>Rudinì</persName>
+          </person>
+
+          <person xml:id="P_NF" corresp="https://it.wikipedia.org/wiki/Niccol%C3%B2_Ferracciu">
+            <persName>Ferracciù</persName>
+          </person>
+
+          <person xml:id="P_CC" corresp="https://it.wikipedia.org/wiki/Clemente_Corte">
+            <persName>Corte</persName>
+          </person>
+
+          <person xml:id="P_FA" corresp="https://it.wikipedia.org/wiki/Filippo_Abignente">
+            <persName>Abignente</persName>
+          </person>
+
+          <person xml:id="P_LL" corresp="https://it.wikipedia.org/wiki/Luigi_Luzzatti">
+            <persName>Luzzatti</persName>
+          </person>
+
+          <person xml:id="P_GF">
+            <persName>Fabbricotti</persName>
+          </person>
+
+          <person xml:id="P_LN">
+            <persName>Nervo</persName>
+          </person>
+
+          <person xml:id="P_LG" corresp="https://it.wikipedia.org/wiki/Luigi_Guala">
+            <persName>Guala</persName>
+          </person>
+
+          <person xml:id="P_FT" corresp="https://it.wikipedia.org/wiki/Francesco_Tenerelli">
+            <persName>Tenerelli</persName>
+          </person>
+
+          <person xml:id="P_MM" corresp="https://it.wikipedia.org/wiki/Marco_Minghetti">
+            <persName>Minghetti</persName>
+          </person>
+
+
+
+          
+
+
+        </listPerson>
+        
+        <!-- MICENE-->
+
+        <listPerson type="Micene">
+
+          <person xml:id="P_HS" corresp="https://it.wikipedia.org/wiki/Heinrich_Schliemann">
+            <persName>Schliemann</persName>
+          </person>
+
+          <person xml:id="P_A" corresp="https://it.wikipedia.org/wiki/Agamennone">
+            <persName>Agamennone</persName>
+          </person>
+
+          <person xml:id="P_O" corresp= "https://it.wikipedia.org/wiki/Omero">
+            <persName>Omero</persName>
+          </person>
+          
+          <person xml:id="P_P" corresp= "https://it.wikipedia.org/wiki/Pausania_il_Periegeta">
+            <persName>Pausania</persName>
+          </person>
+
+          <person xml:id="P_PE" corresp= "https://it.wikipedia.org/wiki/Perseo">
+            <persName>Perseo</persName>
+          </person>
+
+          <person xml:id="P_PL" corresp= "https://it.wikipedia.org/wiki/Pelope">
+            <persName>Pelope</persName>
+          </person>
+
+          <person xml:id="P_AT" corresp= "https://it.wikipedia.org/wiki/Atreo">
+            <persName>Atreo</persName>
+          </person>
+
+          <person xml:id="P_T" corresp= "https://it.wikipedia.org/wiki/Tieste">
+            <persName>Tieste</persName>
+          </person>
+
+          <person xml:id="P_M" corresp= "https://it.wikipedia.org/wiki/Menelao">
+            <persName>Menelao</persName>
+          </person>
+
+          <person xml:id="P_E" corresp= "https://it.wikipedia.org/wiki/Egisto">
+            <persName>Egisto</persName>
+          </person>
+
+          <person xml:id="P_C" corresp= "https://it.wikipedia.org/wiki/Clitennestra">
+            <persName>Clitennestra</persName>
+          </person>
+
+          <person xml:id="P_EL" corresp= "https://it.wikipedia.org/wiki/Elena_(mitologia)">
+            <persName>Elena</persName>
+          </person>
+
+          <person xml:id="P_OR" corresp= "https://it.wikipedia.org/wiki/Oreste_(figlio_di_Agamennone)">
+            <persName>Oreste</persName>
+          </person>
+
+          <person xml:id="P_ES" corresp= "https://it.wikipedia.org/wiki/Eschilo">
+            <persName>Eschilo</persName>
+          </person>
+
+          <person xml:id="P_WEG" corresp= "https://it.wikipedia.org/wiki/William_Ewart_Gladstone">
+            <persName>Gladstone</persName>
+          </person>
+
+          <person xml:id="P_CA" corresp= "https://it.wikipedia.org/wiki/Cassandra_(mitologia)">
+            <persName>Cassandra</persName>
+          </person>
+
+          <person xml:id="P_PR" corresp= "https://it.wikipedia.org/wiki/Priamo">
+            <persName>Priamo</persName>
+          </person>
+
+          <person xml:id="P_PA" corresp= "https://it.wikipedia.org/wiki/Patroclo">
+            <persName>Patroclo</persName>
+          </person>
+
+          <person xml:id="P_ET" corresp= "https://it.wikipedia.org/wiki/Ettore_(mitologia)">
+            <persName>Ettore</persName>
+          </person>
+
+          <person xml:id="P_AND" corresp= "https://it.wikipedia.org/wiki/Andromaca">
+            <persName>Andromaca</persName>
+          </person>
+
+          
+          <person xml:id="P_DC" corresp= "https://it.wikipedia.org/wiki/Domenico_Comparetti">
+            <persName>D. COMPARETTI</persName>
+          </person>
+
+
+        </listPerson>
+
+
+        <!-- NOTIZIE -->
+
+        <listPerson type="Notizie">
+
+          <person xml:id="P_JC" corresp="https://it.wikipedia.org/wiki/Jacopo_Caponi">
+            <persName>Folchetto</persName>
+          </person>
+
+          <person xml:id="P_MN" corresp="https://it.wikipedia.org/wiki/Max_Nordau">
+            <persName>Max Nordan</persName>
+          </person>
+
+          <person xml:id="P_KLA" corresp="https://it.wikipedia.org/wiki/Ludwig_Arndts_von_Arnesberg">
+            <persName>Carlo Lodovico Arndts</persName>
+          </person>
+
+          <person xml:id="P_FS" corresp="https://it.wikipedia.org/wiki/Filippo_Serafini">
+            <persName>Serafini</persName>
+          </person>
+
+          <person xml:id="P_VC" corresp="https://it.wikipedia.org/wiki/Vittoria_Colonna">
+            <persName>Vittoria Colonna</persName>
+          </person>
+
+          <person xml:id="P_GR" corresp="https://en.wikipedia.org/wiki/George_Rawlinson">
+            <persName>Giorgio Rawlingson</persName>
+          </person>
+
+          <person xml:id="P_LF" corresp="https://it.wikipedia.org/wiki/Leopoldo_Franchetti">
+            <persName>LEOPOLDO FRANCHETTI</persName>
+          </person>
+
+          <person xml:id="P_SS" corresp="https://it.wikipedia.org/wiki/Sidney_Sonnino">
+            <persName>SIDNEY SONNINO</persName>
+          </person>
+
+          <person xml:id="P_AG">
+            <persName>ANGIOLO GHERARDINI</persName>
+          </person>
+
+        </listPerson>
+
+
+
+        <!-- BIBLIOGRAFIA -->
+        <listPerson type="Bibliografia">
+
+          <person xml:id="P_LO" corresp="">
+            <persName>Leone Ottolenghi</persName>
+          </person>
+
+          <person xml:id="P_LOR" corresp="https://it.wikipedia.org/wiki/Luigi_Ornato">
+            <persName>Luigi Ornato</persName>
+          </person>
+
+          <person xml:id="P_SAFD" corresp="https://it.wikipedia.org/wiki/Santorre_di_Santa_Rosa">
+            <persName>Santorre di Santa Rosa</persName>
+          </person>
+
+          <person xml:id="P_MA" corresp="https://it.wikipedia.org/wiki/Marco_Aurelio">
+            <persName>Marco Aurelio</persName>
+          </person>
+
+          <person xml:id="P_PJ" corresp="https://en.wikipedia.org/wiki/Paul_Janet">
+            <persName>Paul Janet</persName>
+          </person>
+
+          <person xml:id="P_CRS" corresp="https://it.wikipedia.org/wiki/Claude-Henri_de_Rouvroy_de_Saint-Simon">
+            <persName>Saint-Simon</persName>
+          </person>
+
+          <person xml:id="P_JDM" corresp="https://it.wikipedia.org/wiki/Joseph_de_Maistre">
+            <persName>Giuseppe de Maistre</persName>
+          </person>
+
+          <person xml:id="P_JBS" corresp="https://en.wikipedia.org/wiki/Jean-Baptiste_Say">
+            <persName>G B Say</persName>
+          </person>
+
+          <person xml:id="P_BPE" corresp="https://it.wikipedia.org/wiki/Barth%C3%A9lemy-Prosper_Enfantin">
+            <persName>Enfantin</persName>
+          </person>
+
+        </listPerson>
+
+
+
+
+
+        <!-- ORGANIZZAZIONI -->
+
+        <!-- IL PARLMENTO -->
+
+        <listOrg type="Il Parlamento">
+
+          <org xml:id="O_CDD" corresp="https://it.wikipedia.org/wiki/Camera_dei_deputati_(Italia)">
+            <orgName>Camera dei Deputati</orgName>
+            <orgName>Camera</orgName>
+          </org>
+
+          <org xml:id="O_SEN" corresp="https://it.wikipedia.org/wiki/Senato_della_Repubblica">
+            <orgName>Senato</orgName>
+          </org>
+
+          <org xml:id="O_MIN" corresp="https://it.wikipedia.org/wiki/Ministero_(Italia)">
+            <orgName>Ministero</orgName>
+          </org>
+
+          <org xml:id="O_PDC" corresp="https://fonteufficiale.it/politica/la-funzione-del-presidente-del-consiglio">
+            <orgName>Presidenza del Consiglio</orgName>
+          </org>
+
+          <org xml:id="O_MDI">
+            <orgName>Interno</orgName>
+          </org>
+
+          <org xml:id="O_MDF">
+            <orgName>Finanze</orgName>
+          </org>
+
+          <org xml:id="O_MDT">
+            <orgName>Ministero del Tesoro</orgName>
+            <orgName>Tesoro</orgName>
+          </org>
+
+          <org xml:id="O_MDG" corresp="https://it.wikipedia.org/wiki/Ministero_della_guerra">
+            <orgName>Guerra</orgName>
+          </org>
+
+          <org xml:id="O_MDM" corresp="https://it.wikipedia.org/wiki/Ministero_della_marina">
+            <orgName>Marina</orgName>
+          </org>
+
+          <org xml:id="O_MDIP">
+            <orgName>Istruzione Pubblica</orgName>
+          </org>
+
+          <org xml:id="O_MGG">
+            <orgName>Grazia e Giustizia</orgName>
+          </org>
+
+          <org xml:id="O_MLP" corresp="https://it.wikipedia.org/wiki/Ministero_dei_lavori_pubblici">
+            <orgName>Lavori Pubblici</orgName>
+          </org>
+
+          <org xml:id="O_MAE">
+            <orgName>Affari Esteri</orgName>
+          </org>
+
+          <org xml:id="O_MAG">
+            <orgName>Ministero di agricoltura</orgName>
+          </org>
+
+          <org xml:id="O_C" corresp="https://it.wikipedia.org/wiki/Regno_d%27Italia_(1861-1946)">
+            <orgName>Corona</orgName>
+          </org>
+
+          <org xml:id="O_LCP">
+            <orgName>legge Comunale e Provinciale</orgName>
+          </org>
+
+          <org xml:id="O_S" corresp="https://it.wikipedia.org/wiki/Sinistra_storica">
+            <orgName>Sinistra</orgName>
+          </org>
+
+          <org xml:id="O_D" corresp="https://it.wikipedia.org/wiki/Destra_storica">
+            <orgName>Destra</orgName>
+          </org>
+
+          <org xml:id="O_G" corresp="https://it.wikipedia.org/wiki/Gabinetto_di_governo">
+            <orgName>Gabinetto</orgName>
+          </org>
+
+          <org xml:id="O_CE">
+            <orgName>centri</orgName>
+          </org>
+
+          <org xml:id="O_CU">
+            <orgName>Camera Unghrese</orgName>
+          </org>
+
+          <org xml:id="O_CR">
+            <orgName>Camera Rumena</orgName>
+          </org>
+
+          <org xml:id="O_CG">
+            <orgName>Camera Greca</orgName>
+          </org>
+
+          <org xml:id="O_RAN" corresp="https://it.wikipedia.org/wiki/Accademia_navale">
+            <orgName>R. Accademia navale</orgName>
+          </org>
+
+        </listOrg>
+
+        <!-- NOTIZIE -->
+
+        <listOrg type="Notizie">
+
+          <org xml:id="O_EXPO" corresp="https://it.wikipedia.org/wiki/Esposizione_universale">
+            <orgName>Esposizione di Parigi</orgName>
+          </org>
+
+          <org xml:id="O_FT" corresp="https://it.wikipedia.org/wiki/Fratelli_Treves">
+            <orgName>Fratelli Treves</orgName>
+          </org>
+
+          <org xml:id="O_UV" corresp="https://it.wikipedia.org/wiki/Universit%C3%A0">
+            <orgName>Università</orgName>
+          </org>
+
+          <org xml:id="O_SWA" corresp="https://openlibrary.org/publishers/Scribner,_Welford,_and_Armstrong">
+            <orgName>Scribner Welford e Armstrong</orgName>
+          </org>
+
+          <org xml:id="O_TBA" corresp="https://it.wikipedia.org/wiki/Casa_Editrice_Barb%C3%A8ra">
+            <orgName>Tipografia Barbera</orgName>
+          </org>
+
+        </listOrg>
+
+        <!-- BIBLIOGRAFIA -->
+        <listOrg type="Bibliografia">
+
+          <org xml:id="O_LO" corresp="https://it.wikipedia.org/wiki/Loescher">
+            <orgName>Loescher</orgName>
+          </org>
+
+          <org xml:id="O_GB">
+            <orgName>Germer Baillière</orgName>
+          </org>
+
+          <org xml:id="O_SSP" corresp="https://it.wikipedia.org/wiki/Istituto_di_studi_politici_di_Parigi">
+            <orgName>Scuola delle Scienze Politiche</orgName>
+          </org>
+
+          <org xml:id="O_PIF" corresp="https://it.wikipedia.org/wiki/Primo_Impero_francese">
+            <orgName>primo Impero</orgName>
+          </org>
+
+          <org xml:id="O_CH" corresp="https://it.wikipedia.org/wiki/Chiesa_cattolica">
+            <orgName>Chiesa</orgName>
+          </org>
+
+
+        </listOrg>
+
+      </particDesc>
+
+
+
+
+
+      <!-- LUOGHI -->
+      <settingDesc>
+
+        <!-- IL PARLAMENTO -->
+        <listPlace type="Il Parlamento">
+
+          <place xml:id="S_IT"  corresp="https://it.wikipedia.org/wiki/Italia">
+            <placeName>Italia</placeName>
+          </place>
+
+
+          <place xml:id="S_AIT">
+            <placeName>Alta Italia</placeName>
+            <country>Italia</country>
+          </place>
+
+          <place xml:id="S_L" corresp="https://it.wikipedia.org/wiki/Livorno">
+            <placeName>Livorno</placeName>
+            <region>Toscana</region>
+            <country>Italia</country>
+          </place>
+
+          <place xml:id="S_FRA"  corresp="https://it.wikipedia.org/wiki/Francia">
+            <placeName>Francia</placeName>
+          </place>
+          
+        </listPlace>
+
+
+
+
+        <!-- MICENE -->
+
+        <listPlace type="Micene">
+
+          <place xml:id="S_M" corresp="https://it.wikipedia.org/wiki/Micene">
+            <placeName>Micene</placeName>
+            <country>Grecia</country>
+          </place>
+
+          <place xml:id="S_T" corresp="https://it.wikipedia.org/wiki/Troia">
+            <placeName>Troja</placeName>
+            <placeName>Nuova Ilio</placeName>
+            <placeName>Ilio</placeName>
+            <placeName>Hissarlik</placeName>
+          </place>
+
+          <place xml:id="S_E" corresp="https://it.wikipedia.org/wiki/Europa">
+            <placeName>Europa</placeName>
+          </place>
+
+          <place xml:id="S_G" corresp="https://it.wikipedia.org/wiki/Grecia">
+            <placeName>Grecia</placeName>
+          </place>
+
+          <place xml:id="S_TR" corresp="https://it.wikipedia.org/wiki/Troade">
+            <placeName>Troade</placeName>
+          </place>
+
+          <place xml:id="S_FR" corresp="https://it.wikipedia.org/wiki/Frigia">
+            <placeName>Frigia</placeName>
+          </place>
+
+          <place xml:id="S_LI" corresp="https://it.wikipedia.org/wiki/Lidia">
+            <placeName>Lidia</placeName>
+          </place>
+
+          <place xml:id="S_PE" corresp="https://it.wikipedia.org/wiki/Peloponneso">
+            <placeName>Peloponneso</placeName>
+            <country>Grecia</country>
+          </place>
+
+          <place xml:id="S_AR" corresp="https://it.wikipedia.org/wiki/Argo_(citt%C3%A0_antica)">
+            <placeName>Argo</placeName>
+            <country>Grecia</country>
+          </place>
+
+          <place xml:id="S_TE" corresp="https://it.wikipedia.org/wiki/Termopili">
+            <placeName>Termopili</placeName>
+            <country>Grecia</country>
+          </place>
+
+          <place xml:id="S_AM" corresp="https://it.wikipedia.org/wiki/Anatolia">
+            <placeName>Asia minore</placeName>
+          </place>
+
+          <place xml:id="S_PL" corresp="https://it.wikipedia.org/wiki/Porta_dei_Leoni_(Micene)">
+            <placeName>Porta dei Leoni</placeName>
+            <settlement>Micene</settlement>
+          </place>
+
+          <place xml:id="S_AS" corresp="https://it.wikipedia.org/wiki/Asia">
+            <placeName>Asia</placeName>
+          </place>
+
+          <place xml:id="S_ACR" corresp="https://it.wikipedia.org/wiki/Acropoli">
+            <placeName>Acropoli</placeName>
+            <settlement>Micene</settlement>
+          </place>
+
+          <place xml:id="S_RO" corresp="https://it.wikipedia.org/wiki/Rodi">
+            <placeName>Rodi</placeName>
+          </place>
+
+          <place xml:id="S_CI" corresp="https://it.wikipedia.org/wiki/Cipro">
+            <placeName>Cipro</placeName>
+          </place>
+
+          <place xml:id="S_SP" corresp="https://it.wikipedia.org/wiki/Sparta">
+            <placeName>Sparta</placeName>
+            <country>Grecia</country>
+          </place>
+
+          <place xml:id="S_SA" corresp="https://it.wikipedia.org/wiki/Santorini">
+            <placeName>Santorino</placeName>
+          </place>
+
+          <place xml:id="S_EG" corresp="https://it.wikipedia.org/wiki/Egitto">
+            <placeName>Egitto</placeName>
+          </place>
+
+          <place xml:id="S_FE" corresp="https://it.wikipedia.org/wiki/Fenicia">
+            <placeName>Fenicia</placeName>
+          </place>
+
+          <place xml:id="S_ASR" corresp="https://it.wikipedia.org/wiki/Assiria">
+            <placeName>Assiria</placeName>
+          </place>
+
+        </listPlace>
+
+
+
+
+        <!-- NOTIZIE -->
+        <listPlace type="Notizie">
+
+          <place xml:id="S_PA" corresp="https://it.wikipedia.org/wiki/Parigi">
+            <placeName>Parigi</placeName>
+            <country>Francia</country>
+          </place>
+
+          <place xml:id="S_MI" corresp="https://it.wikipedia.org/wiki/Milano">
+            <placeName>Milano</placeName>
+            <region>Lombardia</region>
+            <country>Italia</country>
+          </place>
+
+          <place xml:id="S_VI" corresp="https://it.wikipedia.org/wiki/Vienna">
+            <placeName>Vienna</placeName>
+            <country>Austria</country>
+          </place>
+
+          <place xml:id="S_ARN" corresp="https://it.wikipedia.org/wiki/Arnsberg">
+            <placeName>Arnesberg</placeName>
+            <region>Vestfalia</region>
+            <country>Germania</country>
+          </place>
+
+          <place xml:id="S_WE" corresp="https://it.wikipedia.org/wiki/Vestfalia">
+            <placeName>Vestfalia</placeName>
+            <country>Germania</country>
+          </place>
+
+          <place xml:id="S_NY" corresp="https://it.wikipedia.org/wiki/New_York">
+            <placeName>Nuova York</placeName>
+            <country>Stati Uniti d'America</country>
+          </place>
+
+
+        </listPlace>
+
+
+
+        <!-- BIBLIOGRAFIA -->
+
+        <listPlace type="Bibliografia">
+
+          <place xml:id="S_RM" corresp="https://it.wikipedia.org/wiki/Roma">
+            <placeName>Roma</placeName>
+            <region>Lazio</region>
+            <country>Italia</country>
+          </place>
+
+          <place xml:id="S_CR" corresp="https://it.wikipedia.org/wiki/Caramagna_Piemonte">
+            <placeName>Caramagna</placeName>
+            <region>Piemonte</region>
+            <country>Italia</country>
+          </place>
+
+          
+
+        </listPlace>
+
+      </settingDesc>
+
+
+
+      <!-- LANGUAGE + TEXT TYPE -->
+
+      <langUsage>
+        <language ident="it">Italiano</language>
+      </langUsage>
+
+      <textDesc>
+        <channel mode="w">journal</channel>
+        <constitution type="single"/>
+        <derivation type="original"/>
+        <domain type="multi">politics science literature art</domain>
+        <factuality type="fact"/>
+        <interaction type="none"/>
+        <preparedness type="prepared"/>
+        <purpose type="inform" degree="high"/>
+        <purpose type="entertain" degree="medium"/>
+      </textDesc>
+
+    </profileDesc>
+
+  </teiHeader>
+
+  <!-- FACSSIMILE -->
+  <facsimile>
+    <surface xml:id="imgr1">
+
+      <graphic url='./pages/img1.png' width='859.4px' height='1237.4px' />
+      <zone ulx="427" uly="86" lrx="803" lry="320" corresp="#Capoverso1_Il_Parlamento" />
+      <zone ulx="427" uly="320" lrx="806" lry="807" corresp="#Capoverso2_Il_Parlamento"/>
+      <zone ulx="431" uly="808" lrx="806" lry="919" corresp="#Capoverso3_Il_Parlamento"/>
+      <zone ulx="430" uly="919" lrx="805" lry="973" corresp="#Capoverso4_Il_Parlamento"/>
+      <zone ulx="431" uly="972" lrx="807" lry="1176" corresp="#Capoverso5_Il_Parlamento"/>
+    </surface>
+
+
+    <surface xml:id="imgr2">
+
+      <graphic url='./pages/img2.png' width='859.4px' height='1237.4px' />
+      <zone ulx="53" uly="90" lrx="432" lry="134" corresp="#Capoverso5_Il_Parlamento" />
+      <zone ulx="53" uly="135" lrx="435" lry="247" corresp="#Capoverso6_Il_Parlamento" />
+      <zone ulx="51" uly="248" lrx="435" lry="293" corresp="#Capoverso7_Il_Parlamento" />
+      <zone ulx="52" uly="292" lrx="434" lry="372"  corresp="#Capoverso8_Il_Parlamento"/>
+      <zone ulx="51" uly="371" lrx="434" lry="615" corresp="#Capoverso9_Il_Parlamento" />
+      <zone ulx="51" uly="615" lrx="435" lry="739" corresp="#Capoverso10_Il_Parlamento" />
+      <zone ulx="51" uly="739" lrx="436" lry="927" corresp="#Capoverso11_Il_Parlamento" />
+      <zone ulx="52" uly="927" lrx="437" lry="1089" corresp="#Capoverso12_Il_Parlamento" />
+    </surface>
+
+    <surface xml:id="imgr3">
+
+      <graphic url='./pages/img3.png' width='859.4px' height='1237.4px' />
+      <zone ulx="47" uly="815" lrx="440" lry="1163" corresp="#Capoverso1_Micene" />
+      <zone ulx="47" uly="1162" lrx="443" lry="1203" corresp="#Capoverso2_Micene" />
+      <zone ulx="437" uly="90" lrx="830" lry="253" corresp="#Capoverso2_Micene" />
+      <zone ulx="438" uly="254" lrx="829" lry="453" corresp="#Capoverso3_Micene" />
+      <zone ulx="439" uly="454" lrx="829" lry="1076" corresp="#Capoverso4_Micene" />
+      <zone ulx="442" uly="1076" lrx="831" lry="1227" corresp="#Capoverso5_Micene" />
+    </surface>
+
+    <surface xml:id="imgr4">
+      <graphic url='./pages/img4.png' width='859.4px' height='1237.4px' />
+      <zone ulx="60" uly="67" lrx="439" lry="843" corresp="#Capoverso5_Micene" />
+      <zone ulx="60" uly="842" lrx="439" lry="1168" corresp="#Capoverso6_Micene" />
+      <zone ulx="439" uly="68" lrx="819" lry="486" corresp="#Capoverso6_Micene" />
+      <zone ulx="439" uly="486" lrx="820" lry="1167" corresp="#Capoverso7_Micene" />
+
+    </surface>
+
+    <surface xml:id="imgr5">
+      <graphic url='./pages/img5.png' width='859.4px' height='1237.4px' />
+      <zone ulx="57" uly="81" lrx="435" lry="481"  corresp="#Capoverso7_Micene" />
+      <zone ulx="58" uly="481" lrx="437" lry="838"  corresp="#Capoverso8_Micene" />
+      <zone ulx="57" uly="838" lrx="435" lry="1116"  corresp="#Capoverso9_Micene" />
+      <zone ulx="56" uly="1116" lrx="437" lry="1181"  corresp="#Capoverso10_Micene" />
+      <zone ulx="436" uly="84" lrx="817" lry="127"  corresp="#Capoverso10_Micene" />
+      <zone ulx="438" uly="127" lrx="815" lry="342"  corresp="#Capoverso11_Micene" />
+    </surface>
+
+
+    <surface xml:id="imgr6">
+      <graphic url='./pages/img6.png' width='859.4px' height='1237.4px' />
+      <zone ulx="67" uly="561" lrx="444" lry="606" corresp="#Capoverso1_Bibliografia1" />
+      <zone ulx="66" uly="606" lrx="447" lry="1214" corresp="#Capoverso2_Bibliografia1" />
+      <zone ulx="443" uly="39" lrx="818" lry="245" corresp="#Capoverso2_Bibliografia1" />
+      <zone ulx="443" uly="270" lrx="818" lry="308" corresp="#Capoverso1_Bibliografia2" />
+      <zone ulx="443" uly="308" lrx="823" lry="1212" corresp="#Capoverso2_Bibliografia2" />
+    </surface>
+
+    <surface xml:id="imgr7">
+      <graphic url='./pages/img7.png' width='859.4px' height='1237.4px' />
+      <zone ulx="42" uly="54" lrx="423" lry="168" corresp="#Capoverso2_Bibliografia2" />
+    </surface>
+
+
+    <surface xml:id="imgr8">
+      <graphic url='./pages/img8.png' width='859.4px' height='1237.4px' />
+      <zone ulx="51" uly="1116" lrx="428" lry="1159" corresp="#Capoverso1_Notizie1" />
+      <zone ulx="431" uly="136" lrx="812" lry="221" corresp="#Capoverso1_Notizie2" />
+      <zone ulx="429" uly="977" lrx="807" lry="1009" corresp="#Capoverso1_Notizie3" />
+      <zone ulx="434" uly="1094" lrx="817" lry="1159" corresp="#Crediti_Notizie"/>
+    </surface>
+
+   
+
+  </facsimile>
+
+
+
+
+
+
+
+
+  <text xml:lang="it">
+    <group>
+      <text xml:id="Il_Parlamento">        <!-- IL PARLAMENTO -->
+        <body>
+          <div xml:id="img1">
+            <head rend="center">IL PARLAMENTO</head>
+            <ab xml:id="Capoverso1_Il_Parlamento">
+              <lb n="1"/>
+Dinanzi alla <orgName ref="#O_CDD">Camera dei Deputati</orgName> ed al <orgName ref="#O_SEN">Senato</orgName>, che
+              <lb n="2"/>
+hanno ricominciato i loro lavori martedì <date>26 marzo</date>, si è
+              <lb n="3"/>
+presentato il <orgName ref="#O_MIN">Ministero</orgName> finalmente costituito dall'onorevole
+              <lb n="4"/>
+<persName ref="#P_BC">Cairoli</persName> (Decreto Reale del <date>24 marzo</date>). Questi tiene la <orgName ref="#O_PDC">Pre-
+              <lb n="5" break="no"/>
+sidenza del Consiglio</orgName> senza portafoglio, all'<orgName ref="#O_MDI">Interno</orgName> l'on. <persName ref="#P_GZ">Za-
+              <lb n="6" break="no"/>
+nardelli</persName>, alle <orgName ref="#O_MDF">Finanze</orgName> l'on. <persName ref="#P_FSD">Seismit-Doda</persName> coll'interim del
+              <lb n="7"/>
+<orgName ref="#O_MDT">Tesoro</orgName>, alla <orgName ref="#O_MDG">Guerra</orgName> il generale <persName ref="#P_GB">Bruzzo</persName>, alla <orgName ref="#O_MDM">Marina</orgName> il
+              <lb n="8"/>
+contrammiraglio <persName ref="#P_ADB">Di Brocchetti</persName>, alla <orgName ref="#O_MDIP">Istruzione pubblica</orgName>
+              <lb n="9"/>
+l'on. <persName ref="#P_FDS">De Sanctis</persName>, alla <orgName ref="#O_MGG">Grazia e Giustizia</orgName> l'on. <persName ref="#P_RC">Conforti</persName>, ai
+              <lb n="10"/>
+<orgName ref="#O_MLP">Lavori Pubblici</orgName> l'on. <persName ref="#P_AB">Baccarini</persName>, e (Dereto Reale del <date>26 marzo</date>)
+              <lb n="11"/>
+il conte <persName ref="#P_LC">Corti</persName> agli <orgName ref="#O_MAE">Affari Esteri</orgName>.
+            </ab>
+            <ab xml:id="Capoverso2_Il_Parlamento">
+              <lb n="12"/>
+L'on. Presidente del Consiglio in quella stessa seduta
+              <lb n="13"/>
+del <date>26</date> ha pronunziato un discorso programma, che si può
+              <lb n="14"/>
+riassumere così:- Promette serbare il prestigio dello Sta-
+              <lb n="15" break="no"/>
+tuto, e rispettare scrupolosamente l'urna elettorale. Per
+              <lb n="16"/>
+la politica estera riconosce difficilissimo il momento, ma
+              <lb n="17"/>
+afferma che con una neutralità sottratta ad ogni pericolo
+              <lb n="18"/>
+l'<placeName ref="#S_IT">Italia</placeName> saprà mantenersi rispettata. E a questo buon
+              <lb n="19"/>
+fine è d'uopo completare i provvedimenti già intrapresi
+              <lb n="20"/>
+per l'esercito e per la marina. Propone il ristabilimento
+              <lb n="21"/>
+del <orgName ref="#O_MAG">Ministero di agricoltura</orgName>, lascia impregiudicata la crea-
+              <lb n="22" break="no"/>
+zione del <orgName ref="#O_MDT">Ministero del tesoro</orgName>. Per la grave questione
+              <lb n="23"/>
+ferroviaria la forza delle circostanze ha dimostrato la ne-
+              <lb n="24" break="no"/>
+cessità della seprazione dello esercizio dalle nuove costru-
+              <lb n="25" break="no"/>
+zioni, e la necessità di una inchiesta. Intanto si presen-
+              <lb n="26" break="no"/>
+teranno il progetto per l'esercizio provvisorio delle ferro-
+              <lb n="27" break="no"/>
+vie dell'<placeName ref="#S_AIT">Alta Italia</placeName>, e i progetti di nuove costruzioni coi
+              <lb n="28"/>
+mezzi indicati e preparati dai <orgName ref="#O_MIN">Ministeri</orgName> precedenti. Af-
+              <lb n="29" break="no"/>
+ferma che il pareggio non è scosso, malgrado l'eccedenza
+              <lb n="30"/>
+delle spese, e spera nella diminuzione, promessa dal di-
+              <lb n="31" break="no"/>
+scorso della <orgName ref="#O_C">Corona</orgName>, per le tasse più gravose, togliendo
+              <lb n="32"/>
+però ogni dubbio sulla possibile abolizione del maci-
+              <lb n="33" break="no"/>
+nato. Intende poi nell'interesse delle classi lavoratrici
+              <lb n="34"/>
+dare nuovo impulso di sussidi alla inchiesta agraria e a
+              <lb n="35"/>
+quella sugli scioperi. E finalmente, mirando sempre a una
+              <lb n="36"/>
+riforma tributaria e amministrativa, vuole veder intro-
+              <lb n="37" break="no"/>
+dotte alcune innovazioni alla legge Comunale e Provinciale,
+              <lb n="38"/>
+e mantenuto un antico impegno d'onore della <orgName ref="#O_S">Sinistra</orgName>, la
+              <lb n="39"/>
+riforma elettorale, sostituendo pel cittadino elettore al cri-
+              <lb n="40" break="no"/>
+terio esclusivo del censo quello della capacità seriamente
+              <lb n="41"/>
+definita.
+            </ab>
+            <ab xml:id="Capoverso3_Il_Parlamento">
+              <lb n="42"/>
+Questo discorso fu accolto freddamente, nè poteva es-
+              <lb n="43" break="no"/>
+sere altrimenti, dacchè la <orgName ref="#O_S">Sinistra</orgName> detta storica, e i gruppi
+              <lb n="44"/>
+influenzati o capitanati dagli on. <persName ref="#P_FC">Crispi</persName> e <persName ref="#P_GN">Nicotera</persName>, sono
+              <lb n="45" break="no"/>
+avversi al <orgName ref="#O_MIN">Ministero</orgName>, e la <orgName ref="#O_D">Destra</orgName> che si preparava ad ap-
+              <lb n="46" break="no"/>
+poggiarlo, per spirito di moderazione, non poteva darsi
+              <lb n="47"/>
+perciò all'entusiasmo. Rimanevano i <orgName ref="#O_CE">centri</orgName>, incerti del come
+              <lb n="48"/>
+e quando sarebbesi formata una maggioranza.
+            </ab>
+            <ab xml:id="Capoverso4_Il_Parlamento">
+              <lb n="49"/>
+La fredda accoglienza impressionò gli animi di molti, i
+              <lb n="50"/>
+quali troppo frettolosamente andarono ripetendo che il <orgName ref="#O_MIN">Mi-
+              <lb n="51"/>
+nistero</orgName> avrebbe avuto una brevissima durata.
+            </ab>
+            <ab xml:id="Capoverso5_Il_Parlamento">
+              <lb n="52"/>
+Oggi le condizioni sono già alquanto mutate e le pro
+              <lb n="53" break="no"/>
+babilità della vita di questo <orgName ref="#O_G">Gabinetto</orgName> aumentate, impe-
+              <lb n="54" break="no"/>
+rocchè la forza delle cose ha condotto a ciò, a cui i propo-
+              <lb n="55" break="no"/>
+siti di alcuni uomini politici non avevano ancora approdato.
+              <lb n="56"/>
+I <orgName ref="#O_CE">centri</orgName>, sinistro e destro, si sono in gran parte accostati
+              <lb n="57"/>
+alla destra, e questa a quelli nell'intendimento di sorreg-
+              <lb n="58" break="no"/>
+gere il  <orgName ref="#O_MIN">Ministero</orgName> finchè si manterrà entro i limiti concilia-
+              <lb n="59" break="no"/>
+bili del programma accennato, e così d'accordo tale nuova
+              <lb n="60"/>
+maggioranza e il  <orgName ref="#O_MIN">Ministero</orgName> potrebbero giungere insieme
+              <lb n="61"/>
+alle elezioni generali, salvo a dovere, a seconda degli av-
+              <lb n="62" break="no"/>
+venimenti, portare una modificazione nel <orgName ref="#O_G">Gabinetto</orgName> o prima
+              <lb n="63"/>
+o immediatamente dopo le elezioni stesse. In questo modo
+              <lb n="64"/>
+rimarrebbero esclusi dall'accordo, e quindi avversari del
+            </ab>
+          </div>
+          <pb n="2"/>
+          <div xml:id="img2">
+            <ab>
+              <lb n="65"/>
+<orgName ref="#O_G">Gabinetto Cairoli</orgName>, una parte della <orgName ref="#O_S">sinistra storica</orgName> e i gruppi 
+              <lb n="66"/>
+degli on. <persName ref="#P_FC">Crispi</persName> e <persName ref="#P_GN">Nicotera</persName>.
+            </ab>
+            <ab xml:id="Capoverso6_Il_Parlamento">
+              <lb n="67"/>
+Un segno importante e manifesto degli accordi e degli
+              <lb n="68"/>
+intendimenti che additiamo, si ebbe nella nomina del Pre-
+              <lb n="69"/>
+sidente della Camera. Il seggio era lasciato vacante dal-
+              <lb n="70" break="no"/>
+l'on. <persName ref="#P_BC">Cairoli</persName> salito alla <orgName ref="#O_PDC">Presidenza del Consiglio</orgName>. La can-
+              <lb n="71" break="no"/>
+didatura dell'on. <persName ref="#P_DF">Domenico Farini</persName> fu subito posta innanzi
+              <lb n="72"/>
+dagli amici del <orgName ref="#O_MIN">Ministero</orgName>, appoggiata dall'on. <persName ref="#P_AM">Mordini</persName> e dai
+              <lb n="73"/>
+<orgName ref="#O_CE">centri</orgName>, accettata dall'on. <persName ref="#P_QS">Sella</persName> e dalla <orgName ref="#O_D">destra</orgName>. 
+            </ab>
+            <ab xml:id="Capoverso7_Il_Parlamento">
+              <lb n="74"/>
+Difatti, nella seduta del <date>27</date>, l'on. <persName ref="#P_DF">Farini</persName> sopra 262 vo-
+              <lb n="75" break="no"/>
+tanti ebbe 174 voti. L'on. <persName ref="#P_MC">Coppino</persName> n'ebbe 60. Le schede
+              <lb n="76"/>
+bianche furono 27 e i voti dispersi 2.
+            </ab>
+            <ab xml:id="Capoverso8_Il_Parlamento">
+              <lb n="77"/>
+I voti ottenuti dall'on. <persName ref="#P_MC">Coppino</persName>, e probabilmente una
+              <lb n="78"/>
+parte delle schede bianche, rappresentano quelli che ora
+              <lb n="79"/>
+chiamansi i dissidenti di sinistra, vale a dire, gli avversari
+              <lb n="80"/>
+del <orgName ref="#O_MIN">Ministero</orgName> che trovansi, lo ripetiamo, quasi tutti nei
+              <lb n="81"/>
+gruppi Crispi e Nicotera.
+            </ab>
+            <ab xml:id="Capoverso9_Il_Parlamento">
+              <lb n="82"/>
+Tale è la situazione dell'oggi, situazione precaria, che 
+              <lb n="83"/>
+potrebbe anche prolungarsi a benefizio del <orgName ref="#O_G">Gabinetto</orgName> Cairoli. 
+              <lb n="84"/>
+Ma la disciplina e l'unità di direzione che si era notata
+              <lb n="85"/>
+in quella votazione del 27, è venuta subito a scemare quando
+              <lb n="86"/>
+si è trattato di una questione meno importante, la nomina
+              <lb n="87"/>
+dei due vicepresidenti da sostituirsi agli on. <persName ref="#P_DF">Farini</persName> e <persName ref="#P_FDS">De-
+              <lb n="88" break="no"/>
+Sanctis</persName>. Nella seduta del 28 si ebbe questo risultato: Vo-
+              <lb n="89" break="no"/>
+tanti 226, <persName ref="#P_LP">Pianciani</persName> voti 123, <persName ref="#P_DT">Taiani</persName> voti 113, <persName ref="#P_AS">Rudinì</persName> 66,
+              <lb n="90"/>
+<persName ref="#P_NF">Ferracciù</persName> 46, <persName ref="#P_CC">Corte</persName> 12, <persName ref="#P_FA">Abignente</persName> 11, schede bianche 33.
+              <lb n="91"/>
+Onde ballottaggio tra i primi quattro, perchè in questa
+              <lb n="92"/>
+votazione si sono risentiti gli effetti delle divisioni e delle
+              <lb n="93"/>
+antipatie personali. I due primi, candidati della <orgName ref="#O_S">sinistra</orgName>,
+              <lb n="94"/>
+sono stati eletti definitivamente nel dì <date>29</date> nella votazione di
+              <lb n="95"/>
+ballottaggio: <persName ref="#P_LP">Pianciani</persName> con 169, <persName ref="#P_DT">Taiani</persName> con 123 voti.<persName ref="#P_AS">Ru-
+              <lb n="96" break="no"/>
+dinì</persName> n'ebbe 96 e <persName ref="#P_NF">Ferracciù</persName> 46.
+            </ab>
+            <ab xml:id="Capoverso10_Il_Parlamento">
+              <lb n="97"/>
+Quanto ai lavori parlamentari essi sono appena comin-
+              <lb n="98" break="no"/>
+ciati. La <orgName ref="#O_CDD">Camera</orgName> ha sorteggiato e costituito i suoi uf-
+              <lb n="99" break="no"/>
+fici, approvati gl'indirizzi di risposta al discorso della
+              <lb n="100"/>
+<orgName ref="#O_C">Corona</orgName>, alle Camere <orgName ref="#O_CU">Ungherese</orgName>, <orgName ref="#O_CR">Rumena</orgName> e <orgName ref="#O_CG">Greca</orgName>. Si è di-
+              <lb n="101" break="no"/>
+stribuita la relazione dell'on. <persName ref="#P_LL">Luzzatti</persName> ed è incominciata
+              <lb n="102"/>
+la discussione del trattato di commercio colla <placeName ref="#S_FRA">Francia</placeName>,
+              <lb n="103"/>
+con i discorsi degli on. <persName ref="#P_GF">Fabbricotti</persName>,  <persName ref="#P_LN">Nervo</persName>,  <persName ref="#P_LG">Guala</persName>,  <persName ref="#P_FT">Tene-
+              <lb n="104" break="no"/>
+relli</persName> e  <persName ref="#P_MM">Minghietti</persName>.
+            </ab>
+            <ab xml:id="Capoverso11_Il_Parlamento">
+              <lb n="105"/>
+Il Ministro delle finanze ha presentato i bilanci di de-
+              <lb n="106" break="no"/>
+finitiva previsione per il 1878, la situazione del Tesoro, il re-
+              <lb n="107" break="no"/>
+soconto generale consuntivo pel <date>1874</date> e <date>1875</date>, e un progetto
+              <lb n="108"/>
+di legge per prelevamento di fondi. Il Ministro della ma-
+              <lb n="109" break="no"/>
+rina he presentato i progetti per la istituzione della <orgName ref="#O_RAN">R. Ac-
+              <lb n="110" break="no"/>
+cademia navale</orgName> a <placeName ref="#P_L">Livorno</placeName> e per l'organico del personale;
+              <lb n="111"/>
+progetti che auguriamo di veder ben presto approvati per-
+              <lb n="112" break="no"/>
+chè rappresentano un desiderio nutrito per tanti anni da
+              <lb n="113"/>
+uomini intendenti i bisogni della nostra marina. Delle
+              <lb n="114"/>
+sei interrogazioni sulla politica estera indirizzate al nuovo
+              <lb n="115"/>
+ministro nella seduta del <date>29 marzo</date>, è stata rinviata la di-
+              <lb n="116" break="no"/>
+scussione all'<date>8 aprile</date>.
+            </ab>
+            <ab xml:id="Capoverso12_Il_Parlamento">
+              <lb n="117"/>
+I lavori però saranno pochi, giacchè presto il <orgName ref="#O_MIN">Ministero</orgName>
+              <lb n="118"/>
+dovrà prorogare le Camere per studiare e preparare i suoi
+              <lb n="119"/>
+disegni di legge. Intanto coincidono le solite vacanze di 
+              <lb n="120"/>
+Pasqua, e la stagione incalza. Sarà egli possibile che in
+              <lb n="121"/>
+questa sessione si discuta la legge elettorale? Ne dubi-
+              <lb n="122" break="no"/>
+tiamo. E in tal caso andiamo noi incontro allo scioglimento
+              <lb n="123"/>
+della <orgName ref="#O_CDD">Camera</orgName> e alle elezioni generali senza la promessa ri-
+              <lb n="124" break="no"/>
+forma elettorale, col rischio di presentare questa riforma
+              <lb n="125"/>
+a una <orgName ref="#O_CDD">Camera</orgName> nuova per scioglierla nuovamente entro sei
+              <lb n="126"/>
+mesi?
+            </ab>
+          </div>
+        </body>
+      </text>
+
+
+      <text xml:id="Micene">        <!--Micene-->
+        <body>
+          <div xml:id="img3">
+            <head rend="center">
+              <hi rend="bold">Micene</hi>
+              <lb/>
+            </head>
+            <ab xml:id="Capoverso1_Micene">
+              <lb n="127"/>
+Fu un'ottima idea quella dello <persName ref="#P_HS">Schliemann</persName> di intrapren-
+              <lb n="128" break="no"/>
+dere scavi a <placeName ref="#S_M">Micene</placeName> dopo aver ricercato <placeName ref="#S_T">Troja</placeName>, e il buon
+              <lb n="129"/>
+successo l'ha pienamente giustificata conducendolo alla più
+              <lb n="130"/>
+importante scoperta archeologica che nel nostro secolo siasi
+              <lb n="131"/>
+fatta in <placeName ref="#S_E">Europa</placeName>. Nella guerra trojana, che è il più illustre
+              <lb n="132"/>
+fatto con cui si apre la storia dei popoli europei, primeg-
+              <lb n="133" break="no"/>
+giano due città, una asiatica che è <placeName ref="#S_T">Troja</placeName>, l'altra europea
+              <lb n="134"/>
+che è <placeName ref="#S_M">Micene</placeName>, la sede dei <rs type="people">Pelopidi</rs>, degli <rs type="people">Atridi</rs>, di <persName ref="#P_A">Aga-
+              <lb n="135" break="no"/>
+mennone</persName>, dei più potenti principi che allora dominassero
+              <lb n="136"/>
+in <placeName ref="#S_G">Grecia</placeName>. Dove <placeName ref="#S_T">Troja</placeName> fosse non si sapeva esattamente: ma 
+              <lb n="137"/>
+dove fosse <placeName ref="#S_M">Micene</placeName> ben si sapeva. Cedendo all'attrattiva
+              <lb n="138"/>
+dell'ignoto, sempre irresistibile per l'uomo, i dotti a  <placeName ref="#S_M">Mi-
+              <lb n="139" break="no"/>
+cene</placeName> poco badarono, e anzitutto si occuparono di cercar
+              <lb n="140"/>
+<placeName ref="#S_T">Troja</placeName>, quantunque ben potesse prevedeersi che anche tro-
+              <lb n="141" break="no"/>
+vandola, difficile troppo riuscirebbe provare che fosse quella.
+              <lb n="142"/>
+Fra tutti i cercatori di <placeName ref="#S_T">Troja</placeName> lo <persName ref="#P_HS">Schliemann</persName> fu certamente
+              <lb n="143"/>
+il più fortunato, come fu anche il più avveduto, il più te-
+              <lb n="144" break="no"/>
+nace nel suo proposito e il più illimitatamente devoto alla
+              <lb n="145"/>
+causa del sapere.
+            </ab>
+            <ab xml:id="Capoverso2_Micene">
+              <lb n="146"/>
+La scoperta di una città antichissima della <placeName ref="#S_TR">Troade</placeName> al
+              <lb n="147"/>
+disotto della <placeName ref="#S_T">Nuova Ilio</placeName> degli antichi, con oggetti d'arte
+            </ab>
+            <ab>
+              <lb n="148"/>
+evidentemente primitiva, è importantissima sott'ogni aspetto.
+              <lb n="149"/>
+Com'era da prevedersi, lo <persName ref="#P_HS">Schliemann</persName> non è riuscito a con-
+              <lb n="150" break="no"/>
+vincere tutti che quella sia la <placeName ref="#S_T">Ilio</placeName> di <persName ref="#P_O">Omero</persName>, ma neppure 
+              <lb n="151"/>
+a dire qual città della <placeName ref="#S_TR">Troade</placeName> fosse quella, se <placeName ref="#S_T">Troja</placeName> non
+              <lb n="152"/>
+era. In ogni caso lo <persName ref="#P_HS">Schliemann</persName> è il solo che abbia potuto
+              <lb n="153"/>
+presentare ai dotti una congettura basata sulla esistenza
+              <lb n="154"/>
+di una città antica vera e propria e di antichità senza al-
+              <lb n="155" break="no"/>
+cun dubbio assai pre-omerica.
+            </ab>
+            <ab xml:id="Capoverso3_Micene">
+              <lb n="156"/>
+Le incertezze però che tuttavia possono rimanere sul
+              <lb n="157"/>
+nome da darsi alla scoperta di <placeName ref="#S_T">Hissarlik</placeName>, non esistono af-
+              <lb n="158" break="no"/>
+fatto per questa di <placeName ref="#S_M">Micene</placeName>. Per <placeName ref="#S_T">Troja</placeName> non è mancato qual-
+              <lb n="159" break="no"/>
+che capo ameno che abbia fin negato che sia mai esistita
+              <lb n="160"/>
+e abbia anche tentato di farla sparire dall'albo dei nomi
+              <lb n="161"/>
+storici, coi soliti bussolotti della mitologia comparata, l'an
+            <lb n="162" break="no"/>
+tico mostro vedico, Vritra, e l'antica sua caverna, che è 
+            <lb n="163"/>
+ormai tutta piena di corbellerie moderne. Per <placeName ref="#S_M">Micene</placeName> que-
+            <lb n="164" break="no"/>
+ste fantasticherie non potevano aver luogo. Quantunque
+            <lb n="165"/>
+antichissima, questa città non fu distrutta che in tempi
+            <lb n="166"/>
+storici, cioè nel <date>V secolo prima di Cristo</date>, e le sue rovine 
+            <lb n="167"/>
+imponenti rimasero sopra terra fino ai nostri giorni.
+          </ab>
+          <ab xml:id="Capoverso4_Micene">
+            <lb n="168"/>
+L'antichità spesso rammenta quelle costruzioni antichis-
+            <lb n="169" break="no"/>
+sime, citandole come il piùù antico esempio di struttura
+            <lb n="170"/>
+così detta ciclopica. <persName ref="#P_P">Pausania</persName> nel <date>secondo secolo</date> dell'era
+          <lb n="178"/>
+volgare descriveva le rovine di <placeName ref="#S_M">Micene</placeName> presso a poco quali
+          <lb n="179"/>
+ora puranco le vediamo. Le origini della città sono per
+          <lb n="180"/>
+gli antichi del tutto mitiche; le attribuiscono a <persName ref="#P_PE">Perseo</persName> e
+          <lb n="181"/>
+ai Ciclopi. Il più grande splendore di <placeName ref="#S_M">Micene</placeName> appartiene
+          <lb n="182"/>
+all'età eroica, a quellacioè per la quale mancano i monu-
+          <lb n="183" break="no"/>
+menti storici, e non si hanno che ricordi poetici nelle epo-
+          <lb n="184" break="no"/>
+pee. <persName ref="#P_PL">Pelope</persName> e i <rs type="people">Pelopidi</rs> venuti con ingenti ricchezze dalla
+          <lb n="185"/>
+<placeName ref="#S_FR">Frigia</placeName> o dalla <placeName ref="#S_LI">Lidia</placeName> si stabiliscono a <placeName ref="#S_M">Micene</placeName>, di là domi-
+          <lb n="186" break="no"/>
+nano sul <placeName ref="#S_PE">Peloponneso</placeName> che ne porta tuttora il nome, ed
+          <lb n="187"/>
+hanno il primato fra tutti i principi greci per più genera-
+          <lb n="188" break="no"/>
+zioni, che ci offrono i nomi eroici e poetici di <persName ref="#PL">Pelope</persName>, <persName ref="#P_AT">Atreo</persName>,
+          <lb n="189"/>
+<persName ref="#P_T">Tieste</persName>, <persName ref="#P_A">Agamennone</persName>, <persName ref="#P_M">Menelao</persName>, <persName ref="#P_E">Egisto</persName>, <persName ref="#P_C">Clitennestra</persName>, <persName ref="#P_EL">Elena</persName>,
+          <lb n="190"/>
+<persName ref="#P_OR">Oreste</persName>. Così da <placeName ref="#S_M">Micene</placeName> prende le mosse la guerra trojana,
+          <lb n="191"/>
+e <placeName ref="#S_M">Micene</placeName> è la scena dei tragici avvenimenti che ispirarono
+          <lb n="192"/>
+ad <persName ref="#P_ES">Eschilo</persName> l'<title>Orestea</title>. Dopo <persName ref="#P_OR">Oreste</persName> troviamo il ritrono degli 
+          <lb n="193"/>
+<rs type="people">Eraclidi</rs> nel <placeName ref="#S_PE">Peloponneso</placeName>, i quali danno la prevalenza ad
+          <lb n="194"/>
+<placeName ref="#S_AR">Argo</placeName>, la rivale di <placeName ref="#S_M">Micene</placeName>, e per questa incomincia allora
+          <lb n="195"/>
+un'epoca di decadenza da cui non si risollevò più mai fin-
+          <lb n="196" break="no"/>
+chè, dopo essersi distinta colle illustri gesta dei suoi alle
+          <lb n="197"/>
+<placeName ref="#S_TE">Termopili</placeName>, soccombette nel <date>468 av. Cr.</date> sotto i colpi della 
+          <lb n="198"/>
+gelosa <placeName ref="#S_AR">Argo</placeName>. In mezzo alle favole poetiche, i fatti che pos-
+          <lb n="199" break="no"/>
+sono ritenersi come positivi sono questi: 1° L'esistenza
+          <lb n="200"/>
+fino da tempi antichissimi di questa città di <placeName ref="#S_M">Micene</placeName> di cui
+          <lb n="201"/>
+possediamo le rovine; 2° L'aver essa accolto una stirpe di 
+          <lb n="202"/>
+dominanti venuti dall'<placeName ref="#S_AM">Asia minore</placeName> e che s'impose a tutto
+          <lb n="203"/>
+il <placeName ref="#S_PE">Peloponneso</placeName> per più di una generazione; 3° L'opulenza
+          <lb n="204"/>
+grandissima di quella città durante quel dominio; 4° Il
+          <lb n="205"/>
+principio della sua decadenza colla migrazione dorica o il 
+          <lb n="206"/>
+ritorno degli <rs type="people">Eraclidi</rs>, che è da antichi e moderni consi-
+          <lb n="207" break="no"/>
+derato come un fatto storico, il quale ebbe luogo circa un-
+          <lb n="208" break="no"/>
+dici secoli prima dell'era volgare; 5° Finalmente la distru-
+          <lb n="209" break="no"/>
+zione di <placeName ref="#S_M">Micene</placeName> nel <date>468 av. Cr.</date> Di tutto ciò bisogna tener
+          <lb n="210"/>
+conto per apprezzare l'altissimo valore della scoperta dello
+          <lb n="211"/>
+<persName ref="#P_HS">Schliemann</persName>. 
+        </ab>
+        <ab xml:id="Capoverso5_Micene">
+          <lb n="212"/>
+La porta, così detta dei Leoni, di <placeName ref="#S_M">Micene</placeName>, era fin qui il
+        <lb n="213"/>
+più antico monumento di scultura che si conoscesse in <placeName ref="#S_E">Eu-
+        <lb n="214" break="no"/>
+ropa</placeName>, monumento notevolissimo per lo stile affatto diverso 
+        <lb n="215"/>
+da quanro poi troviamo nella scultura greca e che trova
+        <lb n="216"/>
+raffronti soltanto in <placeName ref="#S_AS">Asia</placeName>, singolarmente nella <placeName ref="#S_FR">Frigia</placeName>. Quella
+        <lb n="217"/>
+porta fa parte delle mura ciclopiche che circondano l'<placeName ref="#S_ACR">Acro-
+        <lb n="218" break="no"/>
+poli</placeName> di <placeName ref="#S_M">Micene</placeName> ed apre l'adito a questa parte alta della 
+        <lb n="219"/>
+città ove trovavansi le case reali. Appunto sull'<placeName ref="#S_ACR">Acropoli</placeName>
+        <lb n="220"/>
+ha trovato lo <persName ref="#P_HS">Schliemann</persName> cinque tombe, alle quali poi se
+      </ab>
+    </div>
+    <pb n="4"/>
+    <div xml:id="img4">
+      <ab>
+        <lb n="221" break="no"/>
+ne aggiunse una sesta e testè anche una settima trovate
+        <lb n="222"/>
+da altri. Non ci vogliamo troppo trattenere qui sull'idea 
+        <lb n="223"/>
+dello <persName ref="#P_HS">Schliemann</persName>, accettata dal <persName ref="#P_WEG">Gladstone</persName>, che queste siano
+        <lb n="224"/>
+le tombe di <persName ref="#P_A">Agamennone</persName>, <persName ref="#P_CA">Cassandra</persName> ec. che l'antica tradi-
+        <lb n="225" break="no"/>
+zione, riferita da <persName ref="#P_P">Pausania</persName> collocava in questi luoghi. La-
+        <lb n="226" break="no"/>
+sciando da parte altre considerazioni più elevate, è strano
+        <lb n="227"/>
+che lo <persName ref="#P_HS">Schliemann</persName> non abbia osservato quanto diverso sia
+        <lb n="228"/>
+lo stile degli oggetti trovati a <placeName ref="#S_T">Troja</placeName>, e quanto incredibile 
+        <lb n="229"/>
+sarebbe che nella tomba di <persName ref="#P_A">Agamennone</persName> fra le cose pre-
+        <lb n="230" break="no"/>
+ziose non si trovasse anche una parte del bottino riportato
+        <lb n="231"/>
+da <placeName ref="#S_T">Troja</placeName>. Dal che seguirebbe che o in queste tombe non
+        <lb n="232"/>
+c'è <persName ref="#P_A">Agamennone</persName> o quella che lo <persName ref="#P_HS">Schliemann</persName> crede <placeName ref="#S_T">Troja</placeName>
+        <lb n="233"/>
+non è <placeName ref="#S_T">Troja</placeName>. Ma a tutto ciò si può passar sopra, chè ve-
+        <lb n="234" break="no"/>
+ramente se non si fossero trovate che le ossa di alcuni eroi,
+        <lb n="235"/>
+il guadagno non sarebbe grande. Questo convien dire che 
+        <lb n="236"/>
+sepolcri come questi pieni di sorprendenti ricchezze (chè
+        <lb n="237"/>
+soltanto l'oro trovato oggi in cinque di essi raggiunge il
+        <lb n="238"/>
+peso di 5000 lire sterline!) e situati non nella città bassa
+        <lb n="239"/>
+ma nell'<placeName ref="#S_ACR">Acropoli</placeName>, non possono appartenere che a perso-
+        <lb n="240" break="no"/>
+naggi regali, e certamente i quindici scheletri trovati dallo
+        <lb n="241"/>
+<persName ref="#P_HS">Schliemann</persName>, quasi tutti letteralmente coperti d'oro, non 
+        <lb n="242"/>
+possono essere di gente oscura, ma è più che probabile
+        <lb n="243"/>
+che se potessero parlare ci direbbero nomi non ignoti e 
+        <lb n="244"/>
+forse anche illustri nell'antica poesia. Come negare che 
+        <lb n="245"/>
+essi appartengono a quell'età in cui <placeName ref="#S_M">Micene</placeName> meritava an-
+        <lb n="246" break="no"/>
+cora i titoli che le dà <persName ref="#P_O">Omero</persName>, di città ben costrutta, dalle
+        <lb n="247"/>
+larghe strade, e sopratutto ricca d'oro (<foreign xml:lang="gr">polychrysos</foreign>)? Ora,
+        <lb n="248"/>
+se interroghiamo la tradizione antica, quest'epoca di ric-
+        <lb n="249" break="no"/>
+chezza per <placeName ref="#S_M">Micene</placeName> risponderebbe al dominio dei <rs type="people">Pelopidi</rs>.
+        <lb n="250"/>
+In ogni caaso poi, posteriore a quello non può essere, poi-
+        <lb n="251" break="no"/>
+chè dopo il ritorno degli Eraclidi non esiste nella storia
+        <lb n="252"/>
+di <placeName ref="#S_M">Micene</placeName> decaduta, un momento in cui si potrebbe spie-
+        <lb n="253" break="no"/>
+gare l'esistenza di tombe regali quali queste sono certa-
+        <lb n="254" break="no"/>
+mente. Qual sia poi il rapporto fra i Pelopidi della poesia
+        <lb n="255"/>
+e i Pelopidi della realtà, noi non possiamo determinare;
+        <lb n="256"/>
+ma certo è un fatto di grande importanza per un'epoca
+      <lb n="257"/>
+qual'è questa, di cui non abbiamo che la immagine poe-
+      <lb n="258" break="no"/>
+tica, il trovare tanto concreto e reale quanto lo <persName ref="#P_HS">Schlie-
+      <lb n="259" break="no"/>
+mann</persName> ebbe la fortuna di scoprire; chè se queste tombe non
+      <lb n="260"/>
+ci dicono nulla sulle persone o sugli avvenimenti, certo
+      <lb n="261"/>
+esse ci dicono moltissimo sulle condizioni della civiltà e
+      <lb n="262"/>
+dell'arte in quei tempi, ed in questo consiste l'importanza
+      <lb n="263"/>
+loro, allargandosi per esse la nostra visuale storica e dira-
+      <lb n="264" break="no"/>
+dandosi in modo del tutto inaspettato una parte almeno di 
+      <lb n="265"/>
+quella nebbia che c'impediva di veder chiaro nelle origini
+      <lb n="266"/>
+e nelle più antiche fasi della nostra civiltà europea.
+    </ab>
+    <ab xml:id="Capoverso6_Micene">
+      <lb n="267"/>
+Gli oggetti trovati nelle tombe non sono pochi: si con-
+      <lb n="268" break="no"/>
+tano a centinaia. È tutto un museo, nel quale si passa di sor-
+      <lb n="269" break="no"/>
+presa in sorpresa dinanzi al numero, alla qualità, alla varietà
+      <lb n="270"/>
+degli oggetti. Notiamo dapprima le stele di marmo scolpite
+      <lb n="271"/>
+a ornati e figure, importante aggiunta all'unico monumento
+      <lb n="272"/>
+prima conosciuto della scultura di quest'epoca remota, che
+      <lb n="273"/>
+era, come dicemmo, la Porta dei Leoni. E poi una quan-
+      <lb n="274" break="no"/>
+tità grande di oggetti, i più importanti dei quali troviamo
+      <lb n="275"/>
+diligentemente rappresentati nelle 700 incisioni che ador-
+      <lb n="276" break="no"/>
+nano il libro dello <persName ref="#P_HS">Schliemann</persName>. In grandissima parte questi
+      <lb n="277"/>
+oggetti sono d'oro più o meno finemente lavorato; altri
+      <lb n="278"/>
+sono di argento puro, di una lega d'argento e piombo,
+      <lb n="279"/>
+d'argento dorato, di bronzo, di rame, di avorio, d'ambra,
+      <lb n="280"/>
+di cristallo di rocca, di alabastro, di osso, di past di ve-
+      <lb n="281" break="no"/>
+tro, di terracotta ec.; v'hanno anche gemme incise, di sar-
+      <lb n="282" break="no"/>
+donica, di agata, di ametisto ec. I più sono vasi, armi, e
+      <lb n="283"/>
+ornamenti del vesitario o della persona dei sepolti, dei
+      <lb n="284"/>
+quali le ossa pur si sono trovate. Soprattutto attirano l'at-
+      <lb n="285" break="no"/>
+tenzione le maschere d'oro trovatee sul volto di parecchi
+      <lb n="286"/>
+scheletri, i vasi d'oro e d'argento dei quali taluni presen-
+    </ab>
+    <ab>
+      <lb n="287" break="no"/>
+tano forme assai eleganti, i lavori di ornato in oro che 
+      <lb n="288"/>
+sorprendono per la grande varietà dei disegni, taluni dei
+      <lb n="289"/>
+quali possono anch'oggi dirsi belli. E v'hanno pure lavori
+      <lb n="290"/>
+di oreficeria più complicata, come la combinazione del cri-
+      <lb n="291" break="no"/>
+stallo di rocca coll'oro: per esempio, un drago d'oro di
+      <lb n="292"/>
+cui le squame sono di cristallo di rocca. Ma ciò che pre-
+      <lb n="293" break="no"/>
+senta il più alto interesse è soprattutto l'opera figurata di
+      <lb n="294"/>
+cui è ricca questa scoperta a differenza del così detto tesoro 
+      <lb n="295"/>
+di Priamo, ove appena si trova un tentativo di rappresentare
+      <lb n="296"/>
+la figura umana. Qui abbiamo una quantità considerevole
+      <lb n="297"/>
+di oggetti figurati, nei quali ciò che a prima giunta col-
+      <lb n="298" break="no"/>
+pisce, è una grande ineguaglianza nella finezza del disegno.
+      <lb n="299"/>
+In taluni si stenta a riconoscere che cosa l'artista abbia
+      <lb n="300"/>
+voluto rappresentare. Altri invece mostrano un'arte propo-
+      <lb n="301" break="no"/>
+gredita quanto niuno lo aspetterebbe in un'epoca anteriore
+      <lb n="302"/>
+di molto a tutti i monumenti figurati greci, anche i più
+      <lb n="302"/>
+arcaici, fin qui conosciuti. Tale, per esempio, un leone d'oro,
+      <lb n="303"/> 
+tale una testa di bue d'argento dorato, tale soprattutto 
+      <lb n="304"/>
+un anello d'oro con una incisione assai complicata di una
+      <lb n="305"/> 
+scena ov'entrano parecchie figure; certo non è un'arte na-
+      <lb n="306" break="no"/>
+scente quella che in piccolo spazio sa con sufficiente osser-
+      <lb n="307" break="no"/>
+vanza delle proporzioni aggruppare figure in quella ma-
+      <lb n="308" break="no"/>
+niera, dar loro espressione e segnare non solo i contorni,
+      <lb n="309"/> 
+ma ogni più minuto particolare della persona e del ve-
+      <lb n="310" break="no"/>
+stiario.
+    </ab>
+    <ab xml:id="Capoverso7_Micene">
+      <lb n="311"/>
+Ad onta della disuguaglianza nella finitezza del lavoro è
+      <lb n="312"/>    
+pur chiaro d'altro lato che c'è una unità di tipo nell'arte
+      <lb n="313"/>
+che qui è rappresentata, e che queste tombe appartengono ad
+      <lb n="314"/>
+uno stesso periodo di arte e di civiltà, il quale però in <placeName ref="#S_G">Grecia</placeName>
+      <lb n="315"/>
+(come la Porta dei Leoni, con cui si accorda pienamente) sta
+      <lb n="316"/>
+da sè, nè si può concepirlo in relazione di continuità con
+      <lb n="317"/>
+quell' arte greca che si sviluppò parecchi secoli più tardi.
+      <lb n="318"/>
+In una parola, qui abbiamo un'arte di provenienza non
+      <lb n="319"/>
+greca, un'arte d'importazione che si riconosce, non soltanto
+      <lb n="320"/>
+nei piccoli oggetti che potrebbero essere stati portati, pel
+      <lb n="321"/>
+commercio fenicio, da regioni diverse, ma anche negli og-
+      <lb n="322" break="no"/>
+getti evidentemente fabbricati sul luogo, come le stele, le
+      <lb n="323"/>
+maschere ec. E già vediamo gli archeologi mettersi al-
+      <lb n="324" break="no"/>
+l'opra ; per uno o per un altro oggetto si fanno confronti
+      <lb n="325"/>
+con oggetti trovati a <placeName ref="#S_RO">Rodi</placeName>, a <placeName ref="#S_CI">Cipro</placeName>, a <placeName ref="#S_SP">Sparta</placeName>, a <placeName ref="#S_SA">Santorino</placeName>
+      <lb n="326"/>
+ed altrove, ed anche, singolarmente nei periodici inglesi,
+      <lb n="327"/> 
+si parla con insistenza di arte assira. Ma se una qualche
+      <lb n="328"/>
+influenza dell'arte assira qui si può ravvisare, nel tutto
+      <lb n="329"/> 
+assieme noi vediamo i prodotti di un popolo clic è bensì
+      <lb n="330"/>
+d'origine asiatica, ma non assira, e che ha un'arte sua
+      <lb n="331"/>
+propria. Convien rammentare che <persName ref="#P_O">Omero</persName> e i più antichi
+      <lb n="332"/>
+miti greci, i quali pur ricordano rapporti dell'<placeName ref="#S_EG">Egitto</placeName> e della
+      <lb n="333"/> 
+<placeName ref="#S_FE">Fenicia</placeName> colla <placeName ref="#S_G">Grecia</placeName>, ignorano affatto l'<placeName ref="#S_ASR">Assiria</placeName>. All'<placeName ref="#S_AM">Asia
+      <lb n="334"/>
+minore</placeName>, ai ricchi paesi della <placeName ref="#S_FR">Frigia</placeName> e della <placeName ref="#S_LI">Lidia</placeName>, fa ine-
+      <lb n="335" break="no"/>
+vitabilmente pensare questa scoperta, accordandosi con quei
+      <lb n="336"/>
+ricordi poetici degli antichi che di là fanno venire una
+      <lb n="337"/> 
+ricca stirpe nel <placeName ref="#S_PE">Peloponneso</placeName>, avente principal sede in <placeName ref="#S_M">Mi-
+      <lb n="338" break="no"/>
+cene</placeName>. Questo vien confermato non solo, dal tipo dell'arte,
+      <lb n="339"/>
+ma anche dalle costumanze certamente asiatiche, a mio cre-
+      <lb n="340" break="no"/>
+dere, e non punto greche, che ci vengono rivelate da questi 
+      <lb n="341"/>
+sepolcri. E qui si scorge anche un fatto notevolissimo, come
+      <lb n="342"/>
+cioè sia lontano assai il rapporto fra la poesia Omerica e
+      <lb n="343"/>
+la realtà. <persName ref="#P_O">Omero</persName> dà una stesso colorito a tutti i Greci, ed
+      <lb n="344"/> 
+anche ai Troiani; lingua, vestiario, costumanze, credenze,
+      <lb n="345"/>
+armi ec. tutto è presso a poco identico. Della origine asia-
+      <lb n="346" break="no"/>
+tica degli Atridi non c'è alcun accenno, nè v'ha alcunché
+      <lb n="347"/>
+che distingua gli Atridi e le loro genti dagli altri Achei.
+      <lb n="348"/> 
+Ebbene: qui si potrebbe notare quanta differenza corre fra
+      <lb n="349"/> 
+gli oggetti qui trovati, e quelli trovati nella <placeName ref="#S_TR">Troade</placeName> che
+      <lb n="350"/>
+mostrano un grado di sviluppo civile o almeno artistico
+      <lb n="351"/>
+assai inferiore. Ma, per venire su di un terreno più sicuro,
+      <lb n="352"/> 
+queste tombe ci dicono chiaro che i Pelopidi, o chiunque
+    </ab>
+  </div>
+  <pb n="5"/>
+  <div xml:id="img5">
+    <ab>
+      <lb n="353"/>
+fossero i venuti nel <placeName ref="#S_PE">Peloponneso</placeName> dall'<placeName ref="#S_AM">Asia Minore</placeName>, oltre alle
+      <lb n="354"/>      
+ingenti ricchezze, ad una abbondanza d'oro ignota alla
+      <lb n="355"/>
+<placeName ref="#S_G">Grecia</placeName> europea, ad uno sfarzo insolito fra i Greci, porta-
+      <lb n="356" break="no"/>
+rono anche e serbarono le loro arti e le loro usanze per
+      <lb n="357"/>
+modo che oggi nei loro sepolcri li vediamo assai diversi
+      <lb n="358"/> 
+dagli Achei d'<persName ref="#P_O">Omero</persName>. A me par chiaro che essi sul capo
+      <lb n="359"/>
+portassero mitre o tiare, alle quali appartengono quegli
+      <lb n="360"/>
+ornamenti d'oro che Schliemann chiama diademi, altrimenti
+      <lb n="361"/>
+non s'intenderebbe come su di una sola testa ci fosse posto
+      <lb n="362"/>
+per cinque diademi. E del resto anche nelle figure rappre-
+      <lb n="363" break="no"/>
+sentate sugli oggetti trovati, vediamo il capo coperto da
+      <lb n="364"/>
+singolari berretti alti, con visiera, o da mitre, in modo af-
+      <lb n="365" break="no"/>
+fatto straniero ai Greci. Anche ignoto affatto ad Omero e
+      <lb n="366"/>
+ai Greci è l'uso di coprire il volto dei defunti con maschere
+      <lb n="367"/> 
+d'oro. Del vestiario dei sepolti non rimanendo che gli ele-
+      <lb n="368" break="no"/>
+menti metallici, mal possiamo determinarne le parti e le for-
+      <lb n="369" break="no"/>
+me: ma anche qui gli oggetti figurati ci mostrano un modo di
+      <lb n="370"/>
+vestire intieramente estraneo ai Greci, schiettamente asia-
+      <lb n="371" break="no"/>
+tico, sovraccarico di ornamenti. Che con ciò si accordasse
+      <lb n="372"/> 
+il vestiario dei sepolti lo mostrano le infinite foglioìine
+      <lb n="373"/>
+d'oro e i dischetti d'oro lavorato a ornati che a centinaia
+      <lb n="374"/>
+si sono trovati sopra e sotto questi scheletri insieme con
+      <lb n="375"/>
+altri oggetti d'oro che certamente erano anch'essi guarni-
+      <lb n="376" break="no"/>
+zioni di vesti.
+    </ab>
+    <ab xml:id="Capoverso8_Micene">
+      <lb n="377"/>
+Con tutti gli scheletri di uomini (una sola tomba, son-
+      <lb n="378" break="no"/>      
+tuosissima, contiene tre scheletri di donne) si sono trovate
+      <lb n="379"/>
+moltissime armi di offesa; le armi di difesa forse c'erano
+      <lb n="380"/> 
+ma non metalliche e quindi scomparvero; i molti denti di
+      <lb n="381"/> 
+cinghiale che si sono trovati potevano essere ornamenti di
+      <lb n="382"/>
+scudi o di elmetti o di barbute di cuoio : come troviamo an-
+      <lb n="383" break="no"/>
+che in <persName ref="#P_O">Omero</persName>: ma in tanta ricchezza di sepolti sorprende
+      <lb n="384"/>
+il non trovare elmi, corazze, scudi e gambiere di metallo,
+      <lb n="385"/>
+che pur chiunque abbia letto <persName ref="#P_O">Omero</persName> sa bene quanto valore
+      <lb n="386"/>
+abbiano fra gli Achei i vestiti di bronzo. Corazza non può chia-
+      <lb n="387" break="no"/>
+marsi la larga lamina d'oro trovata sul petto di due sche-
+      <lb n="388" break="no"/>
+letri. Soprattutto fa impressione l'assoluta assenza del prin-
+      <lb n="389" break="no"/>
+cipal distintivo omerico degli Achei, le belle gambiere di bronzo.
+      <lb n="390"/> 
+Questi sepolti avevano evidentemente le gambe coperte da
+      <lb n="391"/>
+un tessuto di stoffa, alla maniera Frigia, che andava assai
+      <lb n="392"/>
+al disopra del ginocchio ed era tenuto fermo da un anello
+      <lb n="393"/>
+d'oro che si è trovato in più d'uno scheletro. Le armi
+      <lb n="394"/>
+d'offesa poi sono quasi tutte di bronzo, ma si son trovate
+      <lb n="395"/>
+pure assai punte di treccie di pietra e qualche coltello pure
+      <lb n="396"/>
+di pietra, cose affatto ignote ad Omero. D'altro lato fra i
+      <lb n="397"/>
+vari metalli trovati in queste tombe manca affatto il ferro,
+      <lb n="398"/>
+che pure <persName ref="#P_O">Omero</persName> conosce.
+    </ab>
+    <ab xml:id="Capoverso9_Micene">
+      <lb n="399"/>
+Notevolissimo poi e molto caratteristico è il modo di
+      <lb n="400"/> 
+dar sepoltura, ben diverso dagli usi eroici descritti da 
+      <lb n="401"/>
+<persName ref="#P_O">Omero</persName> e dagli usi Greci in generale. In <persName ref="#P_O">Omero</persName> la cosa è
+      <lb n="402"/>
+semplicissima ; <persName ref="#P_PA">Patroclo</persName>, <persName ref="#P_ET">Ettore</persName> sono posti nudi sulla pira,
+      <lb n="403"/>
+bruciati, e poi raccolte le ossa son chiuse in un'urna. Per
+      <lb n="404"/> 
+una eccezione, il padre di <persName ref="#P_AND">Andromaca</persName> è bruciato colle armi
+      <lb n="405"/>
+indosso. Qui invece vediamo che si comincia dal costruire
+      <lb n="406"/> 
+una tomba quadrata con forti pareti di materiale, capace
+      <lb n="407"/>
+di più cadaveri. Si pone uno strato di ghiaia nel fondo, su
+      <lb n="408"/>
+questo il cadavere riccamente vestito ; poi sul cadavere le
+      <lb n="409"/> 
+legna, poi sulle legna uno strato di argilla e finalmente su
+      <lb n="410"/>
+questo un altro strato di ghiaia. Dopo avvenuta la cre-
+      <lb n="411" break="no"/>
+mazione si copre il tutto di terra. Si vede bene che così
+      <lb n="412"/>
+si è voluto ottenere piuttostochè un incenerimento del ca-
+      <lb n="413" break="no"/>
+davere, un disseccamento o una carbonizzazione più o meno
+      <lb n="414"/>
+inoltrata e questa è forse la cagione per cui quelli sche-
+      <lb n="415" break="no"/>
+letri hanno potuto traversare tanti secoli.
+    </ab>
+    <ab xml:id="Capoverso10_Micene">
+      <lb n="416"/>
+Così ognun vede che i poemi omerici appariscono assai
+      <lb n="417"/> 
+lontani dai tempi della prosperità di <placeName ref="#S_M">Micene</placeName>, e danno dei
+      <lb n="418"/>
+signori di questa città un'idea che molto si discosta dal
+      <lb n="419"/> 
+vero. Ciò deve servire di avvertimento a quei dotti che
+    </ab>
+    <ab>
+      <lb n="420"/>
+con <persName ref="#P_O">Omero</persName> alla mano credono poter determinare dov'era o
+      <lb n="421"/>
+dove non era <placeName ref="#S_T">Troja</placeName>.
+    </ab>
+    <ab xml:id="Capoverso11_Micene">
+      <lb n="422"/>
+Di scrittura non s'è trovata traccia in queste tombe :
+      <lb n="423"/>
+però è difficile credere che fosse ignota quando l'arte tanto
+      <lb n="424"/> 
+sapeva fare in ornato e in figura. Ma le molte osservazioni
+      <lb n="425"/> 
+che vorrei aggiungere a quelle che ho già esposte non mi
+      <lb n="426"/>
+sono consentite dalla natura e dalle proporzioni di questo
+      <lb n="427"/> 
+periodico. Basti quanto ho detto a provare l'alta impor-
+      <lb n="428" break="no"/>
+tanza di questa scoperta che apre un nuovo orizzonte alle
+      <lb n="429"/>
+indagini sui primordi dell'arte e della civiltà europea.
+      <lb n="430"/>
+Il suolo della <placeName ref="#S_G">Grecia</placeName> e dell'<placeName ref="#S_AM">Asia minore</placeName> è appena stato sfio-
+      <lb n="431" break="no"/>
+rato dagli archeologi ; esso cela nel suo seno la soluzione
+      <lb n="432"/>
+di molti e gravi problemi storici, e la darà se il nobile ar-
+      <lb n="433" break="no"/>
+dore del signor <persName ref="#P_HS">Schliemann</persName> troverà imitatori.
+      <lb n="434"/>      
+<persName ref="">D. COMPARETTI</persName>.
+    </ab>
+  </div>
+</body>
+</text>
+
+
+
+<text xml:id="Bibliografia1">   <!--BIBLIOGRAFIA-->
+<body>
+<div xml:id="img6">
+<head rend="center">
+  <hi rend="bold">BIBLIOGRAFIA</hi>
+</head>
+<ab xml:id="Capoverso1_Bibliografia1">
+  <lb n="435"/>
+PROF. <persName ref="#P_LO">LEONE OTTOLENGHI</persName>.  <title>Vita,studi e lettere inedite di Luigi
+    <lb n="436" break="no"/>
+Ornato</title>. - <placeName ref="#S_RM">Roma</placeName>, <orgName ref="#O_LO">Loescher</orgName>, <date>1878</date>
+</ab>
+<ab xml:id="Capoverso2_Bibliografia1">
+  <lb n="437"/>
+C'è una generazione di uomini, i quali, sebbene acqui-
+  <lb n="438" break="no"/>
+stino egregia fama di virtù e d'ingegno, o dell'una e del-
+  <lb n="439" break="no"/>
+l'altro insieme, tuttavia conducono una vita così ritirata,
+  <lb n="440"/>
+così aliena, o per cagione loro o per le circostanze, dalle
+  <lb n="441"/>
+faccende pubbliche o da ogni movimento sociale, che vo-
+  <lb n="442" break="no"/>
+lendo parlar di loro è impossibile di trovar materia ba-
+  <lb n="443" break="no"/>
+stante a comporre un libro. Tale, secondo noi, fu <persName ref="#P_LOR">Luigi
+  <lb n="444"/>
+Ornato</persName>. Nè questo diciamo per irriverenza alla sua memoria
+  <lb n="445"/>
+che è grande, come fu grande l'amore che egli portò al-
+  <lb n="446" break="no"/>
+l'<placeName ref="#S_IT">Italia</placeName>, quando era un delitto l'amarla. La vita dell'<persName ref="#P_LOR">Ornato</persName>
+  <lb n="447"/>
+fu una continua battaglia tra il desiderio e l'impotenza di
+  <lb n="448"/>
+fare, ma se sì toglie la parte che ebbe con <persName ref="#P_SAFD">Santorre di
+  <lb n="449"/>
+Santa Rosa</persName>, che poi volle generosamente seguir nell'esilio,
+  <lb n="450"/>
+nella rivoluzione del <date>ventuno</date>, visse in una dignitosa ed
+  <lb n="451"/>
+oscura povertà, e quello che sappiamo di lui, del suo animo,
+  <lb n="452"/> 
+del suo ingegno e dei suoi studii si sa dagli amici ed am-
+  <lb n="453" break="no"/>
+miratori delle sue virtù, che ebbe numerosi e virtuosi al
+  <lb n="454"/>
+pari di lui, più che dai suoi scritti, di cui in sostanza non
+  <lb n="455"/>
+ci rimangono che la traduzione dei <title>Ricordi</title> di <persName ref="#P_MA">Marco Au-
+  <lb n="456" break="no"/>
+relio</persName> e poche lettere. Ora un breve studio biografico, un
+  <lb n="457"/>
+profilo, come oggi si dice, si poteva far dell'<persName ref="#P_LOR">Ornato</persName>, e già 
+  <lb n="458"/>
+è stato fatto da altri, ma il professore <persName ref="#P_LO">Ottolenghi</persName> invece
+  <lb n="459"/> 
+di ritrarci, specialmente da quell'ottantina di lettere che
+  <lb n="460"/>
+ha pubblicato in fine della sua vita, l'immagine del sim-
+  <lb n="461"/>
+patico filosofo di <placeName ref="#S_CR">Caramagna</placeName>, ce l'ha seppellito sotto le
+  <lb n="462"/>
+biografie degli amici di lui, cosicché mentre egli si perde
+  <lb n="463"/>
+in un mondo di particolari, che sarebbero di per sè, per
+  <lb n="464"/>
+quanto non nuovi del tutto, d'un vivo interesse, è poi riu-
+  <lb n="465" break="no"/>
+scito a far un libro che interessa ben poco, perchè manca
+  <lb n="466"/>
+assolutamente di quella dote che deve avere un libro, mas-
+  <lb n="467" break="no"/>
+sime un libro di questo genere, perchè sia ben fatto ; la dote
+  <lb n="468"/>
+cioè, per cui l'autore tiene continuamente desta l'attenzione
+  <lb n="469"/>
+dei suoi lettori intorno al soggetto principale di cui ha
+  <lb n="470"/>
+preso a discorrere. Felice di poter arricchire il suo studio
+  <lb n="471"/>
+biografico di citazioni e di note, anche quando non ce n'è
+</ab>
+<ab>
+  <lb n="472"/>
+proprio bisogno, il professore <persName ref="#P_LO">Ottolenghi</persName> narra e giudica
+  <lb n="473"/> 
+più colle parole degli altri che colle sue proprie, e così
+  <lb n="474"/>
+mette insieme un mosaico e non dei più perfetti, non una
+  <lb n="475"/>
+vita o più vite raccolte in una. Nondimeno gli dobbiamo
+  <lb n="476"/>
+esser grati di aver ravvivata la memoria di un uomo, che
+  <lb n="477"/> 
+appartenne alla schiera di quei generosi, i quali apparec-
+  <lb n="478" break="no"/>
+chiarono col sacrifizio di sè stessi la redenzione d'<placeName ref="#S_IT">Italia</placeName>, e
+  <lb n="479"/>
+che per la modestia, per la temperanza delle opinioni, per
+  <lb n="480"/>
+l'instancabile amore agli studi delle lettere e della filosofia
+  <lb n="481"/>
+e per il coraggio con cui sopportò le più gravi sventure
+  <lb n="482"/>
+può essere anche oggi additato ai giovani come modello.
+</ab>
+<ab xml:id="Capoverso1_Bibliografia2">
+  <lb n="482"/>
+<persName ref="#P_PJ">PAUL JANET</persName>, <title>Saint-Simon et le Saint-Simonisme</title>. — <placeName ref="#S_PA">Paris</placeName>,
+  <lb n="483"/>
+<orgName ref="#O_GB">Germer Baillière</orgName>, <date>1878</date>.
+</ab>
+<ab xml:id="Capoverso2_Bibliografia2">
+  <lb n="484"/>
+Ecco un libretto come sanno farli in <placeName ref="#S_FRA">Francia</placeName>: comple-
+  <lb n="485" break="no"/>
+tissimo, esattissimo e pure tanto breve quanto pieno di
+  <lb n="486"/>
+vita. Il signor <persName ref="#P_PJ">Janet</persName> possiede perfettamente il soggetto
+  <lb n="487"/>
+avendolo svolto da prima come Professore alla <orgName ref="#O_SSP">Scuola delle
+  <lb n="488"/>
+Scienze Politiche</orgName> di <placeName ref="#S_PA">Parigi</placeName>, e poi nella <title>Revue des Deux
+  <lb n="489"/>
+Mondes</title>. L'opera si divide in due parti. Nella prima l'Au-
+  <lb n="490"/>
+tore tratta del <persName ref="#P_CRS">Saint-Simon</persName> e, invece di raccontarci per la
+  <lb n="491"/>
+centesima volta la vita del filosofo con le osservazioni ob-
+  <lb n="492" break="no"/>
+bligate e cogli aneddoti stantii che sentiamo ripetere da
+  <lb n="493"/> 
+cinquant'anni, analizza gli scritti di lui, dichiara e giudica 
+  <lb n="494"/>
+la sua filosofia e i suoi disegni di riorganamento sociale; 
+  <lb n="495"/>
+cose tutte che non gl'impediscono di dare nell'appendice
+  <lb n="496"/> 
+una notizia biografica, come pure un catalogo ragionato
+  <lb n="497"/>
+delle opere del <persName ref="#P_CRS">Saint-Simon</persName>: tutti e due scritti succosi e
+  <lb n="498"/>
+<foreign>matter of fact</foreign> senz'ombra di pretensione letteraria. Il signor
+  <lb n="499"/> 
+<persName ref="#P_PJ">Janet</persName> ha egregiamente mostrato come il <persName ref="#P_CRS">Saint-Simon</persName> si
+  <lb n="500"/>
+ricolleghi al movimento di reazione storica e religiosa del
+  <lb n="501"/> 
+principio di questo secolo, e come la sua prima ispirazione 
+  <lb n="502"/>
+sia della stessa natura di quelle di <persName ref="#P_JDM">Giuseppe De Maistre</persName> e
+  <lb n="503"/>
+della sua scuola. Prova sopra tutto a maraviglia come
+  <lb n="504"/>
+niente fosse tanto estraneo allo spirito riformatore del
+  <lb n="505"/>
+<persName ref="#P_CRS">Saint-Simon</persName>, quanto l'idea rivoluzionaria; ch'egli non pensò
+  <lb n="506"/>
+mai a far guerra alla monarchia, giacchè le forme politiche
+  <lb n="507"/>
+gli erano del tutto indifferenti, nè a combattere il capitale,
+  <lb n="508"/> 
+nè a predicare l'emancipazione della donna; che, massime
+  <lb n="509"/>
+ne' suoi primordi, non si distinse troppo dalla scuola di
+  <lb n="510"/>
+<persName ref="#P_JBS">G. B. Say</persName> il quale esagerò quasi quanto lui e quanto tutti
+  <lb n="511"/> 
+i pensatori politici de'tempi così agitati e così sterili del
+  <lb n="512"/>
+<orgName ref="#O_PIF">primo Impero</orgName>, l'importanza dell'educazione nella società.
+  <lb n="513"/>
+Solamente il Padre <persName ref="#P_BPE">Enfantin</persName> — come chiaramente dimo-
+  <lb n="514" break="no"/>
+stra il <persName ref="#P_PJ">Janet</persName> nella seconda metà del suo breve scritto
+  <lb n="515"/>
+— fu quegli che trasformò il Sansimonismo introducen-
+  <lb n="516"/>
+dovi le proprie idee — o meglio le proprie fisime — a
+  <lb n="517"/>
+proposito della proprietà, della religione e della famiglia.
+  <lb n="518"/>
+Sotto l'influenza di cotesta natura pretesca, il Sansimonismo
+  <lb n="519"/>
+affettò sempre più una forma religiosa, rialzò sempre più
+  <lb n="520"/>
+il principio dell'autorità, mettendosi viemaggiormente in
+  <lb n="521"/>
+opposizione col liberalismo politico. Bisogna leggere tutto
+  <lb n="522"/>
+questo svolgimento, già molto succinto e condensato, nel
+  <lb n="523"/>
+l'opera del signor <persName ref="#P_PJ">Janet</persName>, che è impossibile riassumere, e della
+  <lb n="524"/>
+quale potremmo accoglier quasi tutto, facendo pochissime
+  <lb n="525"/>
+riserve. Forse il signor <persName ref="#P_PJ">Janet</persName> è un po'troppo severo verso
+  <lb n="526"/>
+il Padre <persName ref="#P_BPE">Enfantin</persName>, nel quale vede troppo il sensualista,
+  <lb n="527"/> 
+l'ambizioso e quasi il taumaturgo e l'ipocrita consciente;
+  <lb n="528"/>
+ma noi non sapremmo che approvare di cuore quando dice
+  <lb n="529"/>
+che la dottrina di cotesto Padre è <quote>« una delle più sner-
+  <lb n="530"/>
+vanti e delle più vergognose »</quote> che siansi mai fabbricate.
+  <lb n="531"/> 
+Forse anche faremmo qualche riserva su ciò che il signor
+  <lb n="532"/>
+<persName ref="#P_PJ">Janet</persName> dice del divorzio, in favore del quale non ammette
+  <lb n="533"/>
+che un solo argomento valido, cioè l'immoralità della se-
+  <lb n="534" break="no"/>
+parazione di corpo e di beni col celibato. Ecco dove sempre
+  <lb n="535"/>
+fa capolino, anche nei più spregiudicati dei nostri vicini,
+</ab>
+</div>
+<pb n="7"/>
+<div xml:id="img7">
+<ab>
+  <lb n="536"/>
+il codino del francese e del Cattolico, abituato a conside-
+  <lb n="537" break="no"/>
+rare come verità innate le leggi della <orgName ref="#O_CH">Chiesa</orgName> e del <title>Codice
+  <lb n="538"/>
+Civile</title>. Insomma, il inerito principale di questo ottimo libric-
+  <lb n="539" break="no"/> 
+cino è d'aver stabilita in una forma eccellente, la distinzione
+  <lb n="540"/>
+fra il <persName ref="#P_CRS">Saint-Simon</persName> e la sua Scuola, fra il Sansimonismo del
+  <lb n="541"/>
+maestro e quello dei successori di lui.
+</ab>
+</div>
+</body>
+</text>
+
+
+
+
+<text xml:id="Notizie"><!--NOTIZIE-->
+  <body>
+    <div xml:id="img8">
+      <head rend="center">NOTIZIE</head>
+      <ab xml:id="Capoverso1_Notizie1">
+        <lb n="542"/>
+— In occasione della prossima apertura dell'<orgName ref="#O_EXPO">Esposizione di Parigi</orgName>,
+        <lb n="543"/>
+gli editori <orgName ref="#O_FT">Fratelli Treves</orgName> di <placeName ref="#S_MI">Milano</placeName> stanno per pubblicare una <title>Guida
+        <lb n="544"/>
+pratica di Parigi</title> di <persName ref="#P_JC">Folchetto</persName> ; e un libro su <placeName ref="#S_PA">Parigi</placeName> del dottor <persName ref="#P_MN">Max
+        <lb n="545"/>
+Nordan</persName> col titolo : <title>Il vero paese dei miliardi</title>.
+      </ab>
+      <ab xml:id="Capoverso1_Notizie2">
+        <lb n="546"/>
+— Il <date>primo marzo</date> moriva a <placeName ref="#S_VI">Vienna</placeName> il celebre romanista <persName ref="#P_KLA">Carlo Lo-
+        <lb n="547"/>
+dovico Arndts</persName>, che professava da vari anni in quella <orgName ref="#O_UV">Università</orgName>. Era
+        <lb n="548"/> 
+nato ad <placeName ref="#S_ARN">Arnesberg</placeName> in <placeName ref="#S_WE">Vestfalia</placeName> nel <date>1803</date>. Il suo <title>Lehrbuch der Pandekten</title>
+        <lb n="549"/> 
+è stato tradotto in italiano per cura del professor <persName ref="#P_FS">Serafini</persName>. La prima
+        <lb n="550"/> 
+moglie di lui, donna assai culta, pubblicò i sonetti di <persName ref="#P_VC">Vittoria Colonna</persName>
+        <lb n="551"/>
+accompagnati da una fedele traduzione tedesca.
+      </ab>
+      <ab xml:id="Capoverso1_Notizie3">
+        <lb n="552"/>
+— <persName ref="#P_GR">Giorgio Rawlinson</persName> ha pubblicato un libro sull'<title>Origine delle Na-
+        <lb n="553" break="no"/>
+zioni</title> presso <orgName ref="#O_SWA">Scribner Welford e Armstrong</orgName> a <placeName ref="#S_NY">Nuova York</placeName>.
+      </ab>
+      <ab xml:id="Crediti_Notizie" rend="center">
+      <milestone unit="rule"/>
+        <lb n="554"/>
+<persName ref="#P_LF">LEOPOLDO FRANCHETTI</persName> | 
+<persName ref="#P_SS">SIDNEY SONNINO</persName>, 
+<hi rend="smallcaps">Proprietari Direttori</hi>.
+        <lb n="555"/>
+      <milestone unit="rule"/>
+<persName ref="#P_AG">ANGIOLO GHERARDINI</persName>, 
+<hi rend="italic">Gerente Responsabile</hi>.
+      <milestone unit="rule"/>
+        <lb n="556"/>
+<placeName ref="#S_RM">ROMA</placeName>,<date>1878</date>. — 
+<orgName ref="#O_TBA">Tipografia Barbera</orgName>.
+        <lb n="557"/>
+      </ab>
+    </div>
+  </body>
+</text>
+</group>
+</text>
+</TEI>
+            
+
+
+
+  
