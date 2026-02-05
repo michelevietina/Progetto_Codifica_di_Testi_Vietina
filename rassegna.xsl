@@ -527,8 +527,7 @@
 
 <!-- METODO 
 1) Se c'è un link associato all'ID ==> recupera link con chiave
-2) Se @ref è un URL ==> crea link diretto
-3) Altrimenti genera uno span evidenziabile 
+2) Altrimenti genera uno span evidenziabile 
 -->
 
 <!-- PERSONE -->
@@ -547,13 +546,6 @@
                href="{$externalLink}"
                target="_blank"
                xmlns="">
-                <xsl:apply-templates/>
-            </a>
-        </xsl:when>
-
-        <!-- Altrimenti se ha link diretto lancia quello -->
-        <xsl:when test="@ref and not(starts-with(@ref, '#'))">
-            <a class="persName" href="{@ref}" target="_blank" xmlns="">
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
@@ -585,14 +577,6 @@
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
-
-        <!-- Altrimenti se ha link diretto lancia quello -->
-        <xsl:when test="@ref and not(starts-with(@ref, '#'))">
-            <a xmlns="" class="placeName" href="{@ref}" target="_blank">
-                <xsl:apply-templates/>
-            </a>
-        </xsl:when>
-
         <!-- Se non c'è link rimane evidenziabile -->
         <xsl:otherwise>
             <span class="placeName" xmlns="">
@@ -617,14 +601,6 @@
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
-
-         <!-- Altrimenti se ha link diretto lancia quello -->
-        <xsl:when test="@ref and not(starts-with(@ref, '#'))">
-            <a xmlns="" class="orgName" href="{@ref}" target="_blank">
-                <xsl:apply-templates/>
-            </a>
-        </xsl:when>
-
         <!-- Se non c'è link rimane evidenziabile -->
         <xsl:otherwise>
             <span class="orgName" xmlns="">
@@ -673,13 +649,6 @@
                 <xsl:apply-templates/>
             </a>
         </xsl:when>
-
-        <xsl:when test="@ref and not(starts-with(@ref, '#'))">
-            <a xmlns="" class="opere" href="{@ref}" target="_blank">
-                <xsl:apply-templates/>
-            </a>
-        </xsl:when>
-
         <xsl:otherwise>
             <span class="opere" xmlns="">
                 <xsl:apply-templates/>
@@ -704,8 +673,6 @@
 <xsl:template match="tei:sic">
         <xsl:apply-templates/>
 </xsl:template>
-
-<!-- LA CORREZIONE È NASCOSTA DI DEFAULT -->
 <xsl:template match="tei:corr">
         <xsl:apply-templates/>
 </xsl:template>
