@@ -1,0 +1,1480 @@
+<!DOCTYPE HTML><html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Progetto di Codifica di Testi</title>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script><script src="script/script.js"></script><link rel="stylesheet" href="script/style.css">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <div class="navbar"><a class="nameproject" href="https://github.com/angelodel80/corsoCodifica">Codifica di Testi</a><a href="#">Home</a><a href="#menu-articoli">Paragrafi</a><div class="dropdown"><button class="dropbtn">Pagine
+                     <i class="fa fa-caret-down"></i></button><div class="dropdown-content"><a href="#Pag1">Pagina 1</a><a href="#Pag2">Pagina 2</a><a href="#Pag3">Pagina 3</a><a href="#Pag4">Pagina 4</a><a href="#Pag5">Pagina 5</a><a href="#Pag6">Pagina 6</a><a href="#Pag7">Pagina 7</a><a href="#Pag8">Pagina 8</a></div>
+               </div><a href="#about">About</a></div>
+         </nav>
+      </header>
+      <div class="logo"><a href="https://rassegnasettimanale.animi.it/" target="_blank"><img src="logo.png" alt="La rassegna settimanale di politica"></a></div>
+      <div class="desc-carousel">
+         <div class="desc-slide active">
+            <h2>Descrizione della Fonte:</h2>
+            <p><a class="placeName" href="https://it.wikipedia.org/wiki/Roma" target="_blank">Roma</a> Casa Editrice Barbera <span class="date">1878</span></p>
+            <p><strong>Titolo:</strong> <span class="opere">La Rassegna Settimanale</span></p>
+            <p><strong>Sottotitolo:</strong> <span class="opere">di politica, scienze, lettere ed arti</span></p>
+            <p><strong>Fondatori: </strong><a class="persName" href="https://it.wikipedia.org/wiki/Leopoldo_Franchetti" target="_blank">Leopoldo Franchetti</a>, <a class="persName" href="https://it.wikipedia.org/wiki/Sidney_Sonnino" target="_blank">Sydney Sonnino</a></p><strong>Serie codificata:</strong><p>Volume 1: capitoli 13</p>
+         </div><br><div class="desc-slide">
+            <h2>Descrizione del Manoscritto:</h2>
+            <div class="objectdesc">
+               <div class="supporto">
+                  <p><strong>Materiale:</strong> Paper</p>
+                  <p><strong>Supporto:</strong> Fogli di carta</p>
+                  <p><strong>Condizioni:</strong> Le pagine sono facilmente leggibili nonostante i minimi segni del tempo, rappresentati
+                     da piccole macchie nere e qualche accenno di deteriorazione.
+                     </p>
+               </div>
+               <div class="layout">
+                  <p><strong>Layout:</strong> Le pagine si presentano divise in due colonne rendendo la lettura scorrevvole.</p>
+               </div>
+            </div>
+         </div><br><div class="desc-slide">
+            <h2>Descrizione della Codifica:</h2>
+            <p>Sono state effettuate le codifiche di cinque sezioni della Rassegna settimanale.</p>
+            <p>Gli articoli selezionati sono:
+               
+               <ul>
+                  <li>
+                     <span class="opere">Micene</span>
+                     </li>
+                  <li>
+                     <span class="opere">Il Parlamento</span>
+                     </li>
+                  <li>
+                     <span class="opere">Bibliografia</span>
+                     </li>
+                  <li>
+                     <span class="opere">Notizie</span>
+                     </li>
+               </ul>
+               </p>
+         </div>
+         <div class="desc-indicators"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+      </div>
+      <div id="fenomeni">
+         <ul class="bottoni_fenomeni"><button type="button" id="persone">Nomi di Persona</button><button type="button" id="luoghi">Nomi di Luoghi</button><button type="button" id="date">Date</button><button type="button" id="organizzazioni">Nomi di Organizzazioni</button><button type="button" id="citazioni">Citazioni</button><button type="button" id="opere">Opere</button><button type="button" id="popoli">Popoli</button><button type="button" id="foreign">Lingue Straniere</button></ul>
+      </div>
+      <div id="menu-articoli">
+         <h2>Articoli e Paragrafi</h2>
+         <div class="articolo-block">
+            <h3 class="titolo-articolo" onClick="togglePargrafi(this)">IL PARLAMENTO</h3>
+            <ul class="lista-paragrafi hidden">
+               <li><a href="#Capoverso1_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso1_Il_Parlamento')">Paragrafo 1</a></li>
+               <li><a href="#Capoverso2_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso2_Il_Parlamento')">Paragrafo 2</a></li>
+               <li><a href="#Capoverso3_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso3_Il_Parlamento')">Paragrafo 3</a></li>
+               <li><a href="#Capoverso4_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso4_Il_Parlamento')">Paragrafo 4</a></li>
+               <li><a href="#Capoverso5_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso5_Il_Parlamento')">Paragrafo 5</a></li>
+               <li><a href="#Capoverso6_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso6_Il_Parlamento')">Paragrafo 6</a></li>
+               <li><a href="#Capoverso7_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso7_Il_Parlamento')">Paragrafo 7</a></li>
+               <li><a href="#Capoverso8_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso8_Il_Parlamento')">Paragrafo 8</a></li>
+               <li><a href="#Capoverso9_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso9_Il_Parlamento')">Paragrafo 9</a></li>
+               <li><a href="#Capoverso10_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso10_Il_Parlamento')">Paragrafo 10</a></li>
+               <li><a href="#Capoverso11_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso11_Il_Parlamento')">Paragrafo 11</a></li>
+               <li><a href="#Capoverso12_Il_Parlamento" onclick="evidenziaParagrafo('Capoverso12_Il_Parlamento')">Paragrafo 12</a></li>
+            </ul>
+         </div>
+         <div class="articolo-block">
+            <h3 class="titolo-articolo" onClick="togglePargrafi(this)">
+               Micene
+               
+               </h3>
+            <ul class="lista-paragrafi hidden">
+               <li><a href="#Capoverso1_Micene" onclick="evidenziaParagrafo('Capoverso1_Micene')">Paragrafo 1</a></li>
+               <li><a href="#Capoverso2_Micene" onclick="evidenziaParagrafo('Capoverso2_Micene')">Paragrafo 2</a></li>
+               <li><a href="#Capoverso3_Micene" onclick="evidenziaParagrafo('Capoverso3_Micene')">Paragrafo 3</a></li>
+               <li><a href="#Capoverso4_Micene" onclick="evidenziaParagrafo('Capoverso4_Micene')">Paragrafo 4</a></li>
+               <li><a href="#Capoverso5_Micene" onclick="evidenziaParagrafo('Capoverso5_Micene')">Paragrafo 5</a></li>
+               <li><a href="#Capoverso6_Micene" onclick="evidenziaParagrafo('Capoverso6_Micene')">Paragrafo 6</a></li>
+               <li><a href="#Capoverso7_Micene" onclick="evidenziaParagrafo('Capoverso7_Micene')">Paragrafo 7</a></li>
+               <li><a href="#Capoverso8_Micene" onclick="evidenziaParagrafo('Capoverso8_Micene')">Paragrafo 8</a></li>
+               <li><a href="#Capoverso9_Micene" onclick="evidenziaParagrafo('Capoverso9_Micene')">Paragrafo 9</a></li>
+               <li><a href="#Capoverso10_Micene" onclick="evidenziaParagrafo('Capoverso10_Micene')">Paragrafo 10</a></li>
+               <li><a href="#Capoverso11_Micene" onclick="evidenziaParagrafo('Capoverso11_Micene')">Paragrafo 11</a></li>
+            </ul>
+         </div>
+         <div class="articolo-block">
+            <h3 class="titolo-articolo" onClick="togglePargrafi(this)">
+               BIBLIOGRAFIA
+               </h3>
+            <ul class="lista-paragrafi hidden">
+               <li><a href="#Capoverso1_Bibliografia1" onclick="evidenziaParagrafo('Capoverso1_Bibliografia1')">Paragrafo 1</a></li>
+               <li><a href="#Capoverso2_Bibliografia1" onclick="evidenziaParagrafo('Capoverso2_Bibliografia1')">Paragrafo 2</a></li>
+               <li><a href="#Capoverso1_Bibliografia2" onclick="evidenziaParagrafo('Capoverso1_Bibliografia2')">Paragrafo 3</a></li>
+               <li><a href="#Capoverso2_Bibliografia2" onclick="evidenziaParagrafo('Capoverso2_Bibliografia2')">Paragrafo 4</a></li>
+            </ul>
+         </div>
+         <div class="articolo-block">
+            <h3 class="titolo-articolo" onClick="togglePargrafi(this)">NOTIZIE</h3>
+            <ul class="lista-paragrafi hidden">
+               <li><a href="#Capoverso1_Notizie1" onclick="evidenziaParagrafo('Capoverso1_Notizie1')">Paragrafo 1</a></li>
+               <li><a href="#Capoverso1_Notizie2" onclick="evidenziaParagrafo('Capoverso1_Notizie2')">Paragrafo 2</a></li>
+               <li><a href="#Capoverso1_Notizie3" onclick="evidenziaParagrafo('Capoverso1_Notizie3')">Paragrafo 3</a></li>
+               <li><a href="#Crediti_Notizie" onclick="evidenziaParagrafo('Crediti_Notizie')">Paragrafo 4</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="text">
+         <h2 id="Pag1">Pagina 1:</h2>
+         <div id="img1">
+            <div class="container">
+               <div class="box"><a href="./pages/img1.png" target="_blank">
+                     <div class="facsimile-wrapper"><img src="./pages/img1.png" class="facsimile"><div class="overlay">
+                           <div class="zone-overlay" data-corresp="#Capoverso1_Il_Parlamento" style="left:427px;&#xA;                top:86px;&#xA;&#xA;                width:376px;&#xA;&#xA;                height:234px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso2_Il_Parlamento" style="left:427px;&#xA;                top:320px;&#xA;&#xA;                width:379px;&#xA;&#xA;                height:487px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso3_Il_Parlamento" style="left:431px;&#xA;                top:808px;&#xA;&#xA;                width:375px;&#xA;&#xA;                height:111px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso4_Il_Parlamento" style="left:430px;&#xA;                top:919px;&#xA;&#xA;                width:375px;&#xA;&#xA;                height:54px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso5_Il_Parlamento" style="left:431px;&#xA;                top:972px;&#xA;&#xA;                width:376px;&#xA;&#xA;                height:204px;&#xA;            "></div>
+                        </div>
+                     </div></a></div>
+               <div class="boxtext">
+                  <h2 class="titolo center">IL PARLAMENTO</h2>
+                  <div class="paragrafo" id="Capoverso1_Il_Parlamento">
+                     <br>
+                     Dinanzi alla <a class="orgName" href="https://it.wikipedia.org/wiki/Camera_dei_deputati_(Italia)" target="_blank">Camera dei Deputati</a> ed al <a class="orgName" href="https://it.wikipedia.org/wiki/Senato_della_Repubblica" target="_blank">Senato</a>, che
+                     <br>
+                     hanno ricominciato i loro lavori martedì <span class="date">26 marzo</span>, si è
+                     <br>
+                     presentato il <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_(Italia)" target="_blank">Ministero</a> finalmente costituito dall'onorevole
+                     <br>
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Benedetto_Cairoli" target="_blank">Cairoli</a> (Decreto Reale del <span class="date">24 marzo</span>). Questi tiene la <a class="orgName" href="https://fonteufficiale.it/politica/la-funzione-del-presidente-del-consiglio" target="_blank">Pre-
+                        <br>
+                        sidenza del Consiglio</a> senza portafoglio, all'<span class="orgName">Interno</span> l'on. <a class="persName" href="https://it.wikipedia.org/wiki/Giuseppe_Zanardelli" target="_blank">Za-
+                        <br>
+                        nardelli</a>, alle <span class="orgName">Finanze</span> l'on. <a class="persName" href="https://it.wikipedia.org/wiki/Federico_Seismit-Doda" target="_blank">Seismit-Doda</a> coll'interim del
+                     <br>
+                     <span class="orgName">Tesoro</span>, alla <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_della_guerra" target="_blank">Guerra</a> il generale <a class="persName" href="https://it.wikipedia.org/wiki/Giovanni_Bruzzo" target="_blank">Bruzzo</a>, alla <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_della_marina" target="_blank">Marina</a> il
+                     <br>
+                     contrammiraglio <a class="persName" href="https://it.wikipedia.org/wiki/Alfonso_Di_Brocchetti" target="_blank">Di Brocchetti</a>, alla <span class="orgName">Istruzione pubblica</span>
+                     <br>
+                     l'on. <a class="persName" href="https://it.wikipedia.org/wiki/Francesco_de_Sanctis" target="_blank">De Sanctis</a>, alla <span class="orgName">Grazia e Giustizia</span> l'on. <a class="persName" href="https://it.wikipedia.org/wiki/Raffaele_Conforti#:~:text=Figlio%20di%20Calvanico%2C%20Raffaele%20Conforti,Sicilie%20presieduto%20da%20Carlo%20Troya." target="_blank">Conforti</a>, ai
+                     <br>
+                     <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_dei_lavori_pubblici" target="_blank">Lavori Pubblici</a> l'on. <a class="persName" href="https://it.wikipedia.org/wiki/Alfredo_Baccarini" target="_blank">Baccarini</a>, e (Dereto Reale del <span class="date">26 marzo</span>)
+                     <br>
+                     il conte <a class="persName" href="https://it.wikipedia.org/wiki/Luigi_Corti" target="_blank">Corti</a> agli <span class="orgName">Affari Esteri</span>.
+                     </div>
+                  <div class="paragrafo" id="Capoverso2_Il_Parlamento">
+                     <br>
+                     L'on. Presidente del Consiglio in quella stessa seduta
+                     <br>
+                     del <span class="date">26</span> ha pronunziato un discorso programma, che si può
+                     <br>
+                     riassumere così:- Promette serbare il prestigio dello Sta-
+                     <br>
+                     tuto, e rispettare scrupolosamente l'urna elettorale. Per
+                     <br>
+                     la politica estera riconosce difficilissimo il momento, ma
+                     <br>
+                     afferma che con una neutralità sottratta ad ogni pericolo
+                     <br>
+                     l'<a class="placeName" href="https://it.wikipedia.org/wiki/Italia" target="_blank">Italia</a> saprà mantenersi rispettata. E a questo buon
+                     <br>
+                     fine è d'uopo completare i provvedimenti già intrapresi
+                     <br>
+                     per l'esercito e per la marina. Propone il ristabilimento
+                     <br>
+                     del <span class="orgName">Ministero di agricoltura</span>, lascia impregiudicata la crea-
+                     <br>
+                     zione del <span class="orgName">Ministero del tesoro</span>. Per la grave questione
+                     <br>
+                     ferroviaria la forza delle circostanze ha dimostrato la ne-
+                     <br>
+                     cessità della seprazione dello esercizio dalle nuove costru-
+                     <br>
+                     zioni, e la necessità di una inchiesta. Intanto si presen-
+                     <br>
+                     teranno il progetto per l'esercizio provvisorio delle ferro-
+                     <br>
+                     vie dell'<span class="placeName">Alta Italia</span>, e i progetti di nuove costruzioni coi
+                     <br>
+                     mezzi indicati e preparati dai <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_(Italia)" target="_blank">Ministeri</a> precedenti. Af-
+                     <br>
+                     ferma che il pareggio non è scosso, malgrado l'eccedenza
+                     <br>
+                     delle spese, e spera nella diminuzione, promessa dal di-
+                     <br>
+                     scorso della <a class="orgName" href="https://it.wikipedia.org/wiki/Regno_d%27Italia_(1861-1946)" target="_blank">Corona</a>, per le tasse più gravose, togliendo
+                     <br>
+                     però ogni dubbio sulla possibile abolizione del maci-
+                     <br>
+                     nato. Intende poi nell'interesse delle classi lavoratrici
+                     <br>
+                     dare nuovo impulso di sussidi alla inchiesta agraria e a
+                     <br>
+                     quella sugli scioperi. E finalmente, mirando sempre a una
+                     <br>
+                     riforma tributaria e amministrativa, vuole veder intro-
+                     <br>
+                     dotte alcune innovazioni alla legge Comunale e Provinciale,
+                     <br>
+                     e mantenuto un antico impegno d'onore della <a class="orgName" href="https://it.wikipedia.org/wiki/Sinistra_storica" target="_blank">Sinistra</a>, la
+                     <br>
+                     riforma elettorale, sostituendo pel cittadino elettore al cri-
+                     <br>
+                     terio esclusivo del censo quello della capacità seriamente
+                     <br>
+                     definita.
+                     </div>
+                  <div class="paragrafo" id="Capoverso3_Il_Parlamento">
+                     <br>
+                     Questo discorso fu accolto freddamente, nè poteva es-
+                     <br>
+                     sere altrimenti, dacchè la <a class="orgName" href="https://it.wikipedia.org/wiki/Sinistra_storica" target="_blank">Sinistra</a> detta storica, e i gruppi
+                     <br>
+                     influenzati o capitanati dagli on. <a class="persName" href="https://it.wikipedia.org/wiki/Francesco_Crispi" target="_blank">Crispi</a> e <a class="persName" href="https://it.wikipedia.org/wiki/Giovanni_Nicotera" target="_blank">Nicotera</a>, sono
+                     <br>
+                     avversi al <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_(Italia)" target="_blank">Ministero</a>, e la <a class="orgName" href="https://it.wikipedia.org/wiki/Destra_storica" target="_blank">Destra</a> che si preparava ad ap-
+                     <br>
+                     poggiarlo, per spirito di moderazione, non poteva darsi
+                     <br>
+                     perciò all'entusiasmo. Rimanevano i <span class="orgName">centri</span>, incerti del come
+                     <br>
+                     e quando sarebbesi formata una maggioranza.
+                     </div>
+                  <div class="paragrafo" id="Capoverso4_Il_Parlamento">
+                     <br>
+                     La fredda accoglienza impressionò gli animi di molti, i
+                     <br>
+                     quali troppo frettolosamente andarono ripetendo che il <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_(Italia)" target="_blank">Mi-
+                        <br>
+                        nistero</a> avrebbe avuto una brevissima durata.
+                     </div>
+                  <div class="paragrafo" id="Capoverso5_Il_Parlamento">
+                     <br>
+                     Oggi le condizioni sono già alquanto mutate e le pro
+                     <br>
+                     babilità della vita di questo <a class="orgName" href="https://it.wikipedia.org/wiki/Gabinetto_di_governo" target="_blank">Gabinetto</a> aumentate, impe-
+                     <br>
+                     rocchè la forza delle cose ha condotto a ciò, a cui i propo-
+                     <br>
+                     siti di alcuni uomini politici non avevano ancora approdato.
+                     <br>
+                     I <span class="orgName">centri</span>, sinistro e destro, si sono in gran parte accostati
+                     <br>
+                     alla destra, e questa a quelli nell'intendimento di sorreg-
+                     <br>
+                     gere il  <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_(Italia)" target="_blank">Ministero</a> finchè si manterrà entro i limiti concilia-
+                     <br>
+                     bili del programma accennato, e così d'accordo tale nuova
+                     <br>
+                     maggioranza e il  <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_(Italia)" target="_blank">Ministero</a> potrebbero giungere insieme
+                     <br>
+                     alle elezioni generali, salvo a dovere, a seconda degli av-
+                     <br>
+                     venimenti, portare una modificazione nel <a class="orgName" href="https://it.wikipedia.org/wiki/Gabinetto_di_governo" target="_blank">Gabinetto</a> o prima
+                     <br>
+                     o immediatamente dopo le elezioni stesse. In questo modo
+                     <br>
+                     rimarrebbero esclusi dall'accordo, e quindi avversari del
+                     </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+         <h2 id="Pag2">Pagina 2:</h2>
+         <div id="img2">
+            <div class="container">
+               <div class="box"><a href="./pages/img2.png" target="_blank">
+                     <div class="facsimile-wrapper"><img src="./pages/img2.png" class="facsimile"><div class="overlay">
+                           <div class="zone-overlay" data-corresp="#Capoverso5_Il_Parlamento" style="left:53px;&#xA;                top:90px;&#xA;&#xA;                width:379px;&#xA;&#xA;                height:44px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso6_Il_Parlamento" style="left:53px;&#xA;                top:135px;&#xA;&#xA;                width:382px;&#xA;&#xA;                height:112px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso7_Il_Parlamento" style="left:51px;&#xA;                top:248px;&#xA;&#xA;                width:384px;&#xA;&#xA;                height:45px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso8_Il_Parlamento" style="left:52px;&#xA;                top:292px;&#xA;&#xA;                width:382px;&#xA;&#xA;                height:80px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso9_Il_Parlamento" style="left:51px;&#xA;                top:371px;&#xA;&#xA;                width:383px;&#xA;&#xA;                height:244px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso10_Il_Parlamento" style="left:51px;&#xA;                top:615px;&#xA;&#xA;                width:384px;&#xA;&#xA;                height:124px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso11_Il_Parlamento" style="left:51px;&#xA;                top:739px;&#xA;&#xA;                width:385px;&#xA;&#xA;                height:188px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso12_Il_Parlamento" style="left:52px;&#xA;                top:927px;&#xA;&#xA;                width:385px;&#xA;&#xA;                height:162px;&#xA;            "></div>
+                        </div>
+                     </div></a></div>
+               <div class="boxtext">
+                  <div class="paragrafo" id="">
+                     <br>
+                     <a class="orgName" href="https://it.wikipedia.org/wiki/Gabinetto_di_governo" target="_blank">Gabinetto Cairoli</a>, una parte della <a class="orgName" href="https://it.wikipedia.org/wiki/Sinistra_storica" target="_blank">sinistra storica</a> e i gruppi 
+                     <br>
+                     degli on. <a class="persName" href="https://it.wikipedia.org/wiki/Francesco_Crispi" target="_blank">Crispi</a> e <a class="persName" href="https://it.wikipedia.org/wiki/Giovanni_Nicotera" target="_blank">Nicotera</a>.
+                     </div>
+                  <div class="paragrafo" id="Capoverso6_Il_Parlamento">
+                     <br>
+                     Un segno importante e manifesto degli accordi e degli
+                     <br>
+                     intendimenti che additiamo, si ebbe nella nomina del Pre-
+                     <br>
+                     sidente della Camera. Il seggio era lasciato vacante dal-
+                     <br>
+                     l'on. <a class="persName" href="https://it.wikipedia.org/wiki/Benedetto_Cairoli" target="_blank">Cairoli</a> salito alla <a class="orgName" href="https://fonteufficiale.it/politica/la-funzione-del-presidente-del-consiglio" target="_blank">Presidenza del Consiglio</a>. La can-
+                     <br>
+                     didatura dell'on. <a class="persName" href="https://it.wikipedia.org/wiki/Domenico_Farini" target="_blank">Domenico Farini</a> fu subito posta innanzi
+                     <br>
+                     dagli amici del <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_(Italia)" target="_blank">Ministero</a>, appoggiata dall'on. <a class="persName" href="https://it.wikipedia.org/wiki/Antonio_Mordini" target="_blank">Mordini</a> e dai
+                     <br>
+                     <span class="orgName">centri</span>, accettata dall'on. <a class="persName" href="https://it.wikipedia.org/wiki/Quintino_Sella" target="_blank">Sella</a> e dalla <a class="orgName" href="https://it.wikipedia.org/wiki/Destra_storica" target="_blank">destra</a>. 
+                     </div>
+                  <div class="paragrafo" id="Capoverso7_Il_Parlamento">
+                     <br>
+                     Difatti, nella seduta del <span class="date">27</span>, l'on. <a class="persName" href="https://it.wikipedia.org/wiki/Domenico_Farini" target="_blank">Farini</a> sopra 262 vo-
+                     <br>
+                     tanti ebbe 174 voti. L'on. <a class="persName" href="https://it.wikipedia.org/wiki/Michele_Coppino" target="_blank">Coppino</a> n'ebbe 60. Le schede
+                     <br>
+                     bianche furono 27 e i voti dispersi 2.
+                     </div>
+                  <div class="paragrafo" id="Capoverso8_Il_Parlamento">
+                     <br>
+                     I voti ottenuti dall'on. <a class="persName" href="https://it.wikipedia.org/wiki/Michele_Coppino" target="_blank">Coppino</a>, e probabilmente una
+                     <br>
+                     parte delle schede bianche, rappresentano quelli che ora
+                     <br>
+                     chiamansi i dissidenti di sinistra, vale a dire, gli avversari
+                     <br>
+                     del <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_(Italia)" target="_blank">Ministero</a> che trovansi, lo ripetiamo, quasi tutti nei
+                     <br>
+                     gruppi Crispi e Nicotera.
+                     </div>
+                  <div class="paragrafo" id="Capoverso9_Il_Parlamento">
+                     <br>
+                     Tale è la situazione dell'oggi, situazione precaria, che 
+                     <br>
+                     potrebbe anche prolungarsi a benefizio del <a class="orgName" href="https://it.wikipedia.org/wiki/Gabinetto_di_governo" target="_blank">Gabinetto</a> Cairoli. 
+                     <br>
+                     Ma la disciplina e l'unità di direzione che si era notata
+                     <br>
+                     in quella votazione del 27, è venuta subito a scemare quando
+                     <br>
+                     si è trattato di una questione meno importante, la nomina
+                     <br>
+                     dei due vicepresidenti da sostituirsi agli on. <a class="persName" href="https://it.wikipedia.org/wiki/Domenico_Farini" target="_blank">Farini</a> e <a class="persName" href="https://it.wikipedia.org/wiki/Francesco_de_Sanctis" target="_blank">De-
+                        <br>
+                        Sanctis</a>. Nella seduta del 28 si ebbe questo risultato: Vo-
+                     <br>
+                     tanti 226, <a class="persName" href="https://it.wikipedia.org/wiki/Luigi_Pianciani" target="_blank">Pianciani</a> voti 123, <a class="persName" href="https://it.wikipedia.org/wiki/Diego_Tajani" target="_blank">Taiani</a> voti 113, <a class="persName" href="https://it.wikipedia.org/wiki/Antonio_Starabba,_marchese_di_Rudin%C3%AC" target="_blank">Rudinì</a> 66,
+                     <br>
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Niccol%C3%B2_Ferracciu" target="_blank">Ferracciù</a> 46, <a class="persName" href="https://it.wikipedia.org/wiki/Clemente_Corte" target="_blank">Corte</a> 12, <a class="persName" href="https://it.wikipedia.org/wiki/Filippo_Abignente" target="_blank">Abignente</a> 11, schede bianche 33.
+                     <br>
+                     Onde ballottaggio tra i primi quattro, perchè in questa
+                     <br>
+                     votazione si sono risentiti gli effetti delle divisioni e delle
+                     <br>
+                     antipatie personali. I due primi, candidati della <a class="orgName" href="https://it.wikipedia.org/wiki/Sinistra_storica" target="_blank">sinistra</a>,
+                     <br>
+                     sono stati eletti definitivamente nel dì <span class="date">29</span> nella votazione di
+                     <br>
+                     ballottaggio: <a class="persName" href="https://it.wikipedia.org/wiki/Luigi_Pianciani" target="_blank">Pianciani</a> con 169, <a class="persName" href="https://it.wikipedia.org/wiki/Diego_Tajani" target="_blank">Taiani</a> con 123 voti.<a class="persName" href="https://it.wikipedia.org/wiki/Antonio_Starabba,_marchese_di_Rudin%C3%AC" target="_blank">Ru-
+                        <br>
+                        dinì</a> n'ebbe 96 e <a class="persName" href="https://it.wikipedia.org/wiki/Niccol%C3%B2_Ferracciu" target="_blank">Ferracciù</a> 46.
+                     </div>
+                  <div class="paragrafo" id="Capoverso10_Il_Parlamento">
+                     <br>
+                     Quanto ai lavori parlamentari essi sono appena comin-
+                     <br>
+                     ciati. La <a class="orgName" href="https://it.wikipedia.org/wiki/Camera_dei_deputati_(Italia)" target="_blank">Camera</a> ha sorteggiato e costituito i suoi uf-
+                     <br>
+                     fici, approvati gl'indirizzi di risposta al discorso della
+                     <br>
+                     <a class="orgName" href="https://it.wikipedia.org/wiki/Regno_d%27Italia_(1861-1946)" target="_blank">Corona</a>, alle Camere <span class="orgName">Ungherese</span>, <span class="orgName">Rumena</span> e <span class="orgName">Greca</span>. Si è di-
+                     <br>
+                     stribuita la relazione dell'on. <a class="persName" href="https://it.wikipedia.org/wiki/Luigi_Luzzatti" target="_blank">Luzzatti</a> ed è incominciata
+                     <br>
+                     la discussione del trattato di commercio colla <a class="placeName" href="https://it.wikipedia.org/wiki/Francia" target="_blank">Francia</a>,
+                     <br>
+                     con i discorsi degli on. <span class="persName">Fabbricotti</span>,  <span class="persName">Nervo</span>,  <a class="persName" href="https://it.wikipedia.org/wiki/Luigi_Guala" target="_blank">Guala</a>,  <a class="persName" href="https://it.wikipedia.org/wiki/Francesco_Tenerelli" target="_blank">Tene-
+                        <br>
+                        relli</a> e  <a class="persName" href="https://it.wikipedia.org/wiki/Marco_Minghetti" target="_blank">Minghietti</a>.
+                     </div>
+                  <div class="paragrafo" id="Capoverso11_Il_Parlamento">
+                     <br>
+                     Il Ministro delle finanze ha presentato i bilanci di de-
+                     <br>
+                     finitiva previsione per il 1878, la situazione del Tesoro, il re-
+                     <br>
+                     soconto generale consuntivo pel <span class="date">1874</span> e <span class="date">1875</span>, e un progetto
+                     <br>
+                     di legge per prelevamento di fondi. Il Ministro della ma-
+                     <br>
+                     rina he presentato i progetti per la istituzione della <a class="orgName" href="https://it.wikipedia.org/wiki/Accademia_navale" target="_blank">R. Ac-
+                        <br>
+                        cademia navale</a> a <span class="placeName">Livorno</span> e per l'organico del personale;
+                     <br>
+                     progetti che auguriamo di veder ben presto approvati per-
+                     <br>
+                     chè rappresentano un desiderio nutrito per tanti anni da
+                     <br>
+                     uomini intendenti i bisogni della nostra marina. Delle
+                     <br>
+                     sei interrogazioni sulla politica estera indirizzate al nuovo
+                     <br>
+                     ministro nella seduta del <span class="date">29 marzo</span>, è stata rinviata la di-
+                     <br>
+                     scussione all'<span class="date">8 aprile</span>.
+                     </div>
+                  <div class="paragrafo" id="Capoverso12_Il_Parlamento">
+                     <br>
+                     I lavori però saranno pochi, giacchè presto il <a class="orgName" href="https://it.wikipedia.org/wiki/Ministero_(Italia)" target="_blank">Ministero</a>
+                     <br>
+                     dovrà prorogare le Camere per studiare e preparare i suoi
+                     <br>
+                     disegni di legge. Intanto coincidono le solite vacanze di 
+                     <br>
+                     Pasqua, e la stagione incalza. Sarà egli possibile che in
+                     <br>
+                     questa sessione si discuta la legge elettorale? Ne dubi-
+                     <br>
+                     tiamo. E in tal caso andiamo noi incontro allo scioglimento
+                     <br>
+                     della <a class="orgName" href="https://it.wikipedia.org/wiki/Camera_dei_deputati_(Italia)" target="_blank">Camera</a> e alle elezioni generali senza la promessa ri-
+                     <br>
+                     forma elettorale, col rischio di presentare questa riforma
+                     <br>
+                     a una <a class="orgName" href="https://it.wikipedia.org/wiki/Camera_dei_deputati_(Italia)" target="_blank">Camera</a> nuova per scioglierla nuovamente entro sei
+                     <br>
+                     mesi?
+                     </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+         <h2 id="Pag3">Pagina 3:</h2>
+         <div id="img3">
+            <div class="container">
+               <div class="box"><a href="./pages/img3.png" target="_blank">
+                     <div class="facsimile-wrapper"><img src="./pages/img3.png" class="facsimile"><div class="overlay">
+                           <div class="zone-overlay" data-corresp="#Capoverso1_Micene" style="left:47px;&#xA;                top:815px;&#xA;&#xA;                width:393px;&#xA;&#xA;                height:348px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso2_Micene" style="left:47px;&#xA;                top:1162px;&#xA;&#xA;                width:396px;&#xA;&#xA;                height:41px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso2_Micene" style="left:437px;&#xA;                top:90px;&#xA;&#xA;                width:393px;&#xA;&#xA;                height:163px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso3_Micene" style="left:438px;&#xA;                top:254px;&#xA;&#xA;                width:391px;&#xA;&#xA;                height:199px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso4_Micene" style="left:439px;&#xA;                top:454px;&#xA;&#xA;                width:390px;&#xA;&#xA;                height:622px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso5_Micene" style="left:442px;&#xA;                top:1076px;&#xA;&#xA;                width:389px;&#xA;&#xA;                height:151px;&#xA;            "></div>
+                        </div>
+                     </div></a></div>
+               <div class="boxtext">
+                  <h2 class="titolo center">
+                     Micene
+                     <br>
+                     </h2>
+                  <div class="paragrafo" id="Capoverso1_Micene">
+                     <br>
+                     Fu un'ottima idea quella dello <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a> di intrapren-
+                     <br>
+                     dere scavi a <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> dopo aver ricercato <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a>, e il buon
+                     <br>
+                     successo l'ha pienamente giustificata conducendolo alla più
+                     <br>
+                     importante scoperta archeologica che nel nostro secolo siasi
+                     <br>
+                     fatta in <a class="placeName" href="https://it.wikipedia.org/wiki/Europa" target="_blank">Europa</a>. Nella guerra trojana, che è il più illustre
+                     <br>
+                     fatto con cui si apre la storia dei popoli europei, primeg-
+                     <br>
+                     giano due città, una asiatica che è <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a>, l'altra europea
+                     <br>
+                     che è <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a>, la sede dei <span class="popoli">Pelopidi</span>, degli <span class="popoli">Atridi</span>, di <a class="persName" href="https://it.wikipedia.org/wiki/Agamennone" target="_blank">Aga-
+                        <br>
+                        mennone</a>, dei più potenti principi che allora dominassero
+                     <br>
+                     in <a class="placeName" href="https://it.wikipedia.org/wiki/Grecia" target="_blank">Grecia</a>. Dove <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a> fosse non si sapeva esattamente: ma 
+                     <br>
+                     dove fosse <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> ben si sapeva. Cedendo all'attrattiva
+                     <br>
+                     dell'ignoto, sempre irresistibile per l'uomo, i dotti a  <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Mi-
+                        <br>
+                        cene</a> poco badarono, e anzitutto si occuparono di cercar
+                     <br>
+                     <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a>, quantunque ben potesse prevedeersi che anche tro-
+                     <br>
+                     vandola, difficile troppo riuscirebbe provare che fosse quella.
+                     <br>
+                     Fra tutti i cercatori di <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a> lo <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a> fu certamente
+                     <br>
+                     il più fortunato, come fu anche il più avveduto, il più te-
+                     <br>
+                     nace nel suo proposito e il più illimitatamente devoto alla
+                     <br>
+                     causa del sapere.
+                     </div>
+                  <div class="paragrafo" id="Capoverso2_Micene">
+                     <br>
+                     La scoperta di una città antichissima della <a class="placeName" href="https://it.wikipedia.org/wiki/Troade" target="_blank">Troade</a> al
+                     <br>
+                     disotto della <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Nuova Ilio</a> degli antichi, con oggetti d'arte
+                     </div>
+                  <div class="paragrafo" id="">
+                     <br>
+                     evidentemente primitiva, è importantissima sott'ogni aspetto.
+                     <br>
+                     Com'era da prevedersi, lo <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a> non è riuscito a con-
+                     <br>
+                     vincere tutti che quella sia la <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Ilio</a> di <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a>, ma neppure 
+                     <br>
+                     a dire qual città della <a class="placeName" href="https://it.wikipedia.org/wiki/Troade" target="_blank">Troade</a> fosse quella, se <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a> non
+                     <br>
+                     era. In ogni caso lo <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a> è il solo che abbia potuto
+                     <br>
+                     presentare ai dotti una congettura basata sulla esistenza
+                     <br>
+                     di una città antica vera e propria e di antichità senza al-
+                     <br>
+                     cun dubbio assai pre-omerica.
+                     </div>
+                  <div class="paragrafo" id="Capoverso3_Micene">
+                     <br>
+                     Le incertezze però che tuttavia possono rimanere sul
+                     <br>
+                     nome da darsi alla scoperta di <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Hissarlik</a>, non esistono af-
+                     <br>
+                     fatto per questa di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a>. Per <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a> non è mancato qual-
+                     <br>
+                     che capo ameno che abbia fin negato che sia mai esistita
+                     <br>
+                     e abbia anche tentato di farla sparire dall'albo dei nomi
+                     <br>
+                     storici, coi soliti bussolotti della mitologia comparata, l'an
+                     <br>
+                     tico mostro vedico, Vritra, e l'antica sua caverna, che è 
+                     <br>
+                     ormai tutta piena di corbellerie moderne. Per <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> que-
+                     <br>
+                     ste fantasticherie non potevano aver luogo. Quantunque
+                     <br>
+                     antichissima, questa città non fu distrutta che in tempi
+                     <br>
+                     storici, cioè nel <span class="date">V secolo prima di Cristo</span>, e le sue rovine 
+                     <br>
+                     imponenti rimasero sopra terra fino ai nostri giorni.
+                     </div>
+                  <div class="paragrafo" id="Capoverso4_Micene">
+                     <br>
+                     L'antichità spesso rammenta quelle costruzioni antichis-
+                     <br>
+                     sime, citandole come il piùù antico esempio di struttura
+                     <br>
+                     così detta ciclopica. <a class="persName" href="https://it.wikipedia.org/wiki/Pausania_il_Periegeta" target="_blank">Pausania</a> nel <span class="date">secondo secolo</span> dell'era
+                     <br>
+                     volgare descriveva le rovine di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> presso a poco quali
+                     <br>
+                     ora puranco le vediamo. Le origini della città sono per
+                     <br>
+                     gli antichi del tutto mitiche; le attribuiscono a <a class="persName" href="https://it.wikipedia.org/wiki/Perseo" target="_blank">Perseo</a> e
+                     <br>
+                     ai Ciclopi. Il più grande splendore di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> appartiene
+                     <br>
+                     all'età eroica, a quellacioè per la quale mancano i monu-
+                     <br>
+                     menti storici, e non si hanno che ricordi poetici nelle epo-
+                     <br>
+                     pee. <a class="persName" href="https://it.wikipedia.org/wiki/Pelope" target="_blank">Pelope</a> e i <span class="popoli">Pelopidi</span> venuti con ingenti ricchezze dalla
+                     <br>
+                     <a class="placeName" href="https://it.wikipedia.org/wiki/Frigia" target="_blank">Frigia</a> o dalla <a class="placeName" href="https://it.wikipedia.org/wiki/Lidia" target="_blank">Lidia</a> si stabiliscono a <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a>, di là domi-
+                     <br>
+                     nano sul <a class="placeName" href="https://it.wikipedia.org/wiki/Peloponneso" target="_blank">Peloponneso</a> che ne porta tuttora il nome, ed
+                     <br>
+                     hanno il primato fra tutti i principi greci per più genera-
+                     <br>
+                     zioni, che ci offrono i nomi eroici e poetici di <span class="persName">Pelope</span>, <a class="persName" href="https://it.wikipedia.org/wiki/Atreo" target="_blank">Atreo</a>,
+                     <br>
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Tieste" target="_blank">Tieste</a>, <a class="persName" href="https://it.wikipedia.org/wiki/Agamennone" target="_blank">Agamennone</a>, <a class="persName" href="https://it.wikipedia.org/wiki/Menelao" target="_blank">Menelao</a>, <a class="persName" href="https://it.wikipedia.org/wiki/Egisto" target="_blank">Egisto</a>, <a class="persName" href="https://it.wikipedia.org/wiki/Clitennestra" target="_blank">Clitennestra</a>, <a class="persName" href="https://it.wikipedia.org/wiki/Elena_(mitologia)" target="_blank">Elena</a>,
+                     <br>
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Oreste_(figlio_di_Agamennone)" target="_blank">Oreste</a>. Così da <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> prende le mosse la guerra trojana,
+                     <br>
+                     e <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> è la scena dei tragici avvenimenti che ispirarono
+                     <br>
+                     ad <a class="persName" href="https://it.wikipedia.org/wiki/Eschilo" target="_blank">Eschilo</a> l'<span class="opere">Orestea</span>. Dopo <a class="persName" href="https://it.wikipedia.org/wiki/Oreste_(figlio_di_Agamennone)" target="_blank">Oreste</a> troviamo il ritrono degli 
+                     <br>
+                     <span class="popoli">Eraclidi</span> nel <a class="placeName" href="https://it.wikipedia.org/wiki/Peloponneso" target="_blank">Peloponneso</a>, i quali danno la prevalenza ad
+                     <br>
+                     <a class="placeName" href="https://it.wikipedia.org/wiki/Argo_(citt%C3%A0_antica)" target="_blank">Argo</a>, la rivale di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a>, e per questa incomincia allora
+                     <br>
+                     un'epoca di decadenza da cui non si risollevò più mai fin-
+                     <br>
+                     chè, dopo essersi distinta colle illustri gesta dei suoi alle
+                     <br>
+                     <a class="placeName" href="https://it.wikipedia.org/wiki/Termopili" target="_blank">Termopili</a>, soccombette nel <span class="date">468 av. Cr.</span> sotto i colpi della 
+                     <br>
+                     gelosa <a class="placeName" href="https://it.wikipedia.org/wiki/Argo_(citt%C3%A0_antica)" target="_blank">Argo</a>. In mezzo alle favole poetiche, i fatti che pos-
+                     <br>
+                     sono ritenersi come positivi sono questi: 1° L'esistenza
+                     <br>
+                     fino da tempi antichissimi di questa città di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> di cui
+                     <br>
+                     possediamo le rovine; 2° L'aver essa accolto una stirpe di 
+                     <br>
+                     dominanti venuti dall'<a class="placeName" href="https://it.wikipedia.org/wiki/Anatolia" target="_blank">Asia minore</a> e che s'impose a tutto
+                     <br>
+                     il <a class="placeName" href="https://it.wikipedia.org/wiki/Peloponneso" target="_blank">Peloponneso</a> per più di una generazione; 3° L'opulenza
+                     <br>
+                     grandissima di quella città durante quel dominio; 4° Il
+                     <br>
+                     principio della sua decadenza colla migrazione dorica o il 
+                     <br>
+                     ritorno degli <span class="popoli">Eraclidi</span>, che è da antichi e moderni consi-
+                     <br>
+                     derato come un fatto storico, il quale ebbe luogo circa un-
+                     <br>
+                     dici secoli prima dell'era volgare; 5° Finalmente la distru-
+                     <br>
+                     zione di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> nel <span class="date">468 av. Cr.</span> Di tutto ciò bisogna tener
+                     <br>
+                     conto per apprezzare l'altissimo valore della scoperta dello
+                     <br>
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a>. 
+                     </div>
+                  <div class="paragrafo" id="Capoverso5_Micene">
+                     <br>
+                     La porta, così detta dei Leoni, di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a>, era fin qui il
+                     <br>
+                     più antico monumento di scultura che si conoscesse in <a class="placeName" href="https://it.wikipedia.org/wiki/Europa" target="_blank">Eu-
+                        <br>
+                        ropa</a>, monumento notevolissimo per lo stile affatto diverso 
+                     <br>
+                     da quanro poi troviamo nella scultura greca e che trova
+                     <br>
+                     raffronti soltanto in <a class="placeName" href="https://it.wikipedia.org/wiki/Asia" target="_blank">Asia</a>, singolarmente nella <a class="placeName" href="https://it.wikipedia.org/wiki/Frigia" target="_blank">Frigia</a>. Quella
+                     <br>
+                     porta fa parte delle mura ciclopiche che circondano l'<a class="placeName" href="https://it.wikipedia.org/wiki/Acropoli" target="_blank">Acro-
+                        <br>
+                        poli</a> di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> ed apre l'adito a questa parte alta della 
+                     <br>
+                     città ove trovavansi le case reali. Appunto sull'<a class="placeName" href="https://it.wikipedia.org/wiki/Acropoli" target="_blank">Acropoli</a>
+                     <br>
+                     ha trovato lo <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a> cinque tombe, alle quali poi se
+                     </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+         <h2 id="Pag4">Pagina 4:</h2>
+         <div id="img4">
+            <div class="container">
+               <div class="box"><a href="./pages/img4.png" target="_blank">
+                     <div class="facsimile-wrapper"><img src="./pages/img4.png" class="facsimile"><div class="overlay">
+                           <div class="zone-overlay" data-corresp="#Capoverso5_Micene" style="left:60px;&#xA;                top:67px;&#xA;&#xA;                width:379px;&#xA;&#xA;                height:776px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso6_Micene" style="left:60px;&#xA;                top:842px;&#xA;&#xA;                width:379px;&#xA;&#xA;                height:326px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso6_Micene" style="left:439px;&#xA;                top:68px;&#xA;&#xA;                width:380px;&#xA;&#xA;                height:418px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso7_Micene" style="left:439px;&#xA;                top:486px;&#xA;&#xA;                width:381px;&#xA;&#xA;                height:681px;&#xA;            "></div>
+                        </div>
+                     </div></a></div>
+               <div class="boxtext">
+                  <div class="paragrafo" id="">
+                     <br>
+                     ne aggiunse una sesta e testè anche una settima trovate
+                     <br>
+                     da altri. Non ci vogliamo troppo trattenere qui sull'idea 
+                     <br>
+                     dello <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a>, accettata dal <a class="persName" href="https://it.wikipedia.org/wiki/William_Ewart_Gladstone" target="_blank">Gladstone</a>, che queste siano
+                     <br>
+                     le tombe di <a class="persName" href="https://it.wikipedia.org/wiki/Agamennone" target="_blank">Agamennone</a>, <a class="persName" href="https://it.wikipedia.org/wiki/Cassandra_(mitologia)" target="_blank">Cassandra</a> ec. che l'antica tradi-
+                     <br>
+                     zione, riferita da <a class="persName" href="https://it.wikipedia.org/wiki/Pausania_il_Periegeta" target="_blank">Pausania</a> collocava in questi luoghi. La-
+                     <br>
+                     sciando da parte altre considerazioni più elevate, è strano
+                     <br>
+                     che lo <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a> non abbia osservato quanto diverso sia
+                     <br>
+                     lo stile degli oggetti trovati a <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a>, e quanto incredibile 
+                     <br>
+                     sarebbe che nella tomba di <a class="persName" href="https://it.wikipedia.org/wiki/Agamennone" target="_blank">Agamennone</a> fra le cose pre-
+                     <br>
+                     ziose non si trovasse anche una parte del bottino riportato
+                     <br>
+                     da <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a>. Dal che seguirebbe che o in queste tombe non
+                     <br>
+                     c'è <a class="persName" href="https://it.wikipedia.org/wiki/Agamennone" target="_blank">Agamennone</a> o quella che lo <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a> crede <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a>
+                     <br>
+                     non è <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a>. Ma a tutto ciò si può passar sopra, chè ve-
+                     <br>
+                     ramente se non si fossero trovate che le ossa di alcuni eroi,
+                     <br>
+                     il guadagno non sarebbe grande. Questo convien dire che 
+                     <br>
+                     sepolcri come questi pieni di sorprendenti ricchezze (chè
+                     <br>
+                     soltanto l'oro trovato oggi in cinque di essi raggiunge il
+                     <br>
+                     peso di 5000 lire sterline!) e situati non nella città bassa
+                     <br>
+                     ma nell'<a class="placeName" href="https://it.wikipedia.org/wiki/Acropoli" target="_blank">Acropoli</a>, non possono appartenere che a perso-
+                     <br>
+                     naggi regali, e certamente i quindici scheletri trovati dallo
+                     <br>
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a>, quasi tutti letteralmente coperti d'oro, non 
+                     <br>
+                     possono essere di gente oscura, ma è più che probabile
+                     <br>
+                     che se potessero parlare ci direbbero nomi non ignoti e 
+                     <br>
+                     forse anche illustri nell'antica poesia. Come negare che 
+                     <br>
+                     essi appartengono a quell'età in cui <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> meritava an-
+                     <br>
+                     cora i titoli che le dà <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a>, di città ben costrutta, dalle
+                     <br>
+                     larghe strade, e sopratutto ricca d'oro (<span class="foreign">polychrysos</span>)? Ora,
+                     <br>
+                     se interroghiamo la tradizione antica, quest'epoca di ric-
+                     <br>
+                     chezza per <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> risponderebbe al dominio dei <span class="popoli">Pelopidi</span>.
+                     <br>
+                     In ogni caaso poi, posteriore a quello non può essere, poi-
+                     <br>
+                     chè dopo il ritorno degli Eraclidi non esiste nella storia
+                     <br>
+                     di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a> decaduta, un momento in cui si potrebbe spie-
+                     <br>
+                     gare l'esistenza di tombe regali quali queste sono certa-
+                     <br>
+                     mente. Qual sia poi il rapporto fra i Pelopidi della poesia
+                     <br>
+                     e i Pelopidi della realtà, noi non possiamo determinare;
+                     <br>
+                     ma certo è un fatto di grande importanza per un'epoca
+                     <br>
+                     qual'è questa, di cui non abbiamo che la immagine poe-
+                     <br>
+                     tica, il trovare tanto concreto e reale quanto lo <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schlie-
+                        <br>
+                        mann</a> ebbe la fortuna di scoprire; chè se queste tombe non
+                     <br>
+                     ci dicono nulla sulle persone o sugli avvenimenti, certo
+                     <br>
+                     esse ci dicono moltissimo sulle condizioni della civiltà e
+                     <br>
+                     dell'arte in quei tempi, ed in questo consiste l'importanza
+                     <br>
+                     loro, allargandosi per esse la nostra visuale storica e dira-
+                     <br>
+                     dandosi in modo del tutto inaspettato una parte almeno di 
+                     <br>
+                     quella nebbia che c'impediva di veder chiaro nelle origini
+                     <br>
+                     e nelle più antiche fasi della nostra civiltà europea.
+                     </div>
+                  <div class="paragrafo" id="Capoverso6_Micene">
+                     <br>
+                     Gli oggetti trovati nelle tombe non sono pochi: si con-
+                     <br>
+                     tano a centinaia. È tutto un museo, nel quale si passa di sor-
+                     <br>
+                     presa in sorpresa dinanzi al numero, alla qualità, alla varietà
+                     <br>
+                     degli oggetti. Notiamo dapprima le stele di marmo scolpite
+                     <br>
+                     a ornati e figure, importante aggiunta all'unico monumento
+                     <br>
+                     prima conosciuto della scultura di quest'epoca remota, che
+                     <br>
+                     era, come dicemmo, la Porta dei Leoni. E poi una quan-
+                     <br>
+                     tità grande di oggetti, i più importanti dei quali troviamo
+                     <br>
+                     diligentemente rappresentati nelle 700 incisioni che ador-
+                     <br>
+                     nano il libro dello <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a>. In grandissima parte questi
+                     <br>
+                     oggetti sono d'oro più o meno finemente lavorato; altri
+                     <br>
+                     sono di argento puro, di una lega d'argento e piombo,
+                     <br>
+                     d'argento dorato, di bronzo, di rame, di avorio, d'ambra,
+                     <br>
+                     di cristallo di rocca, di alabastro, di osso, di past di ve-
+                     <br>
+                     tro, di terracotta ec.; v'hanno anche gemme incise, di sar-
+                     <br>
+                     donica, di agata, di ametisto ec. I più sono vasi, armi, e
+                     <br>
+                     ornamenti del vesitario o della persona dei sepolti, dei
+                     <br>
+                     quali le ossa pur si sono trovate. Soprattutto attirano l'at-
+                     <br>
+                     tenzione le maschere d'oro trovatee sul volto di parecchi
+                     <br>
+                     scheletri, i vasi d'oro e d'argento dei quali taluni presen-
+                     </div>
+                  <div class="paragrafo" id="">
+                     <br>
+                     tano forme assai eleganti, i lavori di ornato in oro che 
+                     <br>
+                     sorprendono per la grande varietà dei disegni, taluni dei
+                     <br>
+                     quali possono anch'oggi dirsi belli. E v'hanno pure lavori
+                     <br>
+                     di oreficeria più complicata, come la combinazione del cri-
+                     <br>
+                     stallo di rocca coll'oro: per esempio, un drago d'oro di
+                     <br>
+                     cui le squame sono di cristallo di rocca. Ma ciò che pre-
+                     <br>
+                     senta il più alto interesse è soprattutto l'opera figurata di
+                     <br>
+                     cui è ricca questa scoperta a differenza del così detto tesoro 
+                     <br>
+                     di Priamo, ove appena si trova un tentativo di rappresentare
+                     <br>
+                     la figura umana. Qui abbiamo una quantità considerevole
+                     <br>
+                     di oggetti figurati, nei quali ciò che a prima giunta col-
+                     <br>
+                     pisce, è una grande ineguaglianza nella finezza del disegno.
+                     <br>
+                     In taluni si stenta a riconoscere che cosa l'artista abbia
+                     <br>
+                     voluto rappresentare. Altri invece mostrano un'arte propo-
+                     <br>
+                     gredita quanto niuno lo aspetterebbe in un'epoca anteriore
+                     <br>
+                     di molto a tutti i monumenti figurati greci, anche i più
+                     <br>
+                     arcaici, fin qui conosciuti. Tale, per esempio, un leone d'oro,
+                     <br> 
+                     tale una testa di bue d'argento dorato, tale soprattutto 
+                     <br>
+                     un anello d'oro con una incisione assai complicata di una
+                     <br> 
+                     scena ov'entrano parecchie figure; certo non è un'arte na-
+                     <br>
+                     scente quella che in piccolo spazio sa con sufficiente osser-
+                     <br>
+                     vanza delle proporzioni aggruppare figure in quella ma-
+                     <br>
+                     niera, dar loro espressione e segnare non solo i contorni,
+                     <br> 
+                     ma ogni più minuto particolare della persona e del ve-
+                     <br>
+                     stiario.
+                     </div>
+                  <div class="paragrafo" id="Capoverso7_Micene">
+                     <br>
+                     Ad onta della disuguaglianza nella finitezza del lavoro è
+                     <br>    
+                     pur chiaro d'altro lato che c'è una unità di tipo nell'arte
+                     <br>
+                     che qui è rappresentata, e che queste tombe appartengono ad
+                     <br>
+                     uno stesso periodo di arte e di civiltà, il quale però in <a class="placeName" href="https://it.wikipedia.org/wiki/Grecia" target="_blank">Grecia</a>
+                     <br>
+                     (come la Porta dei Leoni, con cui si accorda pienamente) sta
+                     <br>
+                     da sè, nè si può concepirlo in relazione di continuità con
+                     <br>
+                     quell' arte greca che si sviluppò parecchi secoli più tardi.
+                     <br>
+                     In una parola, qui abbiamo un'arte di provenienza non
+                     <br>
+                     greca, un'arte d'importazione che si riconosce, non soltanto
+                     <br>
+                     nei piccoli oggetti che potrebbero essere stati portati, pel
+                     <br>
+                     commercio fenicio, da regioni diverse, ma anche negli og-
+                     <br>
+                     getti evidentemente fabbricati sul luogo, come le stele, le
+                     <br>
+                     maschere ec. E già vediamo gli archeologi mettersi al-
+                     <br>
+                     l'opra ; per uno o per un altro oggetto si fanno confronti
+                     <br>
+                     con oggetti trovati a <a class="placeName" href="https://it.wikipedia.org/wiki/Rodi" target="_blank">Rodi</a>, a <a class="placeName" href="https://it.wikipedia.org/wiki/Cipro" target="_blank">Cipro</a>, a <a class="placeName" href="https://it.wikipedia.org/wiki/Sparta" target="_blank">Sparta</a>, a <a class="placeName" href="https://it.wikipedia.org/wiki/Santorini" target="_blank">Santorino</a>
+                     <br>
+                     ed altrove, ed anche, singolarmente nei periodici inglesi,
+                     <br> 
+                     si parla con insistenza di arte assira. Ma se una qualche
+                     <br>
+                     influenza dell'arte assira qui si può ravvisare, nel tutto
+                     <br> 
+                     assieme noi vediamo i prodotti di un popolo clic è bensì
+                     <br>
+                     d'origine asiatica, ma non assira, e che ha un'arte sua
+                     <br>
+                     propria. Convien rammentare che <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a> e i più antichi
+                     <br>
+                     miti greci, i quali pur ricordano rapporti dell'<a class="placeName" href="https://it.wikipedia.org/wiki/Egitto" target="_blank">Egitto</a> e della
+                     <br> 
+                     <a class="placeName" href="https://it.wikipedia.org/wiki/Fenicia" target="_blank">Fenicia</a> colla <a class="placeName" href="https://it.wikipedia.org/wiki/Grecia" target="_blank">Grecia</a>, ignorano affatto l'<a class="placeName" href="https://it.wikipedia.org/wiki/Assiria" target="_blank">Assiria</a>. All'<a class="placeName" href="https://it.wikipedia.org/wiki/Anatolia" target="_blank">Asia
+                        <br>
+                        minore</a>, ai ricchi paesi della <a class="placeName" href="https://it.wikipedia.org/wiki/Frigia" target="_blank">Frigia</a> e della <a class="placeName" href="https://it.wikipedia.org/wiki/Lidia" target="_blank">Lidia</a>, fa ine-
+                     <br>
+                     vitabilmente pensare questa scoperta, accordandosi con quei
+                     <br>
+                     ricordi poetici degli antichi che di là fanno venire una
+                     <br> 
+                     ricca stirpe nel <a class="placeName" href="https://it.wikipedia.org/wiki/Peloponneso" target="_blank">Peloponneso</a>, avente principal sede in <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Mi-
+                        <br>
+                        cene</a>. Questo vien confermato non solo, dal tipo dell'arte,
+                     <br>
+                     ma anche dalle costumanze certamente asiatiche, a mio cre-
+                     <br>
+                     dere, e non punto greche, che ci vengono rivelate da questi 
+                     <br>
+                     sepolcri. E qui si scorge anche un fatto notevolissimo, come
+                     <br>
+                     cioè sia lontano assai il rapporto fra la poesia Omerica e
+                     <br>
+                     la realtà. <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a> dà una stesso colorito a tutti i Greci, ed
+                     <br> 
+                     anche ai Troiani; lingua, vestiario, costumanze, credenze,
+                     <br>
+                     armi ec. tutto è presso a poco identico. Della origine asia-
+                     <br>
+                     tica degli Atridi non c'è alcun accenno, nè v'ha alcunché
+                     <br>
+                     che distingua gli Atridi e le loro genti dagli altri Achei.
+                     <br> 
+                     Ebbene: qui si potrebbe notare quanta differenza corre fra
+                     <br> 
+                     gli oggetti qui trovati, e quelli trovati nella <a class="placeName" href="https://it.wikipedia.org/wiki/Troade" target="_blank">Troade</a> che
+                     <br>
+                     mostrano un grado di sviluppo civile o almeno artistico
+                     <br>
+                     assai inferiore. Ma, per venire su di un terreno più sicuro,
+                     <br> 
+                     queste tombe ci dicono chiaro che i Pelopidi, o chiunque
+                     </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+         <h2 id="Pag5">Pagina 5:</h2>
+         <div id="img5">
+            <div class="container">
+               <div class="box"><a href="./pages/img5.png" target="_blank">
+                     <div class="facsimile-wrapper"><img src="./pages/img5.png" class="facsimile"><div class="overlay">
+                           <div class="zone-overlay" data-corresp="#Capoverso7_Micene" style="left:57px;&#xA;                top:81px;&#xA;&#xA;                width:378px;&#xA;&#xA;                height:400px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso8_Micene" style="left:58px;&#xA;                top:481px;&#xA;&#xA;                width:379px;&#xA;&#xA;                height:357px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso9_Micene" style="left:57px;&#xA;                top:838px;&#xA;&#xA;                width:378px;&#xA;&#xA;                height:278px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso10_Micene" style="left:56px;&#xA;                top:1116px;&#xA;&#xA;                width:381px;&#xA;&#xA;                height:65px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso10_Micene" style="left:436px;&#xA;                top:84px;&#xA;&#xA;                width:381px;&#xA;&#xA;                height:43px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso11_Micene" style="left:438px;&#xA;                top:127px;&#xA;&#xA;                width:377px;&#xA;&#xA;                height:215px;&#xA;            "></div>
+                        </div>
+                     </div></a></div>
+               <div class="boxtext">
+                  <div class="paragrafo" id="">
+                     <br>
+                     fossero i venuti nel <a class="placeName" href="https://it.wikipedia.org/wiki/Peloponneso" target="_blank">Peloponneso</a> dall'<a class="placeName" href="https://it.wikipedia.org/wiki/Anatolia" target="_blank">Asia Minore</a>, oltre alle
+                     <br>      
+                     ingenti ricchezze, ad una abbondanza d'oro ignota alla
+                     <br>
+                     <a class="placeName" href="https://it.wikipedia.org/wiki/Grecia" target="_blank">Grecia</a> europea, ad uno sfarzo insolito fra i Greci, porta-
+                     <br>
+                     rono anche e serbarono le loro arti e le loro usanze per
+                     <br>
+                     modo che oggi nei loro sepolcri li vediamo assai diversi
+                     <br> 
+                     dagli Achei d'<a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a>. A me par chiaro che essi sul capo
+                     <br>
+                     portassero mitre o tiare, alle quali appartengono quegli
+                     <br>
+                     ornamenti d'oro che Schliemann chiama diademi, altrimenti
+                     <br>
+                     non s'intenderebbe come su di una sola testa ci fosse posto
+                     <br>
+                     per cinque diademi. E del resto anche nelle figure rappre-
+                     <br>
+                     sentate sugli oggetti trovati, vediamo il capo coperto da
+                     <br>
+                     singolari berretti alti, con visiera, o da mitre, in modo af-
+                     <br>
+                     fatto straniero ai Greci. Anche ignoto affatto ad Omero e
+                     <br>
+                     ai Greci è l'uso di coprire il volto dei defunti con maschere
+                     <br> 
+                     d'oro. Del vestiario dei sepolti non rimanendo che gli ele-
+                     <br>
+                     menti metallici, mal possiamo determinarne le parti e le for-
+                     <br>
+                     me: ma anche qui gli oggetti figurati ci mostrano un modo di
+                     <br>
+                     vestire intieramente estraneo ai Greci, schiettamente asia-
+                     <br>
+                     tico, sovraccarico di ornamenti. Che con ciò si accordasse
+                     <br> 
+                     il vestiario dei sepolti lo mostrano le infinite foglioìine
+                     <br>
+                     d'oro e i dischetti d'oro lavorato a ornati che a centinaia
+                     <br>
+                     si sono trovati sopra e sotto questi scheletri insieme con
+                     <br>
+                     altri oggetti d'oro che certamente erano anch'essi guarni-
+                     <br>
+                     zioni di vesti.
+                     </div>
+                  <div class="paragrafo" id="Capoverso8_Micene">
+                     <br>
+                     Con tutti gli scheletri di uomini (una sola tomba, son-
+                     <br>      
+                     tuosissima, contiene tre scheletri di donne) si sono trovate
+                     <br>
+                     moltissime armi di offesa; le armi di difesa forse c'erano
+                     <br> 
+                     ma non metalliche e quindi scomparvero; i molti denti di
+                     <br> 
+                     cinghiale che si sono trovati potevano essere ornamenti di
+                     <br>
+                     scudi o di elmetti o di barbute di cuoio : come troviamo an-
+                     <br>
+                     che in <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a>: ma in tanta ricchezza di sepolti sorprende
+                     <br>
+                     il non trovare elmi, corazze, scudi e gambiere di metallo,
+                     <br>
+                     che pur chiunque abbia letto <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a> sa bene quanto valore
+                     <br>
+                     abbiano fra gli Achei i vestiti di bronzo. Corazza non può chia-
+                     <br>
+                     marsi la larga lamina d'oro trovata sul petto di due sche-
+                     <br>
+                     letri. Soprattutto fa impressione l'assoluta assenza del prin-
+                     <br>
+                     cipal distintivo omerico degli Achei, le belle gambiere di bronzo.
+                     <br> 
+                     Questi sepolti avevano evidentemente le gambe coperte da
+                     <br>
+                     un tessuto di stoffa, alla maniera Frigia, che andava assai
+                     <br>
+                     al disopra del ginocchio ed era tenuto fermo da un anello
+                     <br>
+                     d'oro che si è trovato in più d'uno scheletro. Le armi
+                     <br>
+                     d'offesa poi sono quasi tutte di bronzo, ma si son trovate
+                     <br>
+                     pure assai punte di treccie di pietra e qualche coltello pure
+                     <br>
+                     di pietra, cose affatto ignote ad Omero. D'altro lato fra i
+                     <br>
+                     vari metalli trovati in queste tombe manca affatto il ferro,
+                     <br>
+                     che pure <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a> conosce.
+                     </div>
+                  <div class="paragrafo" id="Capoverso9_Micene">
+                     <br>
+                     Notevolissimo poi e molto caratteristico è il modo di
+                     <br> 
+                     dar sepoltura, ben diverso dagli usi eroici descritti da 
+                     <br>
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a> e dagli usi Greci in generale. In <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a> la cosa è
+                     <br>
+                     semplicissima ; <a class="persName" href="https://it.wikipedia.org/wiki/Patroclo" target="_blank">Patroclo</a>, <a class="persName" href="https://it.wikipedia.org/wiki/Ettore_(mitologia)" target="_blank">Ettore</a> sono posti nudi sulla pira,
+                     <br>
+                     bruciati, e poi raccolte le ossa son chiuse in un'urna. Per
+                     <br> 
+                     una eccezione, il padre di <a class="persName" href="https://it.wikipedia.org/wiki/Andromaca" target="_blank">Andromaca</a> è bruciato colle armi
+                     <br>
+                     indosso. Qui invece vediamo che si comincia dal costruire
+                     <br> 
+                     una tomba quadrata con forti pareti di materiale, capace
+                     <br>
+                     di più cadaveri. Si pone uno strato di ghiaia nel fondo, su
+                     <br>
+                     questo il cadavere riccamente vestito ; poi sul cadavere le
+                     <br> 
+                     legna, poi sulle legna uno strato di argilla e finalmente su
+                     <br>
+                     questo un altro strato di ghiaia. Dopo avvenuta la cre-
+                     <br>
+                     mazione si copre il tutto di terra. Si vede bene che così
+                     <br>
+                     si è voluto ottenere piuttostochè un incenerimento del ca-
+                     <br>
+                     davere, un disseccamento o una carbonizzazione più o meno
+                     <br>
+                     inoltrata e questa è forse la cagione per cui quelli sche-
+                     <br>
+                     letri hanno potuto traversare tanti secoli.
+                     </div>
+                  <div class="paragrafo" id="Capoverso10_Micene">
+                     <br>
+                     Così ognun vede che i poemi omerici appariscono assai
+                     <br> 
+                     lontani dai tempi della prosperità di <a class="placeName" href="https://it.wikipedia.org/wiki/Micene" target="_blank">Micene</a>, e danno dei
+                     <br>
+                     signori di questa città un'idea che molto si discosta dal
+                     <br> 
+                     vero. Ciò deve servire di avvertimento a quei dotti che
+                     </div>
+                  <div class="paragrafo" id="">
+                     <br>
+                     con <a class="persName" href="https://it.wikipedia.org/wiki/Omero" target="_blank">Omero</a> alla mano credono poter determinare dov'era o
+                     <br>
+                     dove non era <a class="placeName" href="https://it.wikipedia.org/wiki/Troia" target="_blank">Troja</a>.
+                     </div>
+                  <div class="paragrafo" id="Capoverso11_Micene">
+                     <br>
+                     Di scrittura non s'è trovata traccia in queste tombe :
+                     <br>
+                     però è difficile credere che fosse ignota quando l'arte tanto
+                     <br> 
+                     sapeva fare in ornato e in figura. Ma le molte osservazioni
+                     <br> 
+                     che vorrei aggiungere a quelle che ho già esposte non mi
+                     <br>
+                     sono consentite dalla natura e dalle proporzioni di questo
+                     <br> 
+                     periodico. Basti quanto ho detto a provare l'alta impor-
+                     <br>
+                     tanza di questa scoperta che apre un nuovo orizzonte alle
+                     <br>
+                     indagini sui primordi dell'arte e della civiltà europea.
+                     <br>
+                     Il suolo della <a class="placeName" href="https://it.wikipedia.org/wiki/Grecia" target="_blank">Grecia</a> e dell'<a class="placeName" href="https://it.wikipedia.org/wiki/Anatolia" target="_blank">Asia minore</a> è appena stato sfio-
+                     <br>
+                     rato dagli archeologi ; esso cela nel suo seno la soluzione
+                     <br>
+                     di molti e gravi problemi storici, e la darà se il nobile ar-
+                     <br>
+                     dore del signor <a class="persName" href="https://it.wikipedia.org/wiki/Heinrich_Schliemann" target="_blank">Schliemann</a> troverà imitatori.
+                     <br>      
+                     <a class="persName" href="" target="_blank">D. COMPARETTI</a>.
+                     </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+         <h2 id="Pag6">Pagina 6:</h2>
+         <div id="img6">
+            <div class="container">
+               <div class="box"><a href="./pages/img6.png" target="_blank">
+                     <div class="facsimile-wrapper"><img src="./pages/img6.png" class="facsimile"><div class="overlay">
+                           <div class="zone-overlay" data-corresp="#Capoverso1_Bibliografia1" style="left:67px;&#xA;                top:561px;&#xA;&#xA;                width:377px;&#xA;&#xA;                height:45px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso2_Bibliografia1" style="left:66px;&#xA;                top:606px;&#xA;&#xA;                width:381px;&#xA;&#xA;                height:608px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso2_Bibliografia1" style="left:443px;&#xA;                top:39px;&#xA;&#xA;                width:375px;&#xA;&#xA;                height:206px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso1_Bibliografia2" style="left:443px;&#xA;                top:270px;&#xA;&#xA;                width:375px;&#xA;&#xA;                height:38px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso2_Bibliografia2" style="left:443px;&#xA;                top:308px;&#xA;&#xA;                width:380px;&#xA;&#xA;                height:904px;&#xA;            "></div>
+                        </div>
+                     </div></a></div>
+               <div class="boxtext">
+                  <h2 class="titolo center">
+                     BIBLIOGRAFIA
+                     </h2>
+                  <div class="paragrafo" id="Capoverso1_Bibliografia1">
+                     <br>
+                     PROF. <a class="persName" href="" target="_blank">LEONE OTTOLENGHI</a>.  <span class="opere">Vita,studi e lettere inedite di Luigi
+                        <br>
+                        Ornato</span>. - <a class="placeName" href="https://it.wikipedia.org/wiki/Roma" target="_blank">Roma</a>, <a class="orgName" href="https://it.wikipedia.org/wiki/Loescher" target="_blank">Loescher</a>, <span class="date">1878</span>
+                     </div>
+                  <div class="paragrafo" id="Capoverso2_Bibliografia1">
+                     <br>
+                     C'è una generazione di uomini, i quali, sebbene acqui-
+                     <br>
+                     stino egregia fama di virtù e d'ingegno, o dell'una e del-
+                     <br>
+                     l'altro insieme, tuttavia conducono una vita così ritirata,
+                     <br>
+                     così aliena, o per cagione loro o per le circostanze, dalle
+                     <br>
+                     faccende pubbliche o da ogni movimento sociale, che vo-
+                     <br>
+                     lendo parlar di loro è impossibile di trovar materia ba-
+                     <br>
+                     stante a comporre un libro. Tale, secondo noi, fu <a class="persName" href="https://it.wikipedia.org/wiki/Luigi_Ornato" target="_blank">Luigi
+                        <br>
+                        Ornato</a>. Nè questo diciamo per irriverenza alla sua memoria
+                     <br>
+                     che è grande, come fu grande l'amore che egli portò al-
+                     <br>
+                     l'<a class="placeName" href="https://it.wikipedia.org/wiki/Italia" target="_blank">Italia</a>, quando era un delitto l'amarla. La vita dell'<a class="persName" href="https://it.wikipedia.org/wiki/Luigi_Ornato" target="_blank">Ornato</a>
+                     <br>
+                     fu una continua battaglia tra il desiderio e l'impotenza di
+                     <br>
+                     fare, ma se sì toglie la parte che ebbe con <a class="persName" href="https://it.wikipedia.org/wiki/Santorre_di_Santa_Rosa" target="_blank">Santorre di
+                        <br>
+                        Santa Rosa</a>, che poi volle generosamente seguir nell'esilio,
+                     <br>
+                     nella rivoluzione del <span class="date">ventuno</span>, visse in una dignitosa ed
+                     <br>
+                     oscura povertà, e quello che sappiamo di lui, del suo animo,
+                     <br> 
+                     del suo ingegno e dei suoi studii si sa dagli amici ed am-
+                     <br>
+                     miratori delle sue virtù, che ebbe numerosi e virtuosi al
+                     <br>
+                     pari di lui, più che dai suoi scritti, di cui in sostanza non
+                     <br>
+                     ci rimangono che la traduzione dei <span class="opere">Ricordi</span> di <a class="persName" href="https://it.wikipedia.org/wiki/Marco_Aurelio" target="_blank">Marco Au-
+                        <br>
+                        relio</a> e poche lettere. Ora un breve studio biografico, un
+                     <br>
+                     profilo, come oggi si dice, si poteva far dell'<a class="persName" href="https://it.wikipedia.org/wiki/Luigi_Ornato" target="_blank">Ornato</a>, e già 
+                     <br>
+                     è stato fatto da altri, ma il professore <a class="persName" href="" target="_blank">Ottolenghi</a> invece
+                     <br> 
+                     di ritrarci, specialmente da quell'ottantina di lettere che
+                     <br>
+                     ha pubblicato in fine della sua vita, l'immagine del sim-
+                     <br>
+                     patico filosofo di <a class="placeName" href="https://it.wikipedia.org/wiki/Caramagna_Piemonte" target="_blank">Caramagna</a>, ce l'ha seppellito sotto le
+                     <br>
+                     biografie degli amici di lui, cosicché mentre egli si perde
+                     <br>
+                     in un mondo di particolari, che sarebbero di per sè, per
+                     <br>
+                     quanto non nuovi del tutto, d'un vivo interesse, è poi riu-
+                     <br>
+                     scito a far un libro che interessa ben poco, perchè manca
+                     <br>
+                     assolutamente di quella dote che deve avere un libro, mas-
+                     <br>
+                     sime un libro di questo genere, perchè sia ben fatto ; la dote
+                     <br>
+                     cioè, per cui l'autore tiene continuamente desta l'attenzione
+                     <br>
+                     dei suoi lettori intorno al soggetto principale di cui ha
+                     <br>
+                     preso a discorrere. Felice di poter arricchire il suo studio
+                     <br>
+                     biografico di citazioni e di note, anche quando non ce n'è
+                     </div>
+                  <div class="paragrafo" id="">
+                     <br>
+                     proprio bisogno, il professore <a class="persName" href="" target="_blank">Ottolenghi</a> narra e giudica
+                     <br> 
+                     più colle parole degli altri che colle sue proprie, e così
+                     <br>
+                     mette insieme un mosaico e non dei più perfetti, non una
+                     <br>
+                     vita o più vite raccolte in una. Nondimeno gli dobbiamo
+                     <br>
+                     esser grati di aver ravvivata la memoria di un uomo, che
+                     <br> 
+                     appartenne alla schiera di quei generosi, i quali apparec-
+                     <br>
+                     chiarono col sacrifizio di sè stessi la redenzione d'<a class="placeName" href="https://it.wikipedia.org/wiki/Italia" target="_blank">Italia</a>, e
+                     <br>
+                     che per la modestia, per la temperanza delle opinioni, per
+                     <br>
+                     l'instancabile amore agli studi delle lettere e della filosofia
+                     <br>
+                     e per il coraggio con cui sopportò le più gravi sventure
+                     <br>
+                     può essere anche oggi additato ai giovani come modello.
+                     </div>
+                  <div class="paragrafo" id="Capoverso1_Bibliografia2">
+                     <br>
+                     <a class="persName" href="https://en.wikipedia.org/wiki/Paul_Janet" target="_blank">PAUL JANET</a>, <span class="opere">Saint-Simon et le Saint-Simonisme</span>. — <a class="placeName" href="https://it.wikipedia.org/wiki/Parigi" target="_blank">Paris</a>,
+                     <br>
+                     <span class="orgName">Germer Baillière</span>, <span class="date">1878</span>.
+                     </div>
+                  <div class="paragrafo" id="Capoverso2_Bibliografia2">
+                     <br>
+                     Ecco un libretto come sanno farli in <a class="placeName" href="https://it.wikipedia.org/wiki/Francia" target="_blank">Francia</a>: comple-
+                     <br>
+                     tissimo, esattissimo e pure tanto breve quanto pieno di
+                     <br>
+                     vita. Il signor <a class="persName" href="https://en.wikipedia.org/wiki/Paul_Janet" target="_blank">Janet</a> possiede perfettamente il soggetto
+                     <br>
+                     avendolo svolto da prima come Professore alla <a class="orgName" href="https://it.wikipedia.org/wiki/Istituto_di_studi_politici_di_Parigi" target="_blank">Scuola delle
+                        <br>
+                        Scienze Politiche</a> di <a class="placeName" href="https://it.wikipedia.org/wiki/Parigi" target="_blank">Parigi</a>, e poi nella <span class="opere">Revue des Deux
+                        <br>
+                        Mondes</span>. L'opera si divide in due parti. Nella prima l'Au-
+                     <br>
+                     tore tratta del <a class="persName" href="https://it.wikipedia.org/wiki/Claude-Henri_de_Rouvroy_de_Saint-Simon" target="_blank">Saint-Simon</a> e, invece di raccontarci per la
+                     <br>
+                     centesima volta la vita del filosofo con le osservazioni ob-
+                     <br>
+                     bligate e cogli aneddoti stantii che sentiamo ripetere da
+                     <br> 
+                     cinquant'anni, analizza gli scritti di lui, dichiara e giudica 
+                     <br>
+                     la sua filosofia e i suoi disegni di riorganamento sociale; 
+                     <br>
+                     cose tutte che non gl'impediscono di dare nell'appendice
+                     <br> 
+                     una notizia biografica, come pure un catalogo ragionato
+                     <br>
+                     delle opere del <a class="persName" href="https://it.wikipedia.org/wiki/Claude-Henri_de_Rouvroy_de_Saint-Simon" target="_blank">Saint-Simon</a>: tutti e due scritti succosi e
+                     <br>
+                     <span class="foreign">matter of fact</span> senz'ombra di pretensione letteraria. Il signor
+                     <br> 
+                     <a class="persName" href="https://en.wikipedia.org/wiki/Paul_Janet" target="_blank">Janet</a> ha egregiamente mostrato come il <a class="persName" href="https://it.wikipedia.org/wiki/Claude-Henri_de_Rouvroy_de_Saint-Simon" target="_blank">Saint-Simon</a> si
+                     <br>
+                     ricolleghi al movimento di reazione storica e religiosa del
+                     <br> 
+                     principio di questo secolo, e come la sua prima ispirazione 
+                     <br>
+                     sia della stessa natura di quelle di <a class="persName" href="https://it.wikipedia.org/wiki/Joseph_de_Maistre" target="_blank">Giuseppe De Maistre</a> e
+                     <br>
+                     della sua scuola. Prova sopra tutto a maraviglia come
+                     <br>
+                     niente fosse tanto estraneo allo spirito riformatore del
+                     <br>
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Claude-Henri_de_Rouvroy_de_Saint-Simon" target="_blank">Saint-Simon</a>, quanto l'idea rivoluzionaria; ch'egli non pensò
+                     <br>
+                     mai a far guerra alla monarchia, giacchè le forme politiche
+                     <br>
+                     gli erano del tutto indifferenti, nè a combattere il capitale,
+                     <br> 
+                     nè a predicare l'emancipazione della donna; che, massime
+                     <br>
+                     ne' suoi primordi, non si distinse troppo dalla scuola di
+                     <br>
+                     <a class="persName" href="https://en.wikipedia.org/wiki/Jean-Baptiste_Say" target="_blank">G. B. Say</a> il quale esagerò quasi quanto lui e quanto tutti
+                     <br> 
+                     i pensatori politici de'tempi così agitati e così sterili del
+                     <br>
+                     <a class="orgName" href="https://it.wikipedia.org/wiki/Primo_Impero_francese" target="_blank">primo Impero</a>, l'importanza dell'educazione nella società.
+                     <br>
+                     Solamente il Padre <a class="persName" href="https://it.wikipedia.org/wiki/Barth%C3%A9lemy-Prosper_Enfantin" target="_blank">Enfantin</a> — come chiaramente dimo-
+                     <br>
+                     stra il <a class="persName" href="https://en.wikipedia.org/wiki/Paul_Janet" target="_blank">Janet</a> nella seconda metà del suo breve scritto
+                     <br>
+                     — fu quegli che trasformò il Sansimonismo introducen-
+                     <br>
+                     dovi le proprie idee — o meglio le proprie fisime — a
+                     <br>
+                     proposito della proprietà, della religione e della famiglia.
+                     <br>
+                     Sotto l'influenza di cotesta natura pretesca, il Sansimonismo
+                     <br>
+                     affettò sempre più una forma religiosa, rialzò sempre più
+                     <br>
+                     il principio dell'autorità, mettendosi viemaggiormente in
+                     <br>
+                     opposizione col liberalismo politico. Bisogna leggere tutto
+                     <br>
+                     questo svolgimento, già molto succinto e condensato, nel
+                     <br>
+                     l'opera del signor <a class="persName" href="https://en.wikipedia.org/wiki/Paul_Janet" target="_blank">Janet</a>, che è impossibile riassumere, e della
+                     <br>
+                     quale potremmo accoglier quasi tutto, facendo pochissime
+                     <br>
+                     riserve. Forse il signor <a class="persName" href="https://en.wikipedia.org/wiki/Paul_Janet" target="_blank">Janet</a> è un po'troppo severo verso
+                     <br>
+                     il Padre <a class="persName" href="https://it.wikipedia.org/wiki/Barth%C3%A9lemy-Prosper_Enfantin" target="_blank">Enfantin</a>, nel quale vede troppo il sensualista,
+                     <br> 
+                     l'ambizioso e quasi il taumaturgo e l'ipocrita consciente;
+                     <br>
+                     ma noi non sapremmo che approvare di cuore quando dice
+                     <br>
+                     che la dottrina di cotesto Padre è <span class="citazione">« una delle più sner-
+                        <br>
+                        vanti e delle più vergognose »</span> che siansi mai fabbricate.
+                     <br> 
+                     Forse anche faremmo qualche riserva su ciò che il signor
+                     <br>
+                     <a class="persName" href="https://en.wikipedia.org/wiki/Paul_Janet" target="_blank">Janet</a> dice del divorzio, in favore del quale non ammette
+                     <br>
+                     che un solo argomento valido, cioè l'immoralità della se-
+                     <br>
+                     parazione di corpo e di beni col celibato. Ecco dove sempre
+                     <br>
+                     fa capolino, anche nei più spregiudicati dei nostri vicini,
+                     </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+         <h2 id="Pag7">Pagina 7:</h2>
+         <div id="img7">
+            <div class="container">
+               <div class="box"><a href="./pages/img7.png" target="_blank">
+                     <div class="facsimile-wrapper"><img src="./pages/img7.png" class="facsimile"><div class="overlay">
+                           <div class="zone-overlay" data-corresp="#Capoverso2_Bibliografia2" style="left:42px;&#xA;                top:54px;&#xA;&#xA;                width:381px;&#xA;&#xA;                height:114px;&#xA;            "></div>
+                        </div>
+                     </div></a></div>
+               <div class="boxtext">
+                  <div class="paragrafo" id="">
+                     <br>
+                     il codino del francese e del Cattolico, abituato a conside-
+                     <br>
+                     rare come verità innate le leggi della <a class="orgName" href="https://it.wikipedia.org/wiki/Chiesa_cattolica" target="_blank">Chiesa</a> e del <span class="opere">Codice
+                        <br>
+                        Civile</span>. Insomma, il inerito principale di questo ottimo libric-
+                     <br> 
+                     cino è d'aver stabilita in una forma eccellente, la distinzione
+                     <br>
+                     fra il <a class="persName" href="https://it.wikipedia.org/wiki/Claude-Henri_de_Rouvroy_de_Saint-Simon" target="_blank">Saint-Simon</a> e la sua Scuola, fra il Sansimonismo del
+                     <br>
+                     maestro e quello dei successori di lui.
+                     </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+         <h2 id="Pag8">Pagina 8:</h2>
+         <div id="img8">
+            <div class="container">
+               <div class="box"><a href="./pages/img8.png" target="_blank">
+                     <div class="facsimile-wrapper"><img src="./pages/img8.png" class="facsimile"><div class="overlay">
+                           <div class="zone-overlay" data-corresp="#Capoverso1_Notizie1" style="left:51px;&#xA;                top:1116px;&#xA;&#xA;                width:377px;&#xA;&#xA;                height:43px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso1_Notizie2" style="left:431px;&#xA;                top:136px;&#xA;&#xA;                width:381px;&#xA;&#xA;                height:85px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Capoverso1_Notizie3" style="left:429px;&#xA;                top:977px;&#xA;&#xA;                width:378px;&#xA;&#xA;                height:32px;&#xA;            "></div>
+                           <div class="zone-overlay" data-corresp="#Crediti_Notizie" style="left:434px;&#xA;                top:1094px;&#xA;&#xA;                width:383px;&#xA;&#xA;                height:65px;&#xA;            "></div>
+                        </div>
+                     </div></a></div>
+               <div class="boxtext">
+                  <h2 class="titolo center">NOTIZIE</h2>
+                  <div class="paragrafo" id="Capoverso1_Notizie1">
+                     <br>
+                     — In occasione della prossima apertura dell'<a class="orgName" href="https://it.wikipedia.org/wiki/Esposizione_universale" target="_blank">Esposizione di Parigi</a>,
+                     <br>
+                     gli editori <a class="orgName" href="https://it.wikipedia.org/wiki/Fratelli_Treves" target="_blank">Fratelli Treves</a> di <a class="placeName" href="https://it.wikipedia.org/wiki/Milano" target="_blank">Milano</a> stanno per pubblicare una <span class="opere">Guida
+                        <br>
+                        pratica di Parigi</span> di <a class="persName" href="https://it.wikipedia.org/wiki/Jacopo_Caponi" target="_blank">Folchetto</a> ; e un libro su <a class="placeName" href="https://it.wikipedia.org/wiki/Parigi" target="_blank">Parigi</a> del dottor <a class="persName" href="https://it.wikipedia.org/wiki/Max_Nordau" target="_blank">Max
+                        <br>
+                        Nordan</a> col titolo : <span class="opere">Il vero paese dei miliardi</span>.
+                     </div>
+                  <div class="paragrafo" id="Capoverso1_Notizie2">
+                     <br>
+                     — Il <span class="date">primo marzo</span> moriva a <a class="placeName" href="https://it.wikipedia.org/wiki/Vienna" target="_blank">Vienna</a> il celebre romanista <a class="persName" href="https://it.wikipedia.org/wiki/Ludwig_Arndts_von_Arnesberg" target="_blank">Carlo Lo-
+                        <br>
+                        dovico Arndts</a>, che professava da vari anni in quella <a class="orgName" href="https://it.wikipedia.org/wiki/Universit%C3%A0" target="_blank">Università</a>. Era
+                     <br> 
+                     nato ad <a class="placeName" href="https://it.wikipedia.org/wiki/Arnsberg" target="_blank">Arnesberg</a> in <a class="placeName" href="https://it.wikipedia.org/wiki/Vestfalia" target="_blank">Vestfalia</a> nel <span class="date">1803</span>. Il suo <span class="opere">Lehrbuch der Pandekten</span>
+                     <br> 
+                     è stato tradotto in italiano per cura del professor <a class="persName" href="https://it.wikipedia.org/wiki/Filippo_Serafini" target="_blank">Serafini</a>. La prima
+                     <br> 
+                     moglie di lui, donna assai culta, pubblicò i sonetti di <a class="persName" href="https://it.wikipedia.org/wiki/Vittoria_Colonna" target="_blank">Vittoria Colonna</a>
+                     <br>
+                     accompagnati da una fedele traduzione tedesca.
+                     </div>
+                  <div class="paragrafo" id="Capoverso1_Notizie3">
+                     <br>
+                     — <a class="persName" href="https://en.wikipedia.org/wiki/George_Rawlinson" target="_blank">Giorgio Rawlinson</a> ha pubblicato un libro sull'<span class="opere">Origine delle Na-
+                        <br>
+                        zioni</span> presso <a class="orgName" href="https://openlibrary.org/publishers/Scribner,_Welford,_and_Armstrong" target="_blank">Scribner Welford e Armstrong</a> a <a class="placeName" href="https://it.wikipedia.org/wiki/New_York" target="_blank">Nuova York</a>.
+                     </div>
+                  <div class="paragrafo" id="Crediti_Notizie">
+                     
+                     <hr class="milestone-rule">
+                     <br>
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Leopoldo_Franchetti" target="_blank">LEOPOLDO FRANCHETTI</a> | 
+                     <a class="persName" href="https://it.wikipedia.org/wiki/Sidney_Sonnino" target="_blank">SIDNEY SONNINO</a>, 
+                     Proprietari Direttori.
+                     <br>
+                     
+                     <hr class="milestone-rule">
+                     <span class="persName">ANGIOLO GHERARDINI</span>, 
+                     Gerente Responsabile.
+                     
+                     <hr class="milestone-rule">
+                     <br>
+                     <a class="placeName" href="https://it.wikipedia.org/wiki/Roma" target="_blank">ROMA</a>,<span class="date">1878</span>. — 
+                     <a class="orgName" href="https://it.wikipedia.org/wiki/Casa_Editrice_Barb%C3%A8ra" target="_blank">Tipografia Barbera</a>.
+                     <br>
+                     </div>
+               </div>
+               <hr>
+            </div>
+         </div>
+      </div>
+      <div id="about">
+         <footer>
+            <h1 class="footer-title">INFORMAZIONI AGGIUNTIVE:</h1>
+            <div class="footer-container">
+               <div class="box">
+                  <h2>Informazioni dell'Edizione: </h2>
+                  <ul class="info-list">Edizione digitale - <span class="date">Febbraio 2026</span>
+                     Coordinatore:<span class="persName"> Angelo Mario Del Grosso</span></ul>
+               </div>
+               <div class="box logo-box"><img src="https://apre.it/wp-content/uploads/2021/01/logo_uni-pisa.png" alt="Logo Università di Pisa" style="width:300px; float: center;"></div>
+               <div class="box">
+                  <h2>Informazioni sulla Pubblicazione: </h2>
+                  <ul class="info-list">Università di Pisa<span class="placeName"> Pisa</span><span class="date"> 2026</span><p>Contenuto ad accesso libero</p>
+                  </ul>
+               </div>
+            </div>
+            <p class="footer-repo">
+               Repository <a href="https://github.com/michelevietina/Progetto_Codifica_di_Testi_Vietina">GitHub</a></p>
+         </footer>
+      </div>
+   </body>
+</html>
