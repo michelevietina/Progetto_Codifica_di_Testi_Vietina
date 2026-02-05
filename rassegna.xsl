@@ -466,7 +466,7 @@
             </div>
 
             <p  class="footer-repo">
-                Repository <a href="https://github.com//">GitHub</a>
+                Repository <a href="https://github.com/michelevietina/Progetto_Codifica_di_Testi_Vietina">GitHub</a>
             </p>
 
         </footer>
